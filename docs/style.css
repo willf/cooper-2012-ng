@@ -98,6 +98,8 @@ dd { margin: 0; overflow-wrap: anywhere; }
 footer { border-top: 1px solid var(--line); padding-block: 1rem 1.5rem;
   display: flex; flex-wrap: wrap; gap: .75rem 2rem; }
 footer a { min-height: 44px; display: inline-flex; align-items: center; }
+footer .copyright { flex-basis: 100%; max-width: none; margin: 0; }
+footer .copyright a { display: inline; min-height: 0; }
 @media (min-width: 48rem) {
   header, main, footer { padding-inline: 2rem; }
   main { padding-block: 2rem 3rem; }
