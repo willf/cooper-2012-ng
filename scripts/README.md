@@ -68,7 +68,9 @@ Generate the website (intro, nine indexes, and individual song pages):
 uv run scripts/site.py
 ```
 
-Open `index/index.html` directly in a browser. All links and styles are local,
+The site is generated in `docs/`. Open `docs/index.html` directly in a browser,
+or serve it locally with `python3 -m http.server 8000 --directory docs`.
+All links and styles are local,
 so no server or network connection is required. Song pages display metadata except
 the internal `Collation` field, and retain the original lyric line and verse breaks.
 Contributor names display in reading order (`F. Price`), with links pointing to

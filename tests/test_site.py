@@ -42,7 +42,7 @@ class SiteTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.lyrics = self.root / "lyrics"
         self.lyrics.mkdir()
-        self.output = self.root / "index"
+        self.output = self.root / "docs"
         self.fragment_ids = {}
         for suffix in ("b", "t"):
             (self.lyrics / f"027{suffix}.txt").write_text(f'''Title: The <Fountain> & Life

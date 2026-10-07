@@ -391,7 +391,7 @@ top entries appear before bottom entries.</p>'''
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build the static lyrics website.")
     parser.add_argument("--lyrics-dir", type=Path, default=ROOT / "lyrics")
-    parser.add_argument("--output", type=Path, default=ROOT / "index")
+    parser.add_argument("--output", type=Path, default=ROOT / "docs")
     args = parser.parse_args()
     count = build_site(args.lyrics_dir, args.output)
     print(f"Built {args.output}: {count} song pages, {len(LABELS)} indexes, and an intro page")
