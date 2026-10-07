@@ -1,0 +1,80 @@
+LYRICS SPELLING REVIEW
+
+Scope: all 613 lyric files; lyric bodies only, not metadata.
+Reviewed dictionary exceptions, word inflections, apostrophe forms, and
+low-frequency words in context. Historical wording and abbreviations retained.
+
+CORRECTIONS
+
+lyrics/071.txt:17: Based as the dirt -> Base as the dirt
+lyrics/100.txt:37: Indicting, in heaven’s -> Inditing, in heaven’s
+lyrics/145b.txt:25: tender Shephard -> tender Shepherd
+lyrics/223.txt:21: words/n/now.html”>Now -> Now
+lyrics/244.txt:19: thorns in fest -> thorns infest
+lyrics/265a.txt:22: Isreal in -> Israel in
+lyrics/278b.txt:24: angels becon -> angels beckon
+lyrics/371.txt:13: heavn’ly -> heav’nly
+lyrics/414.txt:14: sun my set -> sun may set
+lyrics/414.txt:16: sparling eyes -> sparkling eyes
+lyrics/414.txt:16: blooming checks -> blooming cheeks
+lyrics/418.txt:29: heavn’ly -> heav’nly
+lyrics/423.txt:15: firey darts -> fiery darts
+lyrics/441.txt:25: firey darts -> fiery darts
+lyrics/444b.txt:30: greives -> grieves
+lyrics/465.txt:10: E’re since -> E’er since
+lyrics/496b.txt:14: can’t forebear -> can’t forbear
+lyrics/513a.txt:27: sould refreshing -> soul-refreshing
+lyrics/572.txt:24: home os made -> home is made
+lyrics/573.txt:21: whate e’re -> whate’er
+lyrics/573.txt:31: Trusing -> Trusting
+lyrics/586.txt:28: travler’s -> trav’ler’s
+
+22 corrections in 19 files.
+
+REVIEW AGAINST THE PRINTED EDITION (LEFT UNCHANGED)
+
+Several apostrophes appear to be punctuation or missing word separators:
+lyrics/059a.txt:25: mount’O ... it’
+lyrics/062.txt:47: grace’in
+lyrics/067.txt:29: stray’d’I’m
+lyrics/135.txt:20: mount’I’m ... it’
+lyrics/150.txt:38: sail’you
+lyrics/153.txt:23: heav’n’a
+lyrics/158.txt:12,17,22: grave’but / grave’we / grave’and
+lyrics/164.txt:25: entered’not ... spake’
+lyrics/412.txt:25: music’what ... song’
+lyrics/436b.txt:14: me’and ... weep’
+lyrics/545.txt:13: may’His
+
+Other possible transcription or usage issues requiring comparison:
+lyrics/180.txt:31: thot’s (possibly plural thots rather than possessive)
+lyrics/275b.txt:27: And breath my life out sweetly there. (compare breathe in 030b.txt)
+lyrics/310.txt:25: sabacthani (commonly sabachthani; transliteration may differ)
+lyrics/362.txt:20: The hour I first, believed! (possible stray comma)
+lyrics/505.txt:23: Shall never lose it’s pow’r (possibly possessive its)
+lyrics/527.txt:15: We’re loathe to leave the place. (usually loath)
+lyrics/586.txt:24: My will suborned to thine. (suborned is a valid word but unusual here)
+
+HISTORICAL FORMS RETAINED
+
+Examples: all-sufficience, opprest, wrapt, spake, thru, harken, Bartimeus,
+Esaias, bo’t, bro’t, thot, heav’n, heav’nly, ev’ry, o’er, whate’er,
+Saviour/Savior, armour, mould, and other ordinary inflections and elisions.
+No gace remains in the collection; grace in lyrics/362.txt was already corrected.
+
+REFERENCE TEXTS USED FOR SELECTED CHECKS
+
+Bower of Prayer: Inditing
+https://hymnary.org/text/to_leave_my_dear_friends_and_with_neighb
+Watts: all-sufficience is historical; Base as the dirt
+https://www.biblehub.com/library/watts/hymns_and_spiritual_songs/hymn_2_10_parting_with_carnal.htm
+Cowper: soul-refreshing
+https://upload.wikimedia.org/wikipedia/commons/0/09/The_life_and_works_of_William_Cowper_%28IA_lifeworksofwilli08cowp%29.pdf
+Sacred Harp lyric index: sparkling eyes and blooming cheeks
+https://fasola.org/indexes/1991/?w=eyes
+Watts: Nor thorns infest the ground
+https://upload.wikimedia.org/wikipedia/commons/7/71/The_Christian_psalmist%3B_or%2C_Watts%27_psalms_and_hymns_%28IA_christianpsalmis00hast_1%29.pdf
+Sweet angels beckon: historical Social Harp scan
+https://vmirror.imslp.org/files/imglnks/usimg/3/33/IMSLP301578-PMLP488158-socialharp00mccu.pdf
+Fiery spelling: Washington State University / Paul Brians
+https://brians.wsu.edu/2016/05/22/firey/
