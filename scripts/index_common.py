@@ -3,10 +3,16 @@
 import argparse
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-KINDS = ("titles", "lyrics", "composers", "lyric_dates", "composition_dates", "meters")
+KINDS = ("titles", "first_lines", "words", "lyrics", "composers", "lyric_dates", "composition_dates", "meters")
+WORD_PATTERN = re.compile(r"[^\W\d_]+(?:[’'][^\W\d_]+)*", re.UNICODE)
+STOPWORDS = frozenset(
+    line.strip() for line in (Path(__file__).parent / "stopwords.txt").read_text(encoding="utf-8").splitlines()
+    if line.strip() and not line.startswith("#")
+)
 ANNOTATION = re.compile(
     r"\s*\((?:arranger|arrangement|alteration|Mrs\.|Miss|Rev\.|Dr\.|Eld\.|"
     r"Sir|Judge|D\. D\.|[^()]*(?:verse|chorus|half)[^()]*)\)",
@@ -29,6 +35,32 @@ def read_metadata(path: Path) -> dict[str, str]:
     if not fields.get("Page"):
         raise ValueError(f"{path}: missing Page metadata")
     return fields
+
+
+def lyric_body(path: Path) -> str:
+    source = path.read_text(encoding="utf-8")
+    separator = re.search(r"^_{3,}[ \t]*\r?$", source, re.MULTILINE)
+    if not separator:
+        raise ValueError(f"{path}: missing metadata/lyrics separator")
+    return source[separator.end():].strip("\r\n")
+
+
+def first_line(path: Path) -> str:
+    """Return the first lyric line without trailing punctuation."""
+    line = next((line.strip() for line in lyric_body(path).splitlines() if line.strip()), "")
+    while line and (line[-1].isspace() or unicodedata.category(line[-1]).startswith("P")):
+        line = line[:-1]
+    return line
+
+
+def normalize_word(word: str) -> str:
+    return word.lower().replace("'", "’")
+
+
+def lyric_words(body: str) -> set[str]:
+    """Index lyric vocabulary, retaining internal apostrophes and elisions."""
+    return {word for match in WORD_PATTERN.finditer(body)
+            if (word := normalize_word(match[0])) not in STOPWORDS}
 
 
 def contributors(value: str) -> list[str]:
@@ -83,7 +115,14 @@ def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
     pages_by_key = {}
     for path in sorted(lyrics_dir.glob("*.txt")):
         metadata = read_metadata(path)
-        for key in index_keys(metadata, kind):
+        if kind == "first_lines":
+            line = first_line(path)
+            keys = [line] if line else []
+        elif kind == "words":
+            keys = lyric_words(lyric_body(path))
+        else:
+            keys = index_keys(metadata, kind)
+        for key in keys:
             pages_by_key.setdefault(key, set()).add(metadata["Page"])
     return {
         key: sorted(pages_by_key[key], key=page_sort_key)

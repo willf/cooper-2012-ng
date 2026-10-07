@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, read_metadata
+from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, lyric_words, read_metadata
 
 
 class IndexTests(unittest.TestCase):
@@ -48,6 +48,9 @@ Words
 """)
         self.expected = {
             "titles": {"Fountain, The": ["2", "10t"]},
+            "first_lines": {"Lyrics: This is a lyric, not metadata": ["10t"], "Words": ["2"]},
+            "words": {"lyric": ["10t"], "lyrics": ["10t"], "metadata": ["10t"],
+                      "page": ["10t"], "words": ["2"]},
             "lyrics": {"Broaddus and Broaddus’ Collection": ["10t"], "Watts, Isaac": ["2", "10t"]},
             "composers": {"Cooper, Wilson Marion": ["2", "10t"], "Rees, Henry Smith": ["10t"], "Walker, William": ["10t"]},
             "lyric_dates": {"1706": ["10t"], "1707": ["2", "10t"], "c1772": ["10t"]},
@@ -107,6 +110,45 @@ Words
     def test_missing_input_directory(self):
         with self.assertRaises(FileNotFoundError):
             build_index(self.root / "missing", "titles")
+
+    def test_word_normalization_and_common_word_filter(self):
+        self.assertEqual(lyric_words("Hark! HARK, God, GOD’S, god's; heav’nly, heav'nly; "
+                                    "ever-lasting Élan 123. The and thou thy I’ll can't Chorus:"),
+                         {"hark", "god", "god’s", "heav’nly", "ever", "lasting", "élan"})
+
+    def test_word_index_uses_only_lyrics_and_deduplicates_pages(self):
+        self.write("003.txt", "Page: 2b\nTitle: Metadataonly\n________________\nHark, hark! Love\n")
+        self.write("004.txt", "Page: 2t\nLyrics: Metadataonly\n________________\nHARK! love love\n")
+        index = build_index(self.lyrics, "words")
+        self.assertEqual(index["hark"], ["2t", "2b"])
+        self.assertEqual(index["love"], ["2t", "2b"])
+        self.assertNotIn("metadataonly", index)
+        self.assertFalse(any(key != key.lower() for key in index))
+
+    def test_first_lines_skip_blanks_and_merge_duplicate_openings(self):
+        self.write("003.txt", "Page: 2b\n________________\n\n  Words  \nAnother line\n")
+        self.write("004.txt", "Page: 2t\n________________\n\nWords\nDifferent verse\n")
+        self.write("005.txt", "Page: 3\n________________\n\n  \n")
+        self.assertEqual(build_index(self.lyrics, "first_lines"), {
+            "Lyrics: This is a lyric, not metadata": ["10t"],
+            "Words": ["2", "2t", "2b"],
+        })
+
+    def test_first_lines_require_a_lyrics_separator(self):
+        self.write("bad.txt", "Page: 4\nTitle: Missing separator\n")
+        with self.assertRaisesRegex(ValueError, "missing metadata/lyrics separator"):
+            build_index(self.lyrics, "first_lines")
+
+    def test_first_lines_trim_all_trailing_punctuation_and_merge_pages(self):
+        for page, line in [("3b", "O, come; sing:"), ("3t", "O, come; sing,"),
+                           ("4", "O, come; sing;"), ("5", "O, come; sing!"),
+                           ("6", "O, come; sing?"), ("7", "O, come; sing."),
+                           ("8", "O, come; sing!’"), ("9", "O, come; sing…"),
+                           ("10", "O, come; sing — ")]:
+            self.write(f"punctuation-{page}.txt", f"Page: {page}\n________________\n{line}\n")
+        index = build_index(self.lyrics, "first_lines")
+        self.assertEqual(index["O, come; sing"], ["3t", "3b", "4", "5", "6", "7", "8", "9", "10"])
+        self.assertFalse(any(key.startswith("O, come; sing") and key != "O, come; sing" for key in index))
 
     def test_checked_in_indexes_match_collection(self):
         for kind in KINDS:

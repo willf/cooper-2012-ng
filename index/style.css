@@ -1,0 +1,28 @@
+body { margin: 0; color: #252525; background: #faf9f6;
+  font: 17px/1.6 Georgia, serif; }
+header, main, footer { max-width: 64rem; margin: auto; padding: 1.5rem; }
+header { border-bottom: 1px solid #d8d5cd; }
+nav { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-top: .75rem; }
+a { color: #28566c; text-underline-offset: .15em; }
+a:hover { color: #122e3d; }
+a:focus-visible { outline: 2px solid #28566c; outline-offset: 3px; }
+h1 { line-height: 1.2; margin: .5rem 0 1.5rem; }
+h2 { margin-top: 2rem; }
+.brand { font-weight: bold; }
+.index-list { padding-left: 1.5rem; }
+.index-list li { margin: .65rem 0; overflow-wrap: anywhere; }
+.index-list li:target { background: #eee9dc; outline: 2px solid #d8d5cd; }
+.index-word { font-variant-caps: small-caps; font-size: 1.15em; }
+.page-links a { white-space: nowrap; }
+dl { display: grid; grid-template-columns: minmax(9rem, 12rem) 1fr;
+  gap: .4rem 1rem; font-size: .95rem; }
+dt { font-weight: bold; }
+dd { margin: 0; overflow-wrap: anywhere; }
+.lyrics { white-space: pre-wrap; overflow-wrap: anywhere;
+  font: inherit; max-width: 52rem; }
+footer { border-top: 1px solid #d8d5cd; font-size: .9rem; }
+@media (max-width: 40rem) {
+  dl { display: block; }
+  dd { margin-bottom: .75rem; }
+  header, main, footer { padding: 1rem; }
+}
