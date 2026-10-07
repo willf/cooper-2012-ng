@@ -1,5 +1,44 @@
 # Lyrics indexes
 
+## Full build
+
+Use [build.sh](build.sh) after editing lyrics, metadata, stopwords, or generator
+code. It requires Bash, `uv` on your PATH, and Python 3.13 or later. From the
+repository root, rebuild all JSON indexes and the static website together:
+
+```sh
+./scripts/build.sh
+```
+
+The script runs these generators in order:
+
+1. `titles.py`
+2. `first_lines.py`
+3. `words.py`
+4. `lyrics.py`
+5. `composers.py`
+6. `lyric_dates.py`
+7. `composition_dates.py`
+8. `meters.py`
+9. `site.py`
+
+The first eight write JSON files to `indexes/`; the last writes the website to
+`docs/`. Existing generated files are overwritten. The source lyrics and
+stopword list are not modified. Each generator reports its output, followed by
+a `Build complete` message when all steps succeed.
+
+If a step fails, the script exits immediately with a nonzero status. Earlier
+steps may already have updated their outputs; fix the reported error and run
+the script again to complete the build.
+
+The script locates the repository relative to itself, so it also works from
+another directory when invoked using its absolute path. It uses the default
+input and output folders; run the individual generators below for custom paths.
+It does not run tests or start a preview server. After building, run the tests
+shown below, then open `docs/index.html` or serve `docs/` locally.
+
+## Individual JSON indexes
+
 Run each generator from the repository root:
 
 ```sh
@@ -41,7 +80,7 @@ Repeated occurrences on a page contribute just one page reference. Common words
 are excluded using the editable list in `scripts/stopwords.txt`, including archaic
 forms and common contractions. Content words such as `god`, `lord`, `jesus`,
 `love`, and `heaven` remain indexed. After editing the list, rebuild both the word
-JSON index and the website.
+JSON index and the website with `./scripts/build.sh`.
 
 Contributor lists split on semicolons. Verse labels, roles, and honorifics are
 omitted from index keys to combine repeated contributors. Maiden names, uncertain
