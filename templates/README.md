@@ -17,6 +17,7 @@ Start with these files:
 | `words.html` | The word index overview |
 | `word-letter.html` | Each letter of the word index |
 | `style.css` | Colors, fonts, spacing, responsive layout, and dark mode |
+| `song.js` | Highlights all occurrences of the word selected in the word index |
 
 The smaller templates control repeated pieces: `directory-item.html` for home
 page directory cards, `song-item.html` for song directory rows, `index-list.html`
@@ -83,6 +84,12 @@ song and word pages. Keep the `main`, `top`, `lyrics`, and `details` IDs and the
 `${id}` placeholders on index entries so existing navigation still works.
 Keep `${lyrics_html}` immediately inside `<pre>` without adding indentation or
 extra line breaks; whitespace there is displayed as part of the lyrics.
+Word-index page links jump to the first matching lyric word and subtly highlight
+every occurrence, including different capitalization. The highlight colors are
+set by `--highlight` in `style.css` for light and dark mode. Keep the `song.js`
+script link in `song.html` for this behavior. Links use a readable query string,
+such as `songs/030a.html?highlight=angels`. Highlighting and scrolling require
+JavaScript; the lyrics and their links remain available without it.
 
 For a separate design, copy this entire folder and pass its location:
 

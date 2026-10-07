@@ -1,7 +1,7 @@
 :root {
   color-scheme: light dark;
   --paper: #faf9f6; --ink: #252421; --quiet: #252421b8;
-  --line: #25242129; --accent: #28566c; --wash: #28566c0d;
+  --line: #25242129; --accent: #28566c; --wash: #28566c0d; --highlight: #28566c1f;
   --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 * { box-sizing: border-box; }
@@ -89,6 +89,8 @@ p { max-width: 60ch; text-wrap: pretty; }
   font: 1.1rem/1.8 Georgia, "Times New Roman", serif; margin: 0; max-width: 60ch; }
 .lyrics a { text-decoration-color: #28566c66; }
 .lyrics a:hover { text-decoration-color: var(--accent); }
+.lyrics a.word-highlight { background: var(--highlight);
+  box-shadow: 0 0 0 .12em var(--highlight); border-radius: .15em; }
 .metadata { border-top: 1px solid var(--line); padding-top: 1rem; }
 dl { font: .9rem/1.65 var(--ui); margin: 0; }
 dt { color: var(--quiet); font-size: .75rem; margin: .75rem 0 .125rem; }
@@ -113,6 +115,6 @@ footer a { min-height: 44px; display: inline-flex; align-items: center; }
 }
 @media (prefers-color-scheme: dark) {
   :root { --paper: #1c1b19; --ink: #efede6; --quiet: #efede6b8;
-    --line: #efede62e; --accent: #a2c4d3; --wash: #a2c4d312; }
+    --line: #efede62e; --accent: #a2c4d3; --wash: #a2c4d312; --highlight: #a2c4d326; }
   .lyrics a { text-decoration-color: #a2c4d366; }
 }

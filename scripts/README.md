@@ -126,6 +126,9 @@ The word index has an overview and separate A–Z pages. Accented initials are g
 under their corresponding letter; an additional “Other” page is generated if needed.
 Included words in each song’s lyrics link to their word-index entry, retaining
 original capitalization, punctuation, line breaks, and spacing.
+Following a page number from a word index jumps to the first matching word in
+the song and subtly highlights every occurrence, using a readable URL such as
+`songs/030a.html?highlight=angels`. Highlighting and scrolling use JavaScript.
 
 Page layouts and styles come from the editable files in `templates/`; see the
 [template guide](../templates/README.md) for customization instructions.

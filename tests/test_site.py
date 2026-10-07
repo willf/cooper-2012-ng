@@ -3,7 +3,7 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 from scripts.index_common import KINDS, ROOT
 from scripts.site import (
@@ -25,9 +25,12 @@ class Links(HTMLParser):
         self.lyric_text = []
         self.in_lyrics = False
         self.neighbors = {"prev": [], "next": []}
+        self.word_targets = []
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
+        if "data-word" in attributes:
+            self.word_targets.append(attributes)
         if tag == "a" and attributes.get("rel") in self.neighbors:
             self.neighbors[attributes["rel"]].append(attributes["href"])
         self.targets.extend(value for key, value in attrs if key in ("href", "src"))
@@ -88,7 +91,7 @@ Another verse & more
         )
         titles = (self.output / "titles.html").read_text()
         self.assertLess(titles.index(">27t</a>"), titles.index(">27b</a>"))
-        self.assertIn('>27t</a>, <a ', titles)
+        self.assertIn(">27t</a>, <a ", titles)
         first_lines = (self.output / "first_lines.html").read_text()
         self.assertIn("First line &lt;script&gt;", first_lines)
         self.assertIn('href="songs/027t.html"', first_lines)
@@ -147,12 +150,34 @@ Another verse & more
         self.assertNotIn(f'#{entry_id("more")}', song)
         words = (self.output / "words/v.html").read_text()
         self.assertIn(f'id="{entry_id("verse")}"', words)
-        self.assertIn('href="../songs/027t.html"', words)
+        self.assertIn('href="../songs/027t.html?highlight=verse"', words)
         self.assertLess(words.index(">27t</a>"), words.index(">27b</a>"))
         for letter in "abcdefghijklmnopqrstuvwxyz":
             self.assertTrue((self.output / "words" / f"{letter}.html").is_file())
         self.assertEqual(word_letter("élan"), "e")
         self.assertEqual(word_letter("Ωmega"), "other")
+
+    def test_word_index_uses_readable_highlight_queries_and_tags_matching_words(self):
+        path = self.lyrics / "027t.txt"
+        path.write_text(
+            path.read_text() + "\nAngels angels angel ANGELS heav'nly heav’nly\n"
+        )
+        build_site(self.lyrics, self.output)
+        parser = Links()
+        parser.feed((self.output / "songs/027t.html").read_text())
+        for word, count in [("angels", 3), ("angel", 1), ("heav’nly", 2)]:
+            matches = [
+                item for item in parser.word_targets if item["data-word"] == word
+            ]
+            self.assertEqual(len(matches), count)
+            index = self.output / "words" / f"{word_letter(word)}.html"
+            link = f"../songs/027t.html?highlight={quote(word, safe='')}"
+            self.assertIn(link, index.read_text())
+            self.assert_link_resolves(index, link)
+        self.assertEqual(len(parser.ids), len(set(parser.ids)))
+        self.assertIn(
+            "Angels angels angel ANGELS heav'nly heav’nly", "".join(parser.lyric_text)
+        )
 
     def test_readable_contributor_names_keep_collation_links(self):
         for field, kind in [

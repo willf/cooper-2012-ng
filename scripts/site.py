@@ -123,7 +123,7 @@ def word_links(body: str, word_index: dict[str, list[str]]) -> str:
         word = normalize_word(match[0])
         if word in word_index:
             pieces.append(
-                f'<a href="../words/{word_letter(word)}.html#{entry_id(word)}">{escape(match[0])}</a>'
+                f'<a href="../words/{word_letter(word)}.html#{entry_id(word)}" data-word="{escape(word)}">{escape(match[0])}</a>'
             )
         else:
             pieces.append(escape(match[0]))
@@ -149,7 +149,9 @@ def index_items(
             links.append(
                 templates.render(
                     "page-link.html",
-                    href=prefix + quote(filename),
+                    href=prefix
+                    + quote(filename)
+                    + ("?highlight=" + quote(key, safe="") if words else ""),
                     title=title,
                     page=page,
                 )
@@ -315,6 +317,9 @@ def build_site(
     (output / "songs").mkdir(exist_ok=True)
     (output / "style.css").write_text(
         (templates_dir / "style.css").read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    (output / "song.js").write_text(
+        (templates_dir / "song.js").read_text(encoding="utf-8"), encoding="utf-8"
     )
     descriptions = {
         "songs": "Browse every song in page order.",
