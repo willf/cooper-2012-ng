@@ -2,7 +2,7 @@
 
 ## Full build
 
-Use [build.sh](build.sh) after editing lyrics, metadata, stopwords, or generator
+Use [build.sh](build.sh) after editing lyrics, metadata, stopwords, templates, or generator
 code. It requires Bash, `uv` on your PATH, and Python 3.13 or later. From the
 repository root, rebuild all JSON indexes and the static website together:
 
@@ -127,6 +127,10 @@ under their corresponding letter; an additional “Other” page is generated if
 Included words in each song’s lyrics link to their word-index entry, retaining
 original capitalization, punctuation, line breaks, and spacing.
 
-The generator accepts `--lyrics-dir PATH` and `--output PATH`. It overwrites
+Page layouts and styles come from the editable files in `templates/`; see the
+[template guide](../templates/README.md) for customization instructions.
+
+The generator accepts `--lyrics-dir PATH`, `--output PATH`, and
+`--templates-dir PATH` (defaults to the repository’s `templates/` folder). It overwrites
 generated pages on subsequent runs; it does not delete other files in the output
 directory or edit lyrics or JSON indexes.

@@ -1,11 +1,20 @@
 from html.parser import HTMLParser
 from pathlib import Path
+import shutil
 import tempfile
 import unittest
 from urllib.parse import unquote, urlsplit
 
 from scripts.index_common import KINDS, ROOT
-from scripts.site import LABELS, build_site, display_source, entry_id, metadata_value, word_letter
+from scripts.site import (
+    Templates,
+    LABELS,
+    build_site,
+    display_source,
+    entry_id,
+    metadata_value,
+    word_letter,
+)
 
 
 class Links(HTMLParser):
@@ -45,7 +54,8 @@ class SiteTests(unittest.TestCase):
         self.output = self.root / "docs"
         self.fragment_ids = {}
         for suffix in ("b", "t"):
-            (self.lyrics / f"027{suffix}.txt").write_text(f'''Title: The <Fountain> & Life
+            (self.lyrics / f"027{suffix}.txt").write_text(
+                f"""Title: The <Fountain> & Life
 Collation: <Fountain> & Life, The
 Page: 27{suffix}
 Tune Composer: Cowper, William (arranger)
@@ -58,19 +68,24 @@ First line <script>alert("test")</script>
 Second line
 
 Another verse & more
-''', encoding="utf-8")
+""",
+                encoding="utf-8",
+            )
 
     def test_site_escapes_content_preserves_metadata_and_verses(self):
         self.assertEqual(build_site(self.lyrics, self.output), 2)
         song = (self.output / "songs/027t.html").read_text()
         self.assertIn("The &lt;Fountain&gt; &amp; Life", song)
-        self.assertIn('>William Cowper</a> (1st Verse)', song)
+        self.assertIn(">William Cowper</a> (1st Verse)", song)
         self.assertNotIn("<dt>Collation</dt>", song)
         self.assertIn(f'../titles.html#{entry_id("<Fountain> & Life, The")}', song)
         self.assertNotIn("<script>", song)
         parser = Links()
         parser.feed(song)
-        self.assertEqual("".join(parser.lyric_text), 'First line <script>alert("test")</script>\nSecond line\n\nAnother verse & more')
+        self.assertEqual(
+            "".join(parser.lyric_text),
+            'First line <script>alert("test")</script>\nSecond line\n\nAnother verse & more',
+        )
         titles = (self.output / "titles.html").read_text()
         self.assertLess(titles.index(">27t</a>"), titles.index(">27b</a>"))
         first_lines = (self.output / "first_lines.html").read_text()
@@ -80,7 +95,9 @@ Another verse & more
 
     def test_every_generated_local_link_resolves(self):
         build_site(self.lyrics, self.output)
-        self.assertEqual(len(list(self.output.rglob("*.html"))), 2 + len(LABELS) + 1 + 26)
+        self.assertEqual(
+            len(list(self.output.rglob("*.html"))), 2 + len(LABELS) + 1 + 26
+        )
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text())
@@ -97,7 +114,9 @@ Another verse & more
                 parser = Links()
                 parser.feed(destination.read_text(encoding="utf-8"))
                 self.fragment_ids[destination] = set(parser.ids)
-            self.assertIn(unquote(url.fragment), self.fragment_ids[destination], (path, target))
+            self.assertIn(
+                unquote(url.fragment), self.fragment_ids[destination], (path, target)
+            )
 
     def test_index_ids_are_unique_and_metadata_links_keep_annotations(self):
         build_site(self.lyrics, self.output)
@@ -112,8 +131,8 @@ Another verse & more
         rendered = metadata_value("Lyrics", value, {})
         self.assertIn(f'../lyrics.html#{entry_id("Watts, Isaac")}', rendered)
         self.assertIn(f'../lyrics.html#{entry_id("Newton, John")}', rendered)
-        self.assertIn('</a> (1st Verse); ', rendered)
-        self.assertIn('</a> (Rev.) (2nd Verse)', rendered)
+        self.assertIn("</a> (1st Verse); ", rendered)
+        self.assertIn("</a> (Rev.) (2nd Verse)", rendered)
         rendered = metadata_value("Lyrics Date", "1706 (verse 1), 1707 (verse 2)", {})
         self.assertIn(f'../lyric_dates.html#{entry_id("1706")}', rendered)
         self.assertIn(f'../lyric_dates.html#{entry_id("1707")}', rendered)
@@ -133,26 +152,51 @@ Another verse & more
         self.assertEqual(word_letter("Ωmega"), "other")
 
     def test_readable_contributor_names_keep_collation_links(self):
-        for field, kind in [("Lyrics", "lyrics"), ("Tune Composer", "composers"),
-                            ("Alto Composer", "composers"), ("Treble Composer", "composers"),
-                            ("Bass Composer", "composers"), ("Tenor Composer", "composers")]:
+        for field, kind in [
+            ("Lyrics", "lyrics"),
+            ("Tune Composer", "composers"),
+            ("Alto Composer", "composers"),
+            ("Treble Composer", "composers"),
+            ("Bass Composer", "composers"),
+            ("Tenor Composer", "composers"),
+        ]:
             with self.subTest(field=field):
-                rendered = metadata_value(field, "Price, F. (arranger); Watts, Isaac (1st Verse)", {})
-                self.assertIn(f'href="../{kind}.html#{entry_id("Price, F.")}">F. Price</a>', rendered)
-                self.assertIn(f'href="../{kind}.html#{entry_id("Watts, Isaac")}">Isaac Watts</a>', rendered)
-                self.assertIn('</a> (arranger); ', rendered)
-                self.assertIn('</a> (1st Verse)', rendered)
+                rendered = metadata_value(
+                    field, "Price, F. (arranger); Watts, Isaac (1st Verse)", {}
+                )
+                self.assertIn(
+                    f'href="../{kind}.html#{entry_id("Price, F.")}">F. Price</a>',
+                    rendered,
+                )
+                self.assertIn(
+                    f'href="../{kind}.html#{entry_id("Watts, Isaac")}">Isaac Watts</a>',
+                    rendered,
+                )
+                self.assertIn("</a> (arranger); ", rendered)
+                self.assertIn("</a> (1st Verse)", rendered)
 
     def test_song_index_orders_pages_and_links_to_song_files(self):
         content = (self.lyrics / "027t.txt").read_text().replace("Page: 27t", "Page: 2")
         (self.lyrics / "002.txt").write_text(content)
         build_site(self.lyrics, self.output)
         song_index = (self.output / "songs.html").read_text()
-        self.assertLess(song_index.index('href="songs/002.html"'), song_index.index('href="songs/027t.html"'))
-        self.assertLess(song_index.index('href="songs/027t.html"'), song_index.index('href="songs/027b.html"'))
-        self.assertIn('<span class="song-page">27t</span> <span>The &lt;Fountain&gt; &amp; Life</span>', song_index)
+        self.assertLess(
+            song_index.index('href="songs/002.html"'),
+            song_index.index('href="songs/027t.html"'),
+        )
+        self.assertLess(
+            song_index.index('href="songs/027t.html"'),
+            song_index.index('href="songs/027b.html"'),
+        )
+        self.assertIn(
+            '<span class="song-page">27t</span> <span>The &lt;Fountain&gt; &amp; Life</span>',
+            song_index,
+        )
         self.assertIn('href="songs.html"', (self.output / "index.html").read_text())
-        self.assertIn(f'../songs.html#{entry_id("27t")}', (self.output / "songs/027t.html").read_text())
+        self.assertIn(
+            f'../songs.html#{entry_id("27t")}',
+            (self.output / "songs/027t.html").read_text(),
+        )
 
     def test_display_names_preserve_sources_suffixes_and_uncertainty(self):
         examples = {
@@ -171,23 +215,85 @@ Another verse & more
             with self.subTest(key=key):
                 self.assertEqual(display_source(key), label)
 
+    def test_editable_templates_and_styles_are_used_on_each_build(self):
+        templates = self.root / "templates"
+        shutil.copytree(ROOT / "templates", templates)
+        replacements = {
+            "base.html": ("Back to top ↑", "Return to top"),
+            "home.html": ("A companion to the songs.", "My song collection"),
+            "index.html": ("Browse the collection", "Explore this index"),
+            "song.html": ("Song details</h2>", "About this song</h2>"),
+            "words.html": ("Choose a letter", "Select a letter"),
+            "word-letter.html": ("<h1>", '<h1 class="custom-letter">'),
+        }
+        for name, (before, after) in replacements.items():
+            path = templates / name
+            path.write_text(path.read_text().replace(before, after))
+        (templates / "style.css").write_text("body { color: navy; }\n")
+        build_site(self.lyrics, self.output, templates_dir=templates)
+        for name, expected in [
+            ("index.html", "My song collection"),
+            ("titles.html", "Explore this index"),
+            ("songs/027t.html", "About this song</h2>"),
+            ("words.html", "Select a letter"),
+            ("words/a.html", 'class="custom-letter"'),
+        ]:
+            content = (self.output / name).read_text()
+            self.assertIn(expected, content)
+            self.assertIn("Return to top", content)
+        self.assertEqual(
+            (self.output / "style.css").read_text(), "body { color: navy; }\n"
+        )
+        home = templates / "home.html"
+        home.write_text(
+            home.read_text().replace("My song collection", "Revised collection")
+        )
+        build_site(self.lyrics, self.output, templates_dir=templates)
+        self.assertIn("Revised collection", (self.output / "index.html").read_text())
+
+    def test_template_values_are_escaped_and_errors_name_the_file(self):
+        templates = self.root / "templates"
+        templates.mkdir()
+        path = templates / "example.html"
+        path.write_text("${title} ${body_html} $$")
+        self.assertEqual(
+            Templates(templates).render(
+                "example.html", title='<script>"&', body_html="<p>Safe markup</p>"
+            ),
+            "&lt;script&gt;&quot;&amp; <p>Safe markup</p> $",
+        )
+        for content in ("${unknown}", "A literal $ needs escaping"):
+            path.write_text(content)
+            with self.assertRaisesRegex(ValueError, "example.html"):
+                Templates(templates).render("example.html")
+
     def test_rebuild_is_deterministic(self):
         build_site(self.lyrics, self.output)
         before = {str(p): p.read_bytes() for p in self.output.rglob("*") if p.is_file()}
         build_site(self.lyrics, self.output)
-        self.assertEqual(before, {str(p): p.read_bytes() for p in self.output.rglob("*") if p.is_file()})
+        self.assertEqual(
+            before,
+            {str(p): p.read_bytes() for p in self.output.rglob("*") if p.is_file()},
+        )
 
     def test_song_neighbors_follow_page_order_and_stop_at_boundaries(self):
         content = (self.lyrics / "027t.txt").read_text()
         for name, page in [("first.txt", "2"), ("last.txt", "28")]:
-            (self.lyrics / name).write_text(content.replace("Page: 27t", f"Page: {page}"))
+            (self.lyrics / name).write_text(
+                content.replace("Page: 27t", f"Page: {page}")
+            )
         build_site(self.lyrics, self.output)
         order = ["first.html", "027t.html", "027b.html", "last.html"]
         for position, filename in enumerate(order):
             parser = Links()
             parser.feed((self.output / "songs" / filename).read_text())
-            self.assertEqual(parser.neighbors["prev"], [order[position - 1]] * 2 if position else [])
-            self.assertEqual(parser.neighbors["next"], [order[position + 1]] * 2 if position + 1 < len(order) else [])
+            self.assertEqual(
+                parser.neighbors["prev"], [order[position - 1]] * 2 if position else []
+            )
+            self.assertEqual(
+                parser.neighbors["next"],
+                [order[position + 1]] * 2 if position + 1 < len(order) else [],
+            )
 
     def test_duplicate_printed_page_is_rejected_before_writing(self):
         (self.lyrics / "copy.txt").write_text((self.lyrics / "027t.txt").read_text())
@@ -199,7 +305,9 @@ Another verse & more
         count = build_site(ROOT / "lyrics", self.output)
         self.assertEqual(count, len(list((ROOT / "lyrics").glob("*.txt"))))
         extra = int((self.output / "words/other.html").exists())
-        self.assertEqual(len(list(self.output.rglob("*.html"))), count + len(LABELS) + 1 + 26 + extra)
+        self.assertEqual(
+            len(list(self.output.rglob("*.html"))), count + len(LABELS) + 1 + 26 + extra
+        )
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text(encoding="utf-8"))

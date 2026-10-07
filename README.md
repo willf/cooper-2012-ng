@@ -14,7 +14,7 @@ The source files are in `lyrics/`. Use Python 3.13 or later with
 This rebuilds all JSON indexes in `indexes/` and the static website in `docs/`, including the introduction,
 song pages, and all index pages. It reads the current lyrics and metadata
 directly, so rebuild after changing a lyrics file. Edit the source files and
-scripts rather than the generated HTML, which is overwritten on each build.
+templates rather than the generated HTML, which is overwritten on each build.
 
 Open `docs/index.html` in a browser, or start a local preview:
 
@@ -29,6 +29,19 @@ directory using its absolute path. To rebuild only the website, run
 `uv run scripts/site.py`. See [scripts/README.md](scripts/README.md) for the
 full build sequence, individual index commands, and details of the indexing rules.
 The build does not start a server or run tests; those commands are separate.
+
+## Customize the pages
+
+The website uses editable HTML templates in [templates/](templates/README.md).
+Start with [home.html](templates/home.html) for the introduction,
+[base.html](templates/base.html) for the shared header and footer,
+[index.html](templates/index.html) for the indexes, and
+[song.html](templates/song.html) for individual songs. Edit
+[style.css](templates/style.css) to change the appearance.
+
+Keep placeholders such as `${song_count}` and `${lyrics_html}` where you want
+built content, then run `uv run scripts/site.py` to see your changes.
+See the [template guide](templates/README.md) for examples and available placeholders.
 
 ## Add stopwords
 
