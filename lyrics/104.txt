@@ -4,13 +4,13 @@ Tune Composer: Arranged by Elisha J. King
 Tune Composition Date: 1844
 Alto Composer: Miss Minnie Floyd
 Alto Composition Date: 1902
-Lyrics: Mercer's Cluster
+Lyrics: Mercer’s Cluster
 Lyrics Date: 1810
 Meter: 8s Double (8,8,8,8,8,8,8,8)
 
 ________________________________________________________________________________
 
-A story most lovely I'll tell
+A story most lovely I’ll tell
 Of Jesus, (O wondrous surprise!),
 He suffered the torments of hell,
 That sinners, vile sinners might rise.
@@ -34,5 +34,5 @@ By Judas, the traitor, alone?
 Was ever compassion like this?
 The ruffians all joined in a band,
 Confined Him, and led Him away;
-The cords wrapp'd around His sweet hands'
+The cords wrapp’d around His sweet hands’
 O, sinners, look at Him, I pray.

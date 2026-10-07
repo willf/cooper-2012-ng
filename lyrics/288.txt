@@ -2,7 +2,7 @@ Title: White
 Page: 288
 Tune Composer: Eld. Edmund Dumas
 Tune Composition Date: 1856
-Lyrics: Dobell's New Selection
+Lyrics: Dobell’s New Selection
 Lyrics Date: 1806
 Meter: Common Meter (8,6,8,6)
 
@@ -15,9 +15,9 @@ A brighter world on high.
 
 Chorus:
 
-I'm a long time travelling here below,
-I'm a long time a-travelling away from home,
-I'm a long time travelling here below
+I’m a long time travelling here below,
+I’m a long time a-travelling away from home,
+I’m a long time travelling here below
 To lay this body down.
 
 Farewell, my friends, whose tender care

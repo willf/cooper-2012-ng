@@ -4,7 +4,7 @@ Tune Composer: Benjamin Franklin White
 Tune Composition Date: 1844
 Alto Composer: Wilson Marion Cooper
 Alto Composition Date: 1902
-Lyrics: Mead's General Selection
+Lyrics: Mead’s General Selection
 Lyrics Date: 1807
 Meter: 7s,6s Double (7,6,7,6,7,6,7,6)
 
@@ -15,6 +15,6 @@ A happy world above,
 Beyond the starry regions,
 Built by the God of love.
 An everlasting temple,
-And saints array'd in white;
+And saints array’d in white;
 They serve their great Redeemer,
 And dwell with Him in light.

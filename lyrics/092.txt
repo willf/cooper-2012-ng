@@ -5,7 +5,7 @@ Tune Composer: Benjamin Franklin White
 Tune Composition Date: 1844
 Alto Composer: Wilson Marion Cooper
 Alto Composition Date: 1902
-Lyrics: Battle's Collection of Hymns
+Lyrics: Battle’s Collection of Hymns
 Lyrics Date: 1814
 Meter: 7s,6s (7,6,7,6)
 

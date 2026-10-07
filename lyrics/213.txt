@@ -4,13 +4,13 @@ Tune Composer: William Walker
 Tune Composition Date: 1835
 Alto Composer: John Malcolm Cruse Shaw
 Alto Composition Date: 1902
-Lyrics: Mintz's Spiritual Song Book
+Lyrics: Mintz’s Spiritual Song Book
 Lyrics Date: 1805
 Meter: Long Meter (8,8,8,8)
 
 ________________________________________________________________________________
 
-Lift up your heads, Immanuel's friends,
+Lift up your heads, Immanuel’s friends,
 O halle, hallelujah,
 And taste the pleasures Jesus sends,
 O halle, hallelujah.
@@ -34,10 +34,10 @@ May none of us from thee depart;
 O halle, hallelujah.
 But may our actions always say,
 O halle, hallelujah;
-We're marching in the good old way,
+We’re marching in the good old way,
 O halle, hallelujah!
 
-And when on Pisgah's top we stand,
+And when on Pisgah’s top we stand,
 O halle, hallelujah,
 And view, by faith, the promised land,
 O halle, hallelujah.

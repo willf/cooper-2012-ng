@@ -2,7 +2,7 @@ Title: World Above
 Page: 551
 Tune Composer: John Malcolm Cruse Shaw
 Tune Composition Date: 1927
-Lyrics: Mead's General Selection
+Lyrics: Mead’s General Selection
 Lyrics Date: 1807
 Meter: 7s,6s Double (7,6,7,6,7,6,7,6)
 
@@ -23,5 +23,5 @@ He wipes away their sorrows,
 He banishes their care.
 Their joys are still increasing,
 Their songs are ever new,
-They praise th'eternal Father,
+They praise th’eternal Father,
 The Son and Spirit, too.
