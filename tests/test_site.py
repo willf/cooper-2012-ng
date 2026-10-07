@@ -5,7 +5,7 @@ import unittest
 from urllib.parse import unquote, urlsplit
 
 from scripts.index_common import KINDS, ROOT
-from scripts.site import build_site, display_source, entry_id, metadata_value, word_letter
+from scripts.site import LABELS, build_site, display_source, entry_id, metadata_value, word_letter
 
 
 class Links(HTMLParser):
@@ -15,8 +15,12 @@ class Links(HTMLParser):
         self.ids = []
         self.lyric_text = []
         self.in_lyrics = False
+        self.neighbors = {"prev": [], "next": []}
 
     def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "a" and attributes.get("rel") in self.neighbors:
+            self.neighbors[attributes["rel"]].append(attributes["href"])
         self.targets.extend(value for key, value in attrs if key in ("href", "src"))
         self.ids.extend(value for key, value in attrs if key == "id")
         if tag == "pre":
@@ -76,7 +80,7 @@ Another verse & more
 
     def test_every_generated_local_link_resolves(self):
         build_site(self.lyrics, self.output)
-        self.assertEqual(len(list(self.output.rglob("*.html"))), 2 + len(KINDS) + 1 + 26)
+        self.assertEqual(len(list(self.output.rglob("*.html"))), 2 + len(LABELS) + 1 + 26)
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text())
@@ -85,7 +89,7 @@ Another verse & more
 
     def assert_link_resolves(self, path, target):
         url = urlsplit(target)
-        destination = path.parent / unquote(url.path)
+        destination = path.parent / unquote(url.path) if url.path else path
         self.assertTrue(destination.is_file(), (path, target))
         if url.fragment:
             destination = destination.resolve()
@@ -139,6 +143,17 @@ Another verse & more
                 self.assertIn('</a> (arranger); ', rendered)
                 self.assertIn('</a> (1st Verse)', rendered)
 
+    def test_song_index_orders_pages_and_links_to_song_files(self):
+        content = (self.lyrics / "027t.txt").read_text().replace("Page: 27t", "Page: 2")
+        (self.lyrics / "002.txt").write_text(content)
+        build_site(self.lyrics, self.output)
+        song_index = (self.output / "songs.html").read_text()
+        self.assertLess(song_index.index('href="songs/002.html"'), song_index.index('href="songs/027t.html"'))
+        self.assertLess(song_index.index('href="songs/027t.html"'), song_index.index('href="songs/027b.html"'))
+        self.assertIn('<span class="song-page">27t</span> <span>The &lt;Fountain&gt; &amp; Life</span>', song_index)
+        self.assertIn('href="songs.html"', (self.output / "index.html").read_text())
+        self.assertIn(f'../songs.html#{entry_id("27t")}', (self.output / "songs/027t.html").read_text())
+
     def test_display_names_preserve_sources_suffixes_and_uncertainty(self):
         examples = {
             "Blackshear, Anna L. (Cooper)": "Anna L. (Cooper) Blackshear",
@@ -162,6 +177,18 @@ Another verse & more
         build_site(self.lyrics, self.output)
         self.assertEqual(before, {str(p): p.read_bytes() for p in self.output.rglob("*") if p.is_file()})
 
+    def test_song_neighbors_follow_page_order_and_stop_at_boundaries(self):
+        content = (self.lyrics / "027t.txt").read_text()
+        for name, page in [("first.txt", "2"), ("last.txt", "28")]:
+            (self.lyrics / name).write_text(content.replace("Page: 27t", f"Page: {page}"))
+        build_site(self.lyrics, self.output)
+        order = ["first.html", "027t.html", "027b.html", "last.html"]
+        for position, filename in enumerate(order):
+            parser = Links()
+            parser.feed((self.output / "songs" / filename).read_text())
+            self.assertEqual(parser.neighbors["prev"], [order[position - 1]] * 2 if position else [])
+            self.assertEqual(parser.neighbors["next"], [order[position + 1]] * 2 if position + 1 < len(order) else [])
+
     def test_duplicate_printed_page_is_rejected_before_writing(self):
         (self.lyrics / "copy.txt").write_text((self.lyrics / "027t.txt").read_text())
         with self.assertRaisesRegex(ValueError, "duplicate Page"):
@@ -172,7 +199,7 @@ Another verse & more
         count = build_site(ROOT / "lyrics", self.output)
         self.assertEqual(count, len(list((ROOT / "lyrics").glob("*.txt"))))
         extra = int((self.output / "words/other.html").exists())
-        self.assertEqual(len(list(self.output.rglob("*.html"))), count + len(KINDS) + 1 + 26 + extra)
+        self.assertEqual(len(list(self.output.rglob("*.html"))), count + len(LABELS) + 1 + 26 + extra)
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text(encoding="utf-8"))

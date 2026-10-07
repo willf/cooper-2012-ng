@@ -2,7 +2,7 @@ Title: Chicago
 Collation: Chicago
 Page: 140
 Tune Composer: Smith, Stanley
-Tune Composition Date: 32069
+Tune Composition Date: 1987
 Lyrics: Sunday School Hymn Book
 Lyrics Date: 1827
 Meter: Common Meter (8,6,8,6)

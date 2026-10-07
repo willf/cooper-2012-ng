@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, lyric_words, read_metadata
+from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, lyric_words, meter_sort_key, read_metadata
 
 
 class IndexTests(unittest.TestCase):
@@ -115,6 +115,21 @@ Words
         self.assertEqual(lyric_words("Hark! HARK, God, GOD’S, god's; heav’nly, heav'nly; "
                                     "ever-lasting Élan 123. The and thou thy I’ll can't Chorus:"),
                          {"hark", "god", "god’s", "heav’nly", "ever", "lasting", "élan"})
+
+    def test_meter_order_prioritizes_common_short_and_long_families(self):
+        expected = [
+            "Common Meter (8,6,8,6)", "Common Meter Double (8,6,8,6,8,6,8,6)",
+            "Short Meter (6,6,8,6)", "Short Meter Double (6,6,8,6,6,6,8,6)",
+            "Long Meter (8,8,8,8)", "Long Meter Half (8,8)",
+            "Common Particular Meter (8,8,6,8,8,6)", "Hallelujah Meter (6,6,6,6,8,8)",
+            "7s (7,7,7,7)", "11s (11,11,11,11)",
+            "Particular Meter: 7,8,8,7", "Particular Meter: 10,8,10,8",
+            "Irregular", "Prose",
+        ]
+        self.assertEqual(sorted(reversed(expected), key=meter_sort_key), expected)
+        for number, meter in enumerate(reversed(expected)):
+            self.write(f"meter-{number}.txt", f"Page: {number + 100}\nMeter: {meter}\n________________\n")
+        self.assertEqual(list(build_index(self.lyrics, "meters")), expected)
 
     def test_word_index_uses_only_lyrics_and_deduplicates_pages(self):
         self.write("003.txt", "Page: 2b\nTitle: Metadataonly\n________________\nHark, hark! Love\n")

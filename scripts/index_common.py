@@ -107,6 +107,22 @@ def page_sort_key(page: str) -> tuple:
     return (1, 0, 0, page, page)
 
 
+def meter_sort_key(meter: str) -> tuple:
+    """Lead with Common, Short, and Long Meter and their variants."""
+    for rank, family in enumerate(("Common Meter", "Short Meter", "Long Meter")):
+        if meter == family or meter.startswith(family + " "):
+            return (rank, (), meter.casefold(), meter)
+    if meter in ("Irregular", "Prose"):
+        return (6 if meter == "Irregular" else 7, (), meter.casefold(), meter)
+    if meter.startswith("Particular Meter:"):
+        pattern = meter.split(":", 1)[1]
+        return (5, tuple(map(int, re.findall(r"\d+", pattern))), meter.casefold(), meter)
+    if meter[:1].isdigit():
+        pattern = meter.split("(", 1)[0]
+        return (4, tuple(map(int, re.findall(r"\d+", pattern))), meter.casefold(), meter)
+    return (3, (), meter.casefold(), meter)
+
+
 def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
     if kind not in KINDS:
         raise ValueError(f"Unknown index kind: {kind}")
@@ -124,9 +140,10 @@ def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
             keys = index_keys(metadata, kind)
         for key in keys:
             pages_by_key.setdefault(key, set()).add(metadata["Page"])
+    key_order = meter_sort_key if kind == "meters" else lambda key: (key.casefold(), key)
     return {
         key: sorted(pages_by_key[key], key=page_sort_key)
-        for key in sorted(pages_by_key, key=lambda key: (key.casefold(), key))
+        for key in sorted(pages_by_key, key=key_order)
     }
 
 

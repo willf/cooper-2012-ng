@@ -23,6 +23,10 @@ unique page strings, sorted numerically by page, with an unsuffixed page first,
 then `t` before `b`. Page values
 come from `Page` metadata, including suffixes such as `t` and `b`, rather than
 filenames. Keys are sorted without regard to case; Unicode punctuation is retained.
+Meters use a separate order: Common Meter and its variants, Short Meter and its
+variants, Long Meter and its variants, other named meters alphabetically, numeric
+meters, Particular Meter patterns, then Irregular and Prose. Numeric patterns sort
+by their syllable counts rather than alphabetically.
 
 The first-line index uses the first nonblank line after the metadata separator,
 with surrounding whitespace and all trailing punctuation removed, including
@@ -58,7 +62,7 @@ uv run python -m unittest discover -s tests -v
 
 ## Static website
 
-Generate the website (intro, eight indexes, and individual song pages):
+Generate the website (intro, nine indexes, and individual song pages):
 
 ```sh
 uv run scripts/site.py
@@ -71,6 +75,10 @@ Contributor names display in reading order (`F. Price`), with links pointing to
 their collation keys (`Price, F.`); book titles retain their proper wording.
 The site rebuilds indexes
 from current lyrics using the same rules as the JSON generators.
+The Songs index lists page numbers and titles in page order, with `t` before `b`,
+linking each entry directly to its song page.
+Each song page has Prev and Next navigation at the top and bottom, following
+the same page order. The first and last songs have no link beyond the collection.
 Each index entry has a stable ID. Song metadata links to the matching title,
 contributor, date, and meter entries, preserving the displayed annotations.
 The word index has an overview and separate A–Z pages. Accented initials are grouped
