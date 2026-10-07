@@ -1,10 +1,10 @@
 Title: Millennium
 Page: 130
-Tune Composer: William Walker
+Tune Composer: Walker, William
 Tune Composition Date: 1831
-Alto Composer: Karen Willard
+Alto Composer: Willard, Karen
 Alto Composition Date: 2011
-Lyrics: The Portsmouth Selection
+Lyrics: Portsmouth Selection, The
 Lyrics Date: 1818
 Meter: Particular Meter: 12,12,12,13
 

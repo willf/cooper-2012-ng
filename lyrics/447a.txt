@@ -1,8 +1,8 @@
 Title: Boylston
 Page: 447t
-Tune Composer: Lowell Mason
+Tune Composer: Mason, Lowell
 Tune Composition Date: 1832
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Short Meter (6,6,8,6)
 

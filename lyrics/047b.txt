@@ -1,10 +1,10 @@
 Title: Idumea
 Page: 47b
-Tune Composer: Ananias Davisson
+Tune Composer: Davisson, Ananias
 Tune Composition Date: 1816
-Alto Composer: J. W. Watson
+Alto Composer: Watson, J. W.
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1763
 Meter: Short Meter (6,6,8,6)
 

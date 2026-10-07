@@ -1,8 +1,8 @@
 Title: Savannah
 Page: 583
-Tune Composer: William Billings
+Tune Composer: Billings, William
 Tune Composition Date: 1778
-Lyrics: Thomas Baldwin
+Lyrics: Baldwin, Thomas
 Lyrics Date: 1793
 Meter: 8s (8,8,8,8)
 

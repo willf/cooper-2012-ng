@@ -1,8 +1,8 @@
 Title: Expression
 Page: 125
-Alto Composer: W. R. McCoy
+Alto Composer: McCoy, W. R.
 Alto Composition Date: 1902
-Lyrics: Caleb Jarvis Taylor
+Lyrics: Taylor, Caleb Jarvis
 Lyrics Date: 1804
 Meter: 11s (11,11,11,11)
 

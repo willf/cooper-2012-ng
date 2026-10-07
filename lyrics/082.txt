@@ -1,10 +1,10 @@
 Title: Bound for Canaan
 Page: 82
-Tune Composer: Elisha J. King
+Tune Composer: King, Elisha J.
 Tune Composition Date: 1844
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: John Leland
+Lyrics: Leland, John
 Lyrics Date: 1793
 Meter: 7s,6s (7,6,7,6)
 

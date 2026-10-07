@@ -1,8 +1,8 @@
 Title: Delight
 Page: 216
-Tune Composer: Simeon Coan
+Tune Composer: Coan, Simeon
 Tune Composition Date: 1798
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Hallelujah Meter (6,6,6,6,8,8)
 

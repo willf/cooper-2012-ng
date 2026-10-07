@@ -1,10 +1,10 @@
 Title: Love Divine
 Page: 330t
-Tune Composer: Thomas Waller
+Tune Composer: Waller, Thomas
 Tune Composition Date: 1869
-Alto Composer: Miss Lessie Green
+Alto Composer: Green, Lessie (Miss)
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1747
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 

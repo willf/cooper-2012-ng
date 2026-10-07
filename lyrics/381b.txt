@@ -1,10 +1,10 @@
 Title: The Surrender
 Page: 381b
-Tune Composer: Spencer Reed Penick
+Tune Composer: Penick, Spencer Reed
 Tune Composition Date: 1859
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: William Mason
+Lyrics: Mason, William
 Lyrics Date: 1826
 Meter: 8s,7s (8,7,8,7)
 

@@ -1,8 +1,8 @@
 Title: Playel’s Hymn Second
 Page: 143
-Tune Composer: Ignaz Joseph Pleyel
+Tune Composer: Pleyel, Ignaz Joseph
 Tune Composition Date: 1790
-Lyrics: Helen Maria Williams
+Lyrics: Williams, Helen Maria
 Lyrics Date: 1790
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

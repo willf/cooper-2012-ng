@@ -1,10 +1,10 @@
 Title: Melancholy Day
 Page: 419
-Tune Composer: Rev. Henry Smith Rees
+Tune Composer: Rees, Henry Smith (Rev.)
 Tune Composition Date: 1859
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1709
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

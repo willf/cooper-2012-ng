@@ -1,9 +1,9 @@
 Title: Messiah
 Page: 131t
-Tune Composer: Rev. James P. Carrell
+Tune Composer: Carrell, James P. (Rev.)
 Tune Composition Date: 1821
-Lyrics: Samuel Stennett
-Lyrics Date: 1787 (1st verse); Charles Wesley, 1763 (2nd verse)
+Lyrics: Stennett, Samuel (1st verse); Wesley, Charles (2nd verse)
+Lyrics Date: 1787 (1st verse); 1763 (2nd verse)
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 
 ________________________________________________________________________________

@@ -1,8 +1,8 @@
 Title: Heavenly Rest
 Page: 403
-Tune Composer: John S. Terry
-Tune Composition Date: 1869; Arranged by Wilson Marion Cooper, 1902
-Lyrics: Rev. Augustus Montague Toplady
+Tune Composer: Terry, John S.; Cooper, Wilson Marion (arranger)
+Tune Composition Date: 1869; 1902 (arrangement)
+Lyrics: Toplady, Augustus Montague (Rev.)
 Lyrics Date: 1759
 Meter: Common Meter (8,6,8,6)
 

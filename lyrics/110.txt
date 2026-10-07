@@ -1,10 +1,10 @@
 Title: Mount Vernon
 Page: 110
-Tune Composer: Stephen Jenks
+Tune Composer: Jenks, Stephen
 Tune Composition Date: 1799
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Theodore Dwight
+Lyrics: Dwight, Theodore
 Lyrics Date: 1799
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

@@ -1,10 +1,10 @@
 Title: Dartmouth
 Page: 169
-Tune Composer: Stephen Jenks
+Tune Composer: Jenks, Stephen
 Tune Composition Date: 1803
-Alto Composer: F. M. Roney
+Alto Composer: Roney, F. M.
 Alto Composition Date: 1900
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

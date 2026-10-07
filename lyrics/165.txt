@@ -1,10 +1,10 @@
 Title: Family Bible
 Page: 165
-Tune Composer: William Caldwell
+Tune Composer: Caldwell, William
 Tune Composition Date: 1837
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: The Charleston Courier
+Lyrics: Charleston Courier, The
 Lyrics Date: 1818
 Meter: 12s,11s Double (12,11,12,11,12,11,12,11)
 

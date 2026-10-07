@@ -1,10 +1,10 @@
 Title: Gainsville
 Page: 70t
-Tune Composer: W. D. Jones
+Tune Composer: Jones, W. D.
 Tune Composition Date: 1869
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: William Hammond
+Lyrics: Hammond, William
 Lyrics Date: 1745
 Meter: 7s (7,7,7,7)
 

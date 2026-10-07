@@ -1,8 +1,8 @@
 Title: Florida
 Page: 203
-Tune Composer: Truman S. Wetmore
+Tune Composer: Wetmore, Truman S.
 Tune Composition Date: 1803
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter (6,6,8,6)
 

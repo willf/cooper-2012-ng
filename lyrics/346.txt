@@ -1,8 +1,8 @@
 Title: My Happy Home
 Page: 346
-Tune Composer: Aldine Silliman Kieffer
+Tune Composer: Kieffer, Aldine Silliman
 Tune Composition Date: 1880
-Lyrics: Aldine Silliman Kieffer
+Lyrics: Kieffer, Aldine Silliman
 Lyrics Date: 1880
 Meter: Particular Meter: 10,9,11,9
 

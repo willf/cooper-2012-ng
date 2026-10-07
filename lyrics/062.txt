@@ -1,10 +1,10 @@
 Title: Parting Hand
 Page: 62
-Tune Composer: William Walker
+Tune Composer: Walker, William
 Tune Composition Date: 1835
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: John Blain
+Lyrics: Blain, John
 Lyrics Date: 1818
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

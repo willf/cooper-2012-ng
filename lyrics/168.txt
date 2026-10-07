@@ -1,8 +1,8 @@
 Title: Cowper
 Page: 168
-Tune Composer: Oliver Holden
+Tune Composer: Holden, Oliver
 Tune Composition Date: 1803
-Lyrics: William Cowper
+Lyrics: Cowper, William
 Lyrics Date: 1779
 Meter: Long Meter (8,8,8,8)
 

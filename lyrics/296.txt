@@ -2,7 +2,7 @@ Title: Sardinia
 Page: 296
 Tune Composer: Castle
 Tune Composition Date: 1794
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

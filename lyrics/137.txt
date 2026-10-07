@@ -1,8 +1,8 @@
 Title: Liberty
 Page: 137
-Tune Composer: Stephen Jenks
+Tune Composer: Jenks, Stephen
 Tune Composition Date: 1800
-Alto Composer: Miss Minnie Floyd
+Alto Composer: Floyd, Minnie (Miss)
 Alto Composition Date: 1902
 Meter: Common Meter (8,6,8,6)
 

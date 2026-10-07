@@ -1,8 +1,8 @@
 Title: Conversion
 Page: 297
-Tune Composer: Supply Belcher
+Tune Composer: Belcher, Supply
 Tune Composition Date: 1794
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter (8,6,8,6)
 

@@ -1,9 +1,9 @@
 Title: Wilson
 Page: 502
-Tune Composer: Miss Vera Wilson
+Tune Composer: Wilson, Vera (Miss)
 Tune Composition Date: 1909
-Lyrics: Rev. Augustus Montague Toplady
-Lyrics Date: 1759 (1st Verse); Joseph Bromehead, 1795 (2nd & 3rd Verse)
+Lyrics: Toplady, Augustus Montague (Rev.) (1st Verse); Bromehead, Joseph (2nd & 3rd Verse)
+Lyrics Date: 1759 (1st Verse); 1795 (2nd & 3rd Verse)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

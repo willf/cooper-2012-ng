@@ -1,10 +1,10 @@
 Title: Pickard’s Hymn
 Page: 442b
-Tune Composer: Thomas Waller
+Tune Composer: Waller, Thomas
 Tune Composition Date: 1869
-Alto Composer: Miss Minnie Floyd
+Alto Composer: Floyd, Minnie (Miss)
 Alto Composition Date: 1902
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

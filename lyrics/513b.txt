@@ -1,10 +1,10 @@
 Title: Whosoever Will
 Page: 513b
-Tune Composer: Thomas Jefferson Allen
-Tune Composition Date: 1907; Arranged by Stanley Smith, 2006
-Alto Composer: Maud Lee Allen
+Tune Composer: Allen, Thomas Jefferson; Smith, Stanley (arranger)
+Tune Composition Date: 1907; 2006 (arrangement)
+Alto Composer: Allen, Maud Lee
 Alto Composition Date: 1907
-Lyrics: Samuel Medley
+Lyrics: Medley, Samuel
 Lyrics Date: 1802
 Meter: Common Meter (8,6,8,6)
 

@@ -1,10 +1,10 @@
 Title: Penick
 Page: 387
-Tune Composer: Matthew Sikes
+Tune Composer: Sikes, Matthew
 Tune Composition Date: 1859
-Alto Composer: Mrs. E. D. Martin
+Alto Composer: Martin, E. D. (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Matthew Sikes
+Lyrics: Sikes, Matthew
 Lyrics Date: 1859
 Meter: Common Meter (8,6,8,6)
 

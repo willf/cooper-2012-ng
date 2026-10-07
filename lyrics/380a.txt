@@ -1,8 +1,8 @@
 Title: Nettie
 Page: 380t
-Tune Composer: William L. Green
+Tune Composer: Green, William L.
 Tune Composition Date: 2001
-Lyrics: William L. Green
+Lyrics: Green, William L.
 Lyrics Date: 2001
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

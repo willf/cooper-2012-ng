@@ -1,8 +1,8 @@
 Title: Worchester
 Page: 588
-Tune Composer: Abraham Wood
+Tune Composer: Wood, Abraham
 Tune Composition Date: 1778
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Short Meter Double (6,6,8,6,6,6,8,6)
 

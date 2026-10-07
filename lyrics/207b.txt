@@ -1,8 +1,8 @@
 Title: Passing Away
 Page: 207b
-Tune Composer: John A. Watson
+Tune Composer: Watson, John A.
 Tune Composition Date: 1872
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1763
 Meter: Common Meter (8,6,8,6)
 

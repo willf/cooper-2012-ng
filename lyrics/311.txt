@@ -1,8 +1,8 @@
 Title: Silver Street
 Page: 311
-Tune Composer: Isaac Smith
+Tune Composer: Smith, Isaac
 Tune Composition Date: 1779
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter (6,6,8,6)
 

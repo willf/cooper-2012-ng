@@ -2,9 +2,9 @@ Title: Animation
 Page: 103
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835
-Alto Composer: Miss Minnie Floyd
+Alto Composer: Floyd, Minnie (Miss)
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1759
 Meter: Common Meter (8,6,8,6)
 

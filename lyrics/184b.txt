@@ -4,7 +4,7 @@ Tune Composer: Patterson’s Church Music
 Tune Composition Date: 1813
 Alto Composer: Missouri Harmony
 Alto Composition Date: 1820
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter (8,6,8,6)
 

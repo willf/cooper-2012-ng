@@ -1,11 +1,11 @@
 Title: Gathering Home
 Page: 33
-Tune Composer: Thomas Jefferson Allen
+Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1902
-Alto Composer: Maud Lee Allen
+Alto Composer: Allen, Maud Lee
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
-Lyrics Date: 1707 (1st Verse); Gurdon Robins, 1843 (2nd Verse)
+Lyrics: Watts, Isaac (1st Verse); Robins, Gurdon (2nd Verse)
+Lyrics Date: 1707 (1st Verse); 1843 (2nd Verse)
 Meter: Long Meter Half (8,8)
 
 ________________________________________________________________________________

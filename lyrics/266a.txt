@@ -1,9 +1,9 @@
 Title: O Happy Day
 Alternative Title: Rockingham
 Page: 266t
-Tune Composer: Lowell Mason
+Tune Composer: Mason, Lowell
 Tune Composition Date: 1830
-Lyrics: Philip Doddridge
+Lyrics: Doddridge, Philip
 Lyrics Date: 1755
 Meter: Long Meter (8,8,8,8)
 

@@ -2,9 +2,9 @@ Title: Olney
 Page: 135
 Tune Composer: Tennessee Harmony
 Tune Composition Date: 1818
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Robert Robinson
+Lyrics: Robinson, Robert
 Lyrics Date: 1758
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 

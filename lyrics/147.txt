@@ -1,8 +1,8 @@
 Title: Washington
 Page: 147
-Tune Composer: Wyeth’s Repository of Sacred Music, Part Second
-Tune Composition Date: 1813; Arranged by Reubin Monday, 1835; Arranged by Karen Willard, 2005
-Lyrics: Joseph Hart
+Tune Composer: Wyeth’s Repository of Sacred Music, Part Second; Monday, Reubin (arranger); Willard, Karen (arranger)
+Tune Composition Date: 1813; 1835 (arrangement); 2005 (arrangement)
+Lyrics: Hart, Joseph
 Lyrics Date: 1762
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

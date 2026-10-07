@@ -1,8 +1,8 @@
 Title: Marysville
 Page: 163b
-Tune Composer: Ananias Davisson
-Tune Composition Date: 1821; Arranged by Karen Willard, 2000
-Lyrics: John Cennick
+Tune Composer: Davisson, Ananias; Willard, Karen (arranger)
+Tune Composition Date: 1821; 2000 (arrangement)
+Lyrics: Cennick, John
 Lyrics Date: 1743
 Meter: Long Meter (8,8,8,8)
 

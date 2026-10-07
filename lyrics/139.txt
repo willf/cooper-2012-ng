@@ -2,9 +2,9 @@ Title: Elysian
 Page: 139
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Richard Kemperfelt
+Lyrics: Kemperfelt, Richard
 Lyrics Date: 1777
 Meter: Particular Meter: 7,6,7,6,7,7,7,7
 

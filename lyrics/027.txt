@@ -1,8 +1,8 @@
 Title: Bethel
 Page: 27
-Lyrics: William Cowper
+Lyrics: Cowper, William
 Lyrics Date: 1772
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
 Meter: Common Meter (8,6,8,6)
 

@@ -1,9 +1,9 @@
 Title: Babylon is Fallen
 Page: 427
-Tune Composer: Shaker tune
-Tune Composition Date: ca. 1820; Arranged by W. E. Chute, 1875
-Lyrics: Richard McNemar
-Lyrics Date: 1813 (1st & 2nd Verse); W. E. Chute, 1875 (3rd Verse)
+Tune Composer: Shaker tune; Chute, W. E. (arranger)
+Tune Composition Date: ca. 1820; 1875 (arrangement)
+Lyrics: McNemar, Richard (1st & 2nd Verse); Chute, W. E. (3rd Verse)
+Lyrics Date: 1813 (1st & 2nd Verse); 1875 (3rd Verse)
 Meter: Particular Meter: 8,7,8,7,8,7
 
 ________________________________________________________________________________

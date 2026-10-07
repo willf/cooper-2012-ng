@@ -1,8 +1,8 @@
 Title: New Jerusalem
 Page: 299
-Tune Composer: Jeramiah Ingalls
+Tune Composer: Ingalls, Jeramiah
 Tune Composition Date: 1796
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter (8,6,8,6)
 

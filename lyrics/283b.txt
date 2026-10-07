@@ -1,11 +1,11 @@
 Title: Am I a Soldier?
 Alternative Title: Ortonville
 Page: 283b
-Tune Composer: Thomas Hastings
+Tune Composer: Hastings, Thomas
 Tune Composition Date: 1837
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1724
 Meter: Common Meter (8,6,8,6)
 

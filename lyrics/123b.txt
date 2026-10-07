@@ -1,11 +1,11 @@
 Title: Cross of Christ
 Page: 123b
-Tune Composer: Leonard P. Breedlove
+Tune Composer: Breedlove, Leonard P.
 Tune Composition Date: 1844
-Alto Composer: Miss Minnie Roundtree
+Alto Composer: Roundtree, Minnie (Miss)
 Alto Composition Date: 1902
-Lyrics: Southern Harmony
-Lyrics Date: 1835 (1st Verse); Reginald Heber, 1827 (2nd Verse)
+Lyrics: Southern Harmony (1st Verse); Heber, Reginald (2nd Verse)
+Lyrics Date: 1835 (1st Verse); 1827 (2nd Verse)
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 
 ________________________________________________________________________________

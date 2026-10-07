@@ -1,10 +1,10 @@
 Title: Security
 Page: 66
-Tune Composer: W. A. Robinett
+Tune Composer: Robinett, W. A.
 Tune Composition Date: 1902
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: William Hiley Bathurst
+Lyrics: Bathurst, William Hiley
 Lyrics Date: 1831
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

@@ -1,10 +1,10 @@
 Title: Amherst
 Page: 314
-Tune Composer: William Billings
+Tune Composer: Billings, William
 Tune Composition Date: 1770
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Hallelujah Meter (6,6,6,6,8,8)
 

@@ -1,10 +1,10 @@
 Title: To Die No More
 Page: 111b
-Tune Composer: Eld. Edmund Dumas
+Tune Composer: Dumas, Edmund (Eld.)
 Tune Composition Date: 1856
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: William Hunter
+Lyrics: Hunter, William
 Lyrics Date: 1838
 Meter: Long Meter (8,8,8,8)
 

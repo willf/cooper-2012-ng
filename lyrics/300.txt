@@ -1,8 +1,8 @@
 Title: Calvary
 Page: 300
-Tune Composer: Daniel Read
+Tune Composer: Read, Daniel
 Tune Composition Date: 1785
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1706
 Meter: Common Meter (8,6,8,6)
 

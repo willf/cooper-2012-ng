@@ -1,10 +1,10 @@
 Title: Newman
 Page: 368b
-Tune Composer: John Palmer Rees
+Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859
-Alto Composer: Miss Toy Frasier
+Alto Composer: Frasier, Toy (Miss)
 Alto Composition Date: 1902
-Lyrics: Joseph Hart
+Lyrics: Hart, Joseph
 Lyrics Date: 1759
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

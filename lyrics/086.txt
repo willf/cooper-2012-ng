@@ -1,9 +1,9 @@
 Title: Guiding Spirit
 Page: 86
-Tune Composer: Paine Denson
-Tune Composition Date: 1935; Arr. Vernon E. Austin, 1950
-Lyrics: Isaac Watts
-Lyrics Date: 1707 (Verse); C. H. Austin, 1950 (Chorus)
+Tune Composer: Denson, Paine; Austin, Vernon E. (arranger)
+Tune Composition Date: 1935; 1950 (arrangement)
+Lyrics: Watts, Isaac (Verse); Austin, C. H. (Chorus)
+Lyrics Date: 1707 (Verse); 1950 (Chorus)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

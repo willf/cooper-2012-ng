@@ -1,10 +1,10 @@
 Title: Hedgeburg
 Page: 267b
-Tune Composer: Arranged by Benjamin Franklin White
+Tune Composer: White, Benjamin Franklin (arranger)
 Tune Composition Date: 1869
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Long Meter (8,8,8,8)
 

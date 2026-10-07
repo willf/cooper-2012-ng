@@ -1,10 +1,10 @@
 Title: Baldwin
 Page: 274b
-Tune Composer: J. D. Arnold
+Tune Composer: Arnold, J. D.
 Tune Composition Date: 1869
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter (8,6,8,6)
 

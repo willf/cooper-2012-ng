@@ -1,9 +1,9 @@
 Title: Little Pilgrim
 Page: 392
-Tune Composer: John Newton Merritt
+Tune Composer: Merritt, John Newton
 Tune Composition Date: 1987
-Lyrics: John Newton Merritt
-Lyrics Date: 1987 (1st Verse); Anna Bartlett Warner, 1860 (2nd Verse)
+Lyrics: Merritt, John Newton (1st Verse); Warner, Anna Bartlett (2nd Verse)
+Lyrics Date: 1987 (1st Verse); 1860 (2nd Verse)
 Meter: Particular Meter: 8,7,7,7
 
 ________________________________________________________________________________

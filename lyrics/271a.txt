@@ -1,10 +1,10 @@
 Title: Safety
 Page: 271t
-Tune Composer: W. A. Robinett
+Tune Composer: Robinett, W. A.
 Tune Composition Date: 1902
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1724
 Meter: Common Meter (8,6,8,6)
 

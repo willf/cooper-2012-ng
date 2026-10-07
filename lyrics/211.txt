@@ -2,7 +2,7 @@ Title: Whitestown
 Page: 211
 Tune Composer: Howd
 Tune Composition Date: 1800
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 
 ________________________________________________________________________________

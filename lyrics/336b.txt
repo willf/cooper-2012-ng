@@ -1,8 +1,8 @@
 Title: Haw Ridge
 Page: 336b
-Tune Composer: Stanley Smith
+Tune Composer: Smith, Stanley
 Tune Composition Date: 1982
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1763
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

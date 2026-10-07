@@ -1,10 +1,10 @@
 Title: Weeping Peter
 Page: 373
-Tune Composer: The Sacred Harp
+Tune Composer: Sacred Harp, The
 Tune Composition Date: 1859
-Alto Composer: J. W. McCoy
+Alto Composer: McCoy, J. W.
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1749
 Meter: Particular Meter: 7,6,7,6,7,8,7,6
 

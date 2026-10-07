@@ -2,9 +2,9 @@ Title: Distress
 Page: 50b
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Anne Steele
+Lyrics: Steele, Anne
 Lyrics Date: 1760
 Meter: Long Meter (8,8,8,8)
 

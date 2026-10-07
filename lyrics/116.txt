@@ -1,9 +1,9 @@
 Title: I Will Shout and Sing in Glory
 Page: 116
-Tune Composer: Thomas Jefferson Allen
+Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1902
-Lyrics: Mead’s General Selection
-Lyrics Date: 1807 (1st Verse); William Hunter (2nd, 3rd, & 4th Verse), 1838
+Lyrics: Mead’s General Selection (1st Verse); Hunter, William (2nd, 3rd, & 4th Verse)
+Lyrics Date: 1807 (1st Verse); 1838 (2nd, 3rd, & 4th Verse)
 Meter: Long Meter Half (8,8)
 
 ________________________________________________________________________________

@@ -1,10 +1,10 @@
 Title: Arnold
 Page: 285t
-Tune Composer: Leonard P. Breedlove
+Tune Composer: Breedlove, Leonard P.
 Tune Composition Date: 1850
-Alto Composer: W. L. McGee
+Alto Composer: McGee, W. L.
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1759
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

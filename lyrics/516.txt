@@ -1,8 +1,8 @@
 Title: Tallahassee
 Page: 516
-Tune Composer: Morgan Bunch
+Tune Composer: Bunch, Morgan
 Tune Composition Date: 2006
-Lyrics: Andrew Reed
+Lyrics: Reed, Andrew
 Lyrics Date: 1829
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

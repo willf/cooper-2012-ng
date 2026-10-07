@@ -1,8 +1,8 @@
 Title: I Have No Mother Now
 Page: 363
-Tune Composer: John Wesley Miller
+Tune Composer: Miller, John Wesley
 Tune Composition Date: 1909
-Lyrics: John Wesley Miller
+Lyrics: Miller, John Wesley
 Lyrics Date: 1909
 Meter: 7s,6s Double (7,6,7,6,7,6,7,6)
 

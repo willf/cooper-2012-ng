@@ -1,8 +1,8 @@
 Title: Consecration
 Page: 543
-Tune Composer: William S. Turner
+Tune Composer: Turner, William S.
 Tune Composition Date: 1866
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1745
 Meter: Long Particular Meter (8,8,8,8,8,8)
 

@@ -1,8 +1,8 @@
 Title: Laban
 Page: 447b
-Tune Composer: Lowell Mason
+Tune Composer: Mason, Lowell
 Tune Composition Date: 1831
-Lyrics: George Heath
+Lyrics: Heath, George
 Lyrics Date: 1781
 Meter: Short Meter (6,6,8,6)
 

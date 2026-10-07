@@ -2,7 +2,7 @@ Title: Ocean
 Page: 222
 Tune Composer: Philadelphia Harmony
 Tune Composition Date: 1789
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

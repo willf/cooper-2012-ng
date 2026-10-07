@@ -1,8 +1,8 @@
 Title: Cambridge
 Page: 287
-Tune Composer: John Randall
-Tune Composition Date: 1786; Arranged by Mrs. Clara Atkinson, 1902
-Lyrics: William Cowper
+Tune Composer: Randall, John; Atkinson, Clara (Mrs.) (arranger)
+Tune Composition Date: 1786; 1902 (arrangement)
+Lyrics: Cowper, William
 Lyrics Date: 1779
 Meter: Common Meter (8,6,8,6)
 

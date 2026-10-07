@@ -1,10 +1,10 @@
 Title: Ninety-Third Psalm
 Page: 31t
-Tune Composer: Lucius Chapin
+Tune Composer: Chapin, Lucius
 Tune Composition Date: 1812
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Philip Doddridge
+Lyrics: Doddridge, Philip
 Lyrics Date: 1755
 Meter: Short Meter (6,6,8,6)
 

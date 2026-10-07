@@ -3,9 +3,11 @@ Alternative Title: Ganges
 Page: 295
 Tune Composer: Bridgewater Collection
 Tune Composition Date: 1802
-Treble & Alto: Genuine Church Music
-Treble & Alto Date: 1832
-Lyrics: Rev. Samson Occom
+Treble Composer: Genuine Church Music
+Treble Composition Date: 1832
+Alto Composer: Genuine Church Music
+Alto Composition Date: 1832
+Lyrics: Occom, Samson (Rev.)
 Lyrics Date: 1774
 Meter: Common Particular Meter (8,8,6,8,8,6)
 

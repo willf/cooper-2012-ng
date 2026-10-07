@@ -1,10 +1,10 @@
 Title: Weeping Sinners
 Page: 108t
-Tune Composer: John Palmer Rees
+Tune Composer: Rees, John Palmer
 Tune Composition Date: 1868
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Oliver Holden
+Lyrics: Holden, Oliver
 Lyrics Date: 1806
 Meter: 7s (7,7,7,7)
 

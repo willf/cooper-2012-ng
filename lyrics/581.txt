@@ -1,8 +1,8 @@
 Title: Wells Second
 Page: 581
-Tune Composer: David Wright
+Tune Composer: Wright, David
 Tune Composition Date: 2001
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1709
 Meter: Common Meter (8,6,8,6)
 

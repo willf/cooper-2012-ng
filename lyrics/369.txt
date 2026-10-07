@@ -1,9 +1,9 @@
 Title: Send a Blessing
 Page: 369
-Tune Composer: Benjamin Franklin White and Dr. Lewis L. Ledbetter
+Tune Composer: White, Benjamin Franklin; Ledbetter, Lewis L. (Dr.)
 Tune Composition Date: 1859
-Alto: added in 1902
-Lyrics: John Gambold
+Alto Composition Date: 1902
+Lyrics: Gambold, John
 Lyrics Date: 1748
 Meter: 10s,11s (10,11,10,11)
 

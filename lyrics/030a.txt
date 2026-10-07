@@ -1,8 +1,8 @@
 Title: Rochester
 Page: 30t
-Tune Composer: Israel Holdroyd
+Tune Composer: Holdroyd, Israel
 Tune Composition Date: 1722
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter (8,6,8,6)
 

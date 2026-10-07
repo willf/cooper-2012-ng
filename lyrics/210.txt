@@ -1,8 +1,8 @@
 Title: Minnesota
 Page: 210
-Tune Composer: Stanley Smith
+Tune Composer: Smith, Stanley
 Tune Composition Date: 2004
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter (8,6,8,6)
 

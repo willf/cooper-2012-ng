@@ -1,10 +1,10 @@
 Title: Adoration
 Page: 439
-Tune Composer: W. W. Parks
+Tune Composer: Parks, W. W.
 Tune Composition Date: 1869
-Alto Composer: Miss Minnie Floyd
+Alto Composer: Floyd, Minnie (Miss)
 Alto Composition Date: 1902
-Lyrics: Anne Steele
+Lyrics: Steele, Anne
 Lyrics Date: 1760
 Meter: Common Meter (8,6,8,6)
 

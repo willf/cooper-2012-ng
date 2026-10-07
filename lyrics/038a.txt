@@ -1,8 +1,8 @@
 Title: Sessions
 Page: 38t
-Tune Composer: Luther Orlando Emerson
+Tune Composer: Emerson, Luther Orlando
 Tune Composition Date: 1847
-Lyrics: John Rippon
+Lyrics: Rippon, John
 Lyrics Date: 1787
 Meter: Long Meter (8,8,8,8)
 

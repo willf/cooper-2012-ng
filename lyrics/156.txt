@@ -1,8 +1,8 @@
 Title: San Diego
 Page: 156
-Tune Composer: Stanley Smith
+Tune Composer: Smith, Stanley
 Tune Composition Date: 1997
-Lyrics: Samuel Medley
+Lyrics: Medley, Samuel
 Lyrics Date: 1793
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

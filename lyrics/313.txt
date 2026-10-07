@@ -1,8 +1,8 @@
 Title: Concord
 Page: 313
-Tune Composer: Oliver Holden
+Tune Composer: Holden, Oliver
 Tune Composition Date: 1793
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Short Meter (6,6,8,6)
 

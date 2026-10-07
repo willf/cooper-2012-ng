@@ -1,10 +1,10 @@
 Title: Worlds Above
 Page: 315
-Tune Composer: Benjamin Franklin White
+Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1850
-Alto Composer: J. W. Watson
+Alto Composer: Watson, J. W.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Hallelujah Meter (6,6,6,6,8,8)
 

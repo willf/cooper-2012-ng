@@ -1,10 +1,10 @@
 Title: Evening Shade
 Page: 132
-Tune Composer: Stephen Jenks
+Tune Composer: Jenks, Stephen
 Tune Composition Date: 1805
-Alto Composer: Dr. William Hauser
+Alto Composer: Hauser, William (Dr.)
 Alto Composition Date: 1848
-Lyrics: John Leland
+Lyrics: Leland, John
 Lyrics Date: 1792
 Meter: Short Meter (6,6,8,6)
 

@@ -1,11 +1,11 @@
 Title: My Home
 Alternative Title: Lisbon
 Page: 51
-Tune Composer: Arranged by C. F. Letson
+Tune Composer: Letson, C. F. (arranger)
 Tune Composition Date: 1869
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Samuel Stennett
+Lyrics: Stennett, Samuel
 Lyrics Date: 1787
 Meter: Common Meter (8,6,8,6)
 

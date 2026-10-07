@@ -1,8 +1,8 @@
 Title: North Jersey
 Page: 504b
-Tune Composer: Aldo Thomas Ceresa
+Tune Composer: Ceresa, Aldo Thomas
 Tune Composition Date: 2008
-Lyrics: The Christian’s Magazine
+Lyrics: Christian’s Magazine, The
 Lyrics Date: 1760
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 

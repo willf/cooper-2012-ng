@@ -1,11 +1,11 @@
 Title: I’m On My Journey Home
 Page: 207t
-Tune Composer: Miss Sarah Lancaster
+Tune Composer: Lancaster, Sarah (Miss)
 Tune Composition Date: 1859
-Alto Composer: Miss Belle Spivey
+Alto Composer: Spivey, Belle (Miss)
 Alto Composition Date: 1902
-Lyrics: Mead’s General Selection
-Lyrics Date: 1807 (1st Verse); Baltimore Collection, 1801 (2nd & 3rd Verse)
+Lyrics: Mead’s General Selection (1st Verse); Baltimore Collection (2nd & 3rd Verse)
+Lyrics Date: 1807 (1st Verse); 1801 (2nd & 3rd Verse)
 Meter: Long Meter Half (8,8)
 
 ________________________________________________________________________________

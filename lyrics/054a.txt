@@ -1,9 +1,9 @@
 Title: Palmetto
 Page: 54t
-Tune Composer: Dr. William Hauser
+Tune Composer: Hauser, William (Dr.)
 Tune Composition Date: 1859
-Lyrics: James Allen
-Lyrics Date: 1757; Alt. by Walter Shirley, 1774 (1st Verse); Christian Harmony, 1958 (2nd Verse)
+Lyrics: Allen, James; Shirley, Walter (alteration) (1st Verse); Christian Harmony (2nd Verse)
+Lyrics Date: 1757; 1774 (1st Verse) (alteration); 1958 (2nd Verse)
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 
 ________________________________________________________________________________

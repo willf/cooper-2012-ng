@@ -2,9 +2,9 @@ Title: Prospect
 Page: 30b
 Tune Composer: Graham
 Tune Composition Date: 1835
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Long Meter (8,8,8,8)
 

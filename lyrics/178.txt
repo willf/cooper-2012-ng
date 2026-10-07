@@ -1,10 +1,10 @@
 Title: Hosanna
 Page: 178
-Tune Composer: The American Church Harp
+Tune Composer: American Church Harp, The
 Tune Composition Date: 1850
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: John King
+Lyrics: King, John
 Lyrics Date: 1830
 Meter: 7s,6s Double (7,6,7,6,7,6,7,6)
 

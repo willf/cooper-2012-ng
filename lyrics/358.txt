@@ -1,10 +1,10 @@
 Title: Murrillo’s Lesson
 Page: 358
-Tune Composer: The Sacred Harp
+Tune Composer: Sacred Harp, The
 Tune Composition Date: 1850
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Timothy Dwight
+Lyrics: Dwight, Timothy
 Lyrics Date: ca. 1778
 Meter: 11s Double (11,11,11,11,11,11,11,11)
 

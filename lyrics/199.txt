@@ -1,8 +1,8 @@
 Title: City of Light
 Page: 199
-Tune Composer: Aldine Silliman Kieffer
+Tune Composer: Kieffer, Aldine Silliman
 Tune Composition Date: 1877
-Lyrics: Aldine Silliman Kieffer
+Lyrics: Kieffer, Aldine Silliman
 Lyrics Date: 1877
 Meter: 12s,9s (12,9,12,9)
 

@@ -1,9 +1,9 @@
 Title: Cuba
 Page: 401
-Tune: J. H. Bolen and Rev. Henry Smith Rees
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Tune Composer: Bolen, J. H.; Rees, Henry Smith (Rev.)
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: The Sacred Harp
+Lyrics: Sacred Harp, The
 Lyrics Date: 1859
 Meter: Irregular
 

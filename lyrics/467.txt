@@ -1,10 +1,11 @@
 Title: Pray, Brethren, Pray
 Page: 467
-Tune Composer: The Minstrel of Zion
+Tune Composer: Minstrel of Zion, The
 Tune Composition Date: 1845
-Treble Composer: U. G. Wood Alto: Wilson Marion Cooper
+Treble Composer: Wood, U. G.
 Treble Composition Date: 1902
-Lyrics: William Hunter
+Alto Composer: Cooper, Wilson Marion
+Lyrics: Hunter, William
 Lyrics Date: 1855
 Meter: Particular Meter: 4,7,4,6
 

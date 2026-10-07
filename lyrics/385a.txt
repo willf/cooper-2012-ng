@@ -1,10 +1,10 @@
 Title: Fight On
 Page: 385t
-Tune Composer: John Palmer Rees
+Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859
-Alto Composer: W. L. McGee and W. R. McCoy
+Alto Composer: McGee, W. L.; McCoy, W. R.
 Alto Composition Date: 1902
-Lyrics: George Heath
+Lyrics: Heath, George
 Lyrics Date: 1781
 Meter: Short Meter (6,6,8,6)
 

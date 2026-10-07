@@ -1,8 +1,8 @@
 Title: Poyner
 Page: 41
-Tune Composer: Wilson Marion Cooper
+Tune Composer: Cooper, Wilson Marion
 Tune Composition Date: 1905
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter (8,6,8,6)
 

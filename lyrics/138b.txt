@@ -1,10 +1,10 @@
 Title: Ogletree
 Page: 138b
-Tune Composer: S. M. Brown
+Tune Composer: Brown, S. M.
 Tune Composition Date: 1869
-Alto Composer: Miss Leila Underwood
+Alto Composer: Underwood, Leila (Miss)
 Alto Composition Date: 1902
-Lyrics: Simon Browne
+Lyrics: Browne, Simon
 Lyrics Date: 1720
 Meter: Common Meter (8,6,8,6)
 

@@ -1,8 +1,8 @@
 Title: The Finest Flower
 Page: 411
-Tune Composer: David Walker
+Tune Composer: Walker, David
 Tune Composition Date: 1845
-Lyrics: Joseph Swain
+Lyrics: Swain, Joseph
 Lyrics Date: 1834
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

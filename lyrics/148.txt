@@ -2,9 +2,9 @@ Title: Jefferson
 Page: 148
 Tune Composer: Tennessee Harmony
 Tune Composition Date: 1818
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 

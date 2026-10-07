@@ -1,11 +1,12 @@
 Title: Little Songs and Little Ways
 Alternative Title: Louisiana
 Page: 208
-Tune Composer: William Walker
+Tune Composer: Walker, William
 Tune Composition Date: 1835
-Alto Composer: Miss Minnie Floyd
+Alto Composer: Floyd, Minnie (Miss)
 Alto Composition Date: 1902
-Lyrics: Shaker text, c.1806
+Lyrics: Shaker text
+Lyrics Date: c.1806
 Meter: 8s,7s Double Iambic (8,7,8,7,8,7,8,7)
 
 ________________________________________________________________________________

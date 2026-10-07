@@ -1,11 +1,11 @@
 Title: Duane Street
 Page: 164
-Tune Composer: George Coles
+Tune Composer: Coles, George
 Tune Composition Date: 1835
-Treble: Jesse T. White
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Treble Composer: White, Jesse T.
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: James Montgomery
+Lyrics: Montgomery, James
 Lyrics Date: 1826
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

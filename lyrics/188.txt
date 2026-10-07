@@ -2,9 +2,9 @@ Title: Spring
 Page: 188
 Tune Composer: David’s Harp
 Tune Composition Date: 1818
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Meter: Particular Meter: 8,8,8,8,7,7
 
 ________________________________________________________________________________

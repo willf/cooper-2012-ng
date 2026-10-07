@@ -1,10 +1,10 @@
 Title: Hill of Zion
 Page: 445t
-Tune Composer: B. F. M. Mann
+Tune Composer: Mann, B. F. M.
 Tune Composition Date: 1868
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Short Meter (6,6,8,6)
 

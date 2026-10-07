@@ -1,10 +1,10 @@
 Title: Fatherland
 Page: 462
-Tune Composer: Samuel Wakefield
-Tune Composition Date: 1843; Arranged by Miss Jones, 1869
-Alto Composer: Wilson Marion Cooper
+Tune Composer: Wakefield, Samuel; Jones (Miss) (arranger)
+Tune Composition Date: 1843; 1869 (arrangement)
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: William Hunter
+Lyrics: Hunter, William
 Lyrics Date: 1843
 Meter: 9s,8s Double (9,8,9,8,9,8,9,8)
 

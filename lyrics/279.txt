@@ -1,12 +1,14 @@
 Title: Cross for You and Me
 Page: 279
-Tenor and Bass: Wilson Marion Cooper
-Tenor and Bass Date: 1902
-Treble Composer: W. H. Terry
+Tenor Composer: Cooper, Wilson Marion
+Tenor Composition Date: 1902
+Bass Composer: Cooper, Wilson Marion
+Bass Composition Date: 1902
+Treble Composer: Terry, W. H.
 Treble Composition Date: 1902
-Alto Composer: Mrs. Bertie Andrews
+Alto Composer: Andrews, Bertie (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Thomas Shepherd
+Lyrics: Shepherd, Thomas
 Lyrics Date: 1693
 Meter: Common Meter (8,6,8,6)
 

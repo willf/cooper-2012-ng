@@ -1,8 +1,8 @@
 Title: Edwards
 Page: 197
-Tune Composer: Arranged by H. S. Woodward
+Tune Composer: Woodward, H. S. (arranger)
 Tune Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1714
 Meter: Long Particular Meter (8,8,8,8,8,8)
 

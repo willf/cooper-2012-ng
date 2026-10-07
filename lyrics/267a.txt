@@ -1,8 +1,8 @@
 Title: Sacred Stream
 Page: 267t
-Tune Composer: Henry Goodwin Mann
+Tune Composer: Mann, Henry Goodwin
 Tune Composition Date: 1869
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Long Meter (8,8,8,8)
 

@@ -1,10 +1,10 @@
 Title: Hatfield
 Page: 327
-Tune Composer: William Billings
-Tune Composition Date: 1793; Arranged by Benjamin Franklin White, 1850
-Alto Composer: John Malcolm Cruse Shaw
+Tune Composer: Billings, William; White, Benjamin Franklin (arranger)
+Tune Composition Date: 1793; 1850 (arrangement)
+Alto Composer: Shaw, John Malcolm Cruse
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

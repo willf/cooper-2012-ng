@@ -1,10 +1,10 @@
 Title: Melody
 Page: 286b
-Tune Composer: Wyeth’s Repository of Sacred Music, Part Second
-Tune Composition Date: 1813; Arranged by Benjamin Franklin White, 1850
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Tune Composer: Wyeth’s Repository of Sacred Music, Part Second; White, Benjamin Franklin (arranger)
+Tune Composition Date: 1813; 1850 (arrangement)
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1763
 Meter: Common Meter (8,6,8,6)
 

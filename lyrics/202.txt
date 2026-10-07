@@ -1,8 +1,8 @@
 Title: New Lebanon
 Page: 202
-Tune Composer: P. Sherman
+Tune Composer: Sherman, P.
 Tune Composition Date: 1808
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Long Particular Meter (8,8,8,8,8,8)
 

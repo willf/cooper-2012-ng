@@ -1,11 +1,11 @@
 Title: Desire for Piety
 Page: 76b
-Tune Composer: Benjamin Franklin White
+Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1844
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Edward Trivett, c1772; Alt. Purify’s Selection of Hymns and Spiritual Songs
-Lyrics Date: 1823
+Lyrics: Trivett, Edward; Purify’s Selection of Hymns and Spiritual Songs (alteration)
+Lyrics Date: c1772; 1823 (alteration)
 Meter: Long Meter Half (8,8)
 
 ________________________________________________________________________________

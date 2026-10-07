@@ -1,9 +1,9 @@
 Title: Coronation
 Page: 63
-Tune Composer: Oliver Holden
+Tune Composer: Holden, Oliver
 Tune Composition Date: 1793
-Lyrics: Edward Perronet (1st & 2nd Verse)
-Lyrics Date: 1779-80; John Rippon (3rd Verse), 1787
+Lyrics: Perronet, Edward (1st & 2nd Verse); Rippon, John (3rd Verse)
+Lyrics Date: 1779-80; 1787 (3rd Verse)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

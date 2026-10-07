@@ -1,8 +1,8 @@
 Title: Pleasant Hill
 Page: 205
-Tune Composer: William Nicholson
+Tune Composer: Nicholson, William
 Tune Composition Date: 1820
-Lyrics: John Fawcett
+Lyrics: Fawcett, John
 Lyrics Date: 1782
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

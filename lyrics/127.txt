@@ -1,8 +1,8 @@
 Title: Green Fields
 Page: 127
-Tune Composer: The Kentucky Harmonist
+Tune Composer: Kentucky Harmonist, The
 Tune Composition Date: 1818
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: 8s Double (8,8,8,8,8,8,8,8)
 

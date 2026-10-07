@@ -1,8 +1,8 @@
 Title: A Prayerful Heart
 Page: 556
-Tune Composer: Bascom Franklin Faust
+Tune Composer: Faust, Bascom Franklin
 Tune Composition Date: 1927
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1742
 Meter: Common Meter (8,6,8,6)
 

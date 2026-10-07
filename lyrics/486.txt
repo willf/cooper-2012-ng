@@ -1,8 +1,8 @@
 Title: No Night on That Golden Shore
 Page: 486
-Tune Composer: Aldine Silliman Kieffer
+Tune Composer: Kieffer, Aldine Silliman
 Tune Composition Date: 1874
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Meter: 8s Double (8,8,8,8,8,8,8,8)
 
 ________________________________________________________________________________

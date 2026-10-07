@@ -1,8 +1,8 @@
 Title: Arbacoochee
 Page: 183
-Tune Composer: Seaborn McDaniel Denson
+Tune Composer: Denson, Seaborn McDaniel
 Tune Composition Date: 1908
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

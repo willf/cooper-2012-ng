@@ -1,11 +1,11 @@
 Title: Journey Home
 Page: 111t
-Tune Composer: R. F. M. Mann
+Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1868
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Mead’s General Selection
-Lyrics Date: 1807 (1st Verse); Baltimore Collection, 1801 (2nd & 3rd Verse)
+Lyrics: Mead’s General Selection (1st Verse); Baltimore Collection (2nd & 3rd Verse)
+Lyrics Date: 1807 (1st Verse); 1801 (2nd & 3rd Verse)
 Meter: Long Meter Half (8,8)
 
 ________________________________________________________________________________

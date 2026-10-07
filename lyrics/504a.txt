@@ -1,8 +1,8 @@
 Title: Peterborough
 Page: 504t
-Tune Composer: Ralph Harrison
+Tune Composer: Harrison, Ralph
 Tune Composition Date: 1786
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: Common Meter (8,6,8,6)
 

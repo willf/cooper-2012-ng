@@ -1,10 +1,10 @@
 Title: Portuguese Hymn
 Page: 223
-Tune Composer: John Francis Wade
+Tune Composer: Wade, John Francis
 Tune Composition Date: 1743
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: John Francis Wade
+Lyrics: Wade, John Francis
 Lyrics Date: 1743
 Meter: Particular Meter: 11,11,11,10
 

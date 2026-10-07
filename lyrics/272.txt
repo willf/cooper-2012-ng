@@ -1,8 +1,8 @@
 Title: Exhortation
 Page: 272
-Tune Composer: Eliakim Doolittle
+Tune Composer: Doolittle, Eliakim
 Tune Composition Date: 1800
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1709
 Meter: Long Meter (8,8,8,8)
 

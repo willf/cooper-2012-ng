@@ -1,10 +1,10 @@
 Title: Humble Pleadings
 Page: 380b
-Tune Composer: Clark Lee
+Tune Composer: Lee, Clark
 Tune Composition Date: 2001
-Alto Composer: Miss Mary Elizabeth Lee
+Alto Composer: Lee, Mary Elizabeth (Miss)
 Alto Composition Date: 2001
-Lyrics: Clark Lee
+Lyrics: Lee, Clark
 Lyrics Date: 2001
 Meter: 7s,6s Double (7,6,7,6,7,6,7,6)
 

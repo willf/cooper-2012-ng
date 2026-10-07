@@ -1,11 +1,11 @@
 Title: Hallelujah
 Page: 146
-Tune Composer: William Walker
+Tune Composer: Walker, William
 Tune Composition Date: 1835
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
-Lyrics Date: 1759 (1st & 2nd Verse); John Newton, 1779 (3rd Verse); Broaddus and Broaddus’ Collection of Sacred Ballads (4th Verse)
+Lyrics: Wesley, Charles (1st & 2nd Verse); Newton, John (3rd Verse); Broaddus and Broaddus’ Collection of Sacred Ballads (4th Verse)
+Lyrics Date: 1759 (1st & 2nd Verse); 1779 (3rd Verse)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

@@ -1,10 +1,10 @@
 Title: The Dying Californian
 Page: 398b
-Tune Composer: R. F. Ball and Drinkard
+Tune Composer: Ball, R. F.; Drinkard
 Tune Composition Date: 1859
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Kate Harris
+Lyrics: Harris, Kate
 Lyrics Date: 1850
 Meter: 8s,7s (8,7,8,7)
 

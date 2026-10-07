@@ -1,10 +1,10 @@
 Title: The Sinner’s Friend
 Page: 472
-Tune Composer: John Palmer Rees
+Tune Composer: Rees, John Palmer
 Tune Composition Date: 1869
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1709
 Meter: Long Meter (8,8,8,8)
 

@@ -1,10 +1,10 @@
 Title: Sharon
 Page: 212
-Tune Composer: Elisha West
+Tune Composer: West, Elisha
 Tune Composition Date: 1793
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Particular Meter (6,6,8,6,6,8)
 

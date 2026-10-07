@@ -1,9 +1,9 @@
 Title: Newry
 Page: 225t
-Tune: M. C. H. Davis
-Alto Composer: Wilson Marion Cooper
+Tune Composer: Davis, M. C. H.
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Benjamin Beddome
+Lyrics: Beddome, Benjamin
 Lyrics Date: 1787
 Meter: Short Meter (6,6,8,6)
 

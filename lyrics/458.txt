@@ -1,10 +1,10 @@
 Title: Friendship
 Page: 458
-Tune Composer: E. F. Williams
+Tune Composer: Williams, E. F.
 Tune Composition Date: 1869
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 

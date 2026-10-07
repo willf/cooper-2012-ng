@@ -1,10 +1,10 @@
 Title: Northport
 Page: 324
-Tune Composer: Dr. R. R. Osborne
+Tune Composer: Osborne, R. R. (Dr.)
 Tune Composition Date: 1850
-Bass Composer: Arranged by J. Smith
+Bass Composer: Smith, J. (arranger)
 Bass Composition Date: 1850
-Lyrics: John Cennick
+Lyrics: Cennick, John
 Lyrics Date: 1743
 Meter: Long Meter Half (8,8)
 

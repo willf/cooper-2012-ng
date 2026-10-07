@@ -1,8 +1,8 @@
 Title: America
 Page: 36t
-Tune Composer: Truman S. Wetmore
+Tune Composer: Wetmore, Truman S.
 Tune Composition Date: 1798
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter (6,6,8,6)
 

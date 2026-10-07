@@ -2,7 +2,7 @@ Title: Salem
 Page: 56
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: Common Meter (8,6,8,6)
 

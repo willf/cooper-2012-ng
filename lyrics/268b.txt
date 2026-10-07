@@ -1,8 +1,8 @@
 Title: Texas
 Page: 268b
-Tune Composer: Stanley Smith
+Tune Composer: Smith, Stanley
 Tune Composition Date: 1988
-Lyrics: John Newton
+Lyrics: Newton, John
 Lyrics Date: 1779
 Meter: Common Meter (8,6,8,6)
 

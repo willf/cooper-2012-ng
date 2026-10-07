@@ -1,9 +1,9 @@
 Title: Hester
 Page: 336t
-Tune Composer: L. C. Everett
+Tune Composer: Everett, L. C.
 Tune Composition Date: 1860
-Lyrics: Isaac Watts (1st, 2nd, & 4th Verses); Stewart Carver
-Lyrics Date: 1958 (3rd Verse); Church Psalmody, 1831 (5th Verse)
+Lyrics: Watts, Isaac (1st, 2nd, & 4th Verses); Carver, Stewart (3rd Verse); Church Psalmody (5th Verse)
+Lyrics Date: 1958 (3rd Verse); 1831 (5th Verse)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

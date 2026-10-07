@@ -1,8 +1,8 @@
 Title: Ester
 Page: 437
-Tune Composer: John S. Terry
+Tune Composer: Terry, John S.
 Tune Composition Date: 1869
-Lyrics: The Religious Telescope
+Lyrics: Religious Telescope, The
 Lyrics Date: 1842
 Meter: Long Meter (8,8,8,8)
 

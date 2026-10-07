@@ -2,8 +2,8 @@ Title: Old Hundred
 Page: 49t
 Tune Composer: Psaumes de David
 Tune Composition Date: 1551
-Lyrics: Tate & Brady’s New Version
-Lyrics Date: 1696 (1st verse); Thomas Ken, 1674 (2nd verse)
+Lyrics: Tate & Brady’s New Version (1st verse); Ken, Thomas (2nd verse)
+Lyrics Date: 1696 (1st verse); 1674 (2nd verse)
 Meter: Long Meter (8,8,8,8)
 
 ________________________________________________________________________________

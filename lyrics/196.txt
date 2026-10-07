@@ -1,8 +1,8 @@
 Title: Alabama
 Page: 196
-Tune Composer: Tennessee Harmony
-Tune Composition Date: 1818; Arranged by Southern Harmony, 1835
-Alto Composer: Karen Willard
+Tune Composer: Tennessee Harmony; Southern Harmony (arranger)
+Tune Composition Date: 1818; 1835 (arrangement)
+Alto Composer: Willard, Karen
 Alto Composition Date: 2011
 Lyrics: Southern Harmony
 Lyrics Date: 1835

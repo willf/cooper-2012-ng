@@ -1,10 +1,10 @@
 Title: Mount Zion
 Page: 220
-Tune Composer: Bartholomew Brown
+Tune Composer: Brown, Bartholomew
 Tune Composition Date: 1792
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Short Meter Double (6,6,8,6,6,6,8,6)
 

@@ -1,10 +1,10 @@
 Title: Confidence
 Page: 270
-Tune Composer: J. R. Turner
+Tune Composer: Turner, J. R.
 Tune Composition Date: 1850
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1742
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

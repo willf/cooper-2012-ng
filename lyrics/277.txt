@@ -1,10 +1,10 @@
 Title: Antioch
 Page: 277
-Tune Composer: F. C. Wood
+Tune Composer: Wood, F. C.
 Tune Composition Date: 1850
-Alto Composer: J. W. McCoy and W. R. McCoy
+Alto Composer: McCoy, J. W.; McCoy, W. R.
 Alto Composition Date: 1902
-Lyrics: Samuel Medley
+Lyrics: Medley, Samuel
 Lyrics Date: 1775
 Meter: Long Meter Half (8,8)
 

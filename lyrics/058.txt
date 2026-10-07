@@ -1,10 +1,10 @@
 Title: Pisgah
 Page: 58
-Tune Composer: J. C. Lowry
+Tune Composer: Lowry, J. C.
 Tune Composition Date: 1817
-Alto Composer: William Walker
+Alto Composer: Walker, William
 Alto Composition Date: 1866
-Lyrics: Richard Burnham
+Lyrics: Burnham, Richard
 Lyrics Date: 1783
 Meter: Common Meter (8,6,8,6)
 

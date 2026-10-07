@@ -1,10 +1,10 @@
 Title: Span of Life
 Page: 379
-Tune Composer: S. M. Brown
+Tune Composer: Brown, S. M.
 Tune Composition Date: 1869
-Alto Composer: J. W. McCoy
+Alto Composer: McCoy, J. W.
 Alto Composition Date: 1902
-Lyrics: Frances Maria Cowper
+Lyrics: Cowper, Frances Maria
 Lyrics Date: 1792
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

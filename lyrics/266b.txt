@@ -1,10 +1,10 @@
 Title: Lebanon New
 Page: 266b
-Tune Composer: Rev. James P. Carrell
+Tune Composer: Carrell, James P. (Rev.)
 Tune Composition Date: 1850
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1747
 Meter: Long Meter (8,8,8,8)
 

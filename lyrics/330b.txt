@@ -1,10 +1,10 @@
 Title: Sacred Music
 Page: 330b
-Tune Composer: Arranged by R. F. M. Mann
+Tune Composer: Mann, R. F. M. (arranger)
 Tune Composition Date: 1863
-Alto Composer: Miss Lessie Green
+Alto Composer: Green, Lessie (Miss)
 Alto Composition Date: 1902
-Lyrics: Samuel Pearce
+Lyrics: Pearce, Samuel
 Lyrics Date: 1800
 Meter: 8s,7s (8,7,8,7)
 

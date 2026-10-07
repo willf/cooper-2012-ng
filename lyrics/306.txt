@@ -1,11 +1,11 @@
 Title: News From the Regions of the Skies
 Alternative Title: Oxford
 Page: 306
-Tune Composer: Juvenile Harmony
-Tune Composition Date: 1825; Arranged by John Massengale, 1850
-Alto Composer: Wilson Marion Cooper
+Tune Composer: Juvenile Harmony; Massengale, John (arranger)
+Tune Composition Date: 1825; 1850 (arrangement)
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1706
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

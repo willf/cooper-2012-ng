@@ -1,8 +1,8 @@
 Title: Assurance
 Page: 91
-Tune Composer: William Billings
+Tune Composer: Billings, William
 Tune Composition Date: 1781
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter (8,6,8,6)
 

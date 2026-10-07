@@ -1,8 +1,8 @@
 Title: Beautiful River
 Page: 449
-Tune Composer: Rev. Robert Lowry
-Tune Composition Date: 1864; Arranged by Wilson Marion Cooper, 1902
-Lyrics: Rev. Robert Lowry
+Tune Composer: Lowry, Robert (Rev.); Cooper, Wilson Marion (arranger)
+Tune Composition Date: 1864; 1902 (arrangement)
+Lyrics: Lowry, Robert (Rev.)
 Lyrics Date: 1864
 Meter: 8s,7s (8,7,8,7)
 

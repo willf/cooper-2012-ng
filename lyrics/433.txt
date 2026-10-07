@@ -1,8 +1,8 @@
 Title: Rejoice
 Page: 433
-Tune Composer: D. F. Stevens
+Tune Composer: Stevens, D. F.
 Tune Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1707
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

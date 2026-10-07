@@ -1,10 +1,10 @@
 Title: Farewell to All
 Page: 398t
-Tune Composer: John Palmer Rees
+Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: John Blain
+Lyrics: Blain, John
 Lyrics Date: 1818
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

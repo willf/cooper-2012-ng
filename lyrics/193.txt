@@ -1,8 +1,8 @@
 Title: Huntington
 Page: 193
-Tune Composer: Justin Morgan
+Tune Composer: Morgan, Justin
 Tune Composition Date: 1790
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Long Meter Double (8,8,8,8,8,8,8,8)
 

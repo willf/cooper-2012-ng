@@ -1,12 +1,12 @@
 Title: Joyful
 Page: 166
-Tune Composer: Arranged by Benjamin Franklin White
+Tune Composer: White, Benjamin Franklin (arranger)
 Tune Composition Date: 1844
-Treble Composer: Elisha J. King
+Treble Composer: King, Elisha J.
 Treble Composition Date: 1844
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1724
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

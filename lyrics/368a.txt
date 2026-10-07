@@ -1,10 +1,10 @@
 Title: Remember Me
 Page: 368t
-Tune Composer: Benjamin Franklin White and Dr. Lewis L. Ledbetter
+Tune Composer: White, Benjamin Franklin; Ledbetter, Lewis L. (Dr.)
 Tune Composition Date: 1859
-Alto Composer: Miss E. L. Ketcham
+Alto Composer: Ketcham, E. L. (Miss)
 Alto Composition Date: 1902
-Lyrics: William Cowper
+Lyrics: Cowper, William
 Lyrics Date: 1779
 Meter: Common Meter (8,6,8,6)
 

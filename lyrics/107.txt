@@ -1,10 +1,10 @@
 Title: Martin
 Page: 107
-Tune Composer: Simeon B. Marsh
+Tune Composer: Marsh, Simeon B.
 Tune Composition Date: 1836
-Alto Composer: B. P. Poyner
+Alto Composer: Poyner, B. P.
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1738
 Meter: 7s Double (7,7,7,7,7,7,7,7)
 

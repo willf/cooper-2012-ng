@@ -1,8 +1,8 @@
 Title: Newburgh
 Page: 182
-Tune Composer: Amos Munson
+Tune Composer: Munson, Amos
 Tune Composition Date: 1798
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter Double (6,6,8,6,6,6,8,6)
 

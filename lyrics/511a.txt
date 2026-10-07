@@ -1,7 +1,7 @@
 Title: Brown
 Page: 511t
-Tune: William Batchelder Bradbury
-Lyrics: Mrs. Phoebe (Hinsdale) Brown
+Tune Composer: Bradbury, William Batchelder
+Lyrics: Brown, Phoebe (Hinsdale) (Mrs.)
 Meter: Common Meter (8,6,8,6)
 
 ________________________________________________________________________________

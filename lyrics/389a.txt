@@ -1,10 +1,10 @@
 Title: Saint Peters
 Page: 389t
-Tune Composer: The Sacred Harp
+Tune Composer: Sacred Harp, The
 Tune Composition Date: 1869
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1749
 Meter: Long Meter (8,8,8,8)
 

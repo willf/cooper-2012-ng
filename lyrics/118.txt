@@ -1,8 +1,8 @@
 Title: Sounding Joy
 Page: 118
-Tune Composer: Justin Morgan
+Tune Composer: Morgan, Justin
 Tune Composition Date: 1790
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter (6,6,8,6)
 

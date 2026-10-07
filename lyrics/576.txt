@@ -1,8 +1,8 @@
 Title: Allen
 Page: 576
-Tune Composer: Wilson Marion Cooper
+Tune Composer: Cooper, Wilson Marion
 Tune Composition Date: 1910
-Lyrics: Samuel Medley
+Lyrics: Medley, Samuel
 Lyrics Date: 1802
 Meter: Common Meter (8,6,8,6)
 

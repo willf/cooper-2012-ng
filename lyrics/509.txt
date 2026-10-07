@@ -1,10 +1,10 @@
 Title: We Are Going Home
 Page: 509
-Tune Composer: Thomas Jefferson Allen
+Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1907
-Alto Composer: Maud Lee Allen
+Alto Composer: Allen, Maud Lee
 Alto Composition Date: 1907
-Lyrics: Thomas Jefferson Allen
+Lyrics: Allen, Thomas Jefferson
 Lyrics Date: 1907
 Meter: Common Meter (8,6,8,6)
 

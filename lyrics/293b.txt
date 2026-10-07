@@ -1,8 +1,8 @@
 Title: Saint Thomas
 Page: 293b
-Tune Composer: Aaron Williams
+Tune Composer: Williams, Aaron
 Tune Composition Date: 1770
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Short Meter (6,6,8,6)
 

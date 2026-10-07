@@ -1,8 +1,8 @@
 Title: Wiley
 Page: 514
-Tune Composer: Eld. Robert Lee Vaughn
+Tune Composer: Vaughn, Robert Lee (Eld.)
 Tune Composition Date: 2011
-Lyrics: George Askins
+Lyrics: Askins, George
 Lyrics Date: 1819
 Meter: 6,6,7,6,6,7 Double (6,6,7,6,6,7,6,6,7,6,6,7)
 

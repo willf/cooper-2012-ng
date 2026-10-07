@@ -1,8 +1,8 @@
 Title: Morgan
 Page: 304
-Tune Composer: The Easy Instructor, Part II
+Tune Composer: Easy Instructor, Part II, The
 Tune Composition Date: 1803
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

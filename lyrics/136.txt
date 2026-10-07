@@ -2,9 +2,9 @@ Title: Morality
 Page: 136
 Tune Composer: Wyeth’s Repository of Sacred Music, Part Second
 Tune Composition Date: 1813
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Hannah More
+Lyrics: More, Hannah
 Meter: 11s (11,11,11,11)
 
 ________________________________________________________________________________

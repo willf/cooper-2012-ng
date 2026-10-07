@@ -1,8 +1,8 @@
 Title: Stratfield
 Page: 142
-Tune Composer: Ezra Goff
+Tune Composer: Goff, Ezra
 Tune Composition Date: 1786
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter (8,6,8,6)
 

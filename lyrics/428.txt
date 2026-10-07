@@ -1,10 +1,10 @@
 Title: World Unknown
 Page: 428
-Tune Composer: Rev. Henry Smith Rees
+Tune Composer: Rees, Henry Smith (Rev.)
 Tune Composition Date: 1859
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Charles Wesley
+Lyrics: Wesley, Charles
 Lyrics Date: 1763
 Meter: Short Meter (6,6,8,6)
 

@@ -2,9 +2,9 @@ Title: Invocation
 Page: 131b
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835
-Alto Composer: Mrs. Anna L. (Cooper) Blackshear
+Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Robert Seagrave
+Lyrics: Seagrave, Robert
 Lyrics Date: 1742
 Meter: Particular Meter: 7,6,7,6,7,7,7,6
 

@@ -1,10 +1,10 @@
 Title: The Judgment
 Page: 592
-Tune Composer: John Malcolm Cruse Shaw
+Tune Composer: Shaw, John Malcolm Cruse
 Tune Composition Date: 1902
-Alto Composer: Mrs. Bamma Quick
+Alto Composer: Quick, Bamma (Mrs.)
 Alto Composition Date: 1902
-Lyrics: Isaac Watts
+Lyrics: Watts, Isaac
 Lyrics Date: 1719
 Meter: Common Meter Double (8,6,8,6,8,6,8,6)
 

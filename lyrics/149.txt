@@ -1,12 +1,12 @@
 Title: The Trumpet
 Page: 149
-Tune Composer: J. Williams
+Tune Composer: Williams, J.
 Tune Composition Date: 1831
-Treble Composer: William Walker
+Treble Composer: Walker, William
 Treble Composition Date: 1835
-Alto Composer: Wilson Marion Cooper
+Alto Composer: Cooper, Wilson Marion
 Alto Composition Date: 1902
-Lyrics: Henry Hart Milman
+Lyrics: Milman, Henry Hart
 Lyrics Date: 1827
 Meter: Particular Meter: 11,12,12,12
 
