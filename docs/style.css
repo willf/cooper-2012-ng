@@ -46,20 +46,21 @@ p { max-width: 60ch; text-wrap: pretty; }
 .index-note { margin-bottom: 1rem; }
 .index-list { list-style: none; padding: 0; margin: 1.25rem 0; }
 .index-list li { border-top: 1px solid var(--line); padding: .5rem 0;
-  display: grid; gap: .25rem 2rem; overflow-wrap: anywhere;
+  display: grid; grid-template-columns: min(40%, 16rem) minmax(0, 1fr);
+  align-items: baseline; gap: .25rem .75rem; overflow-wrap: anywhere;
   content-visibility: auto; contain-intrinsic-size: auto 5rem; scroll-margin-top: 2rem; }
 .index-list li:target { background: var(--wash); box-shadow: -.5rem 0 var(--accent); }
-.index-label { min-width: 0; }
+.index-label { min-width: 0; text-align: right; }
 .index-word { font-variant-caps: small-caps; font-size: 1.15em; }
 .song-list li { display: block; padding: 0; }
 .song-list a { display: grid; grid-template-columns: 4rem minmax(0, 1fr);
   min-height: 44px; padding-block: .5rem; text-decoration: none; }
 .song-list a:hover { background: var(--wash); text-decoration: underline; }
 .song-page { font: .9rem/1.8 var(--ui); color: var(--quiet); font-variant-numeric: tabular-nums; }
-.page-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .25rem;
+.page-links { min-width: 0; text-align: left;
   font: .9rem/1.5 var(--ui); font-variant-numeric: tabular-nums; }
-.page-links a { min-height: 44px; min-width: 44px; display: inline-flex;
-  align-items: center; justify-content: center; text-decoration: none; padding: .25rem; }
+.page-links a { min-height: 44px; display: inline-block;
+  text-decoration: none; padding: .5rem 0; }
 .page-links a:hover { background: var(--wash); text-decoration: underline; }
 .letter-nav { display: flex; flex-wrap: wrap; gap: .25rem; margin: 1rem 0 1.25rem; }
 .letter-nav a { display: inline-flex; align-items: center; justify-content: center;
@@ -105,7 +106,6 @@ footer a { min-height: 44px; display: inline-flex; align-items: center; }
   .desktop-nav a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
   .desktop-nav a:hover { text-decoration: underline; }
   .directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .index-list li { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); align-items: baseline; }
 }
 @media (min-width: 62rem) {
   .song-layout { grid-template-columns: minmax(0, 1fr) 18rem; gap: 2.5rem; }

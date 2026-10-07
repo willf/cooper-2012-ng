@@ -88,6 +88,7 @@ Another verse & more
         )
         titles = (self.output / "titles.html").read_text()
         self.assertLess(titles.index(">27t</a>"), titles.index(">27b</a>"))
+        self.assertIn('>27t</a>, <a ', titles)
         first_lines = (self.output / "first_lines.html").read_text()
         self.assertIn("First line &lt;script&gt;", first_lines)
         self.assertIn('href="songs/027t.html"', first_lines)
@@ -106,6 +107,8 @@ Another verse & more
 
     def assert_link_resolves(self, path, target):
         url = urlsplit(target)
+        if url.scheme or url.netloc:
+            return
         destination = path.parent / unquote(url.path) if url.path else path
         self.assertTrue(destination.is_file(), (path, target))
         if url.fragment:
@@ -220,7 +223,7 @@ Another verse & more
         shutil.copytree(ROOT / "templates", templates)
         replacements = {
             "base.html": ("Back to top ↑", "Return to top"),
-            "home.html": ("A companion to the songs.", "My song collection"),
+            "home.html": ("<h1>", "<h1>My song collection</h1><h1>"),
             "index.html": ("Browse the collection", "Explore this index"),
             "song.html": ("Song details</h2>", "About this song</h2>"),
             "words.html": ("Choose a letter", "Select a letter"),

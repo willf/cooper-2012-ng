@@ -160,7 +160,7 @@ def index_items(
                 "index-item.html",
                 id=entry_id(key),
                 label_html=label,
-                links_html=" ".join(links),
+                links_html=", ".join(links),
             )
         )
     return templates.render("index-list.html", items_html="\n".join(items))
