@@ -144,7 +144,7 @@ def index_items(
     items = []
     for key, pages in index.items():
         links = []
-        for page in pages:
+        for position, page in enumerate(pages):
             filename, title = by_page[page]
             links.append(
                 templates.render(
@@ -154,6 +154,7 @@ def index_items(
                     + ("?highlight=" + quote(key, safe="") if words else ""),
                     title=title,
                     page=page,
+                    separator="," if position + 1 < len(pages) else "",
                 )
             )
         label = templates.render("word-label.html", word=key) if words else escape(key)
@@ -162,7 +163,7 @@ def index_items(
                 "index-item.html",
                 id=entry_id(key),
                 label_html=label,
-                links_html=", ".join(links),
+                links_html=" ".join(links),
             )
         )
     return templates.render("index-list.html", items_html="\n".join(items))

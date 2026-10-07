@@ -27,6 +27,10 @@ for the word directory and letter navigation, `word-label.html` for indexed
 words, `empty-words.html` for empty letter pages, `metadata-field.html` for song
 details, and `song-navigation.html`, `song-neighbor.html`, and
 `song-unavailable.html` for previous/next song navigation.
+In `page-link.html`, `${separator}` inserts a comma after each reference except
+the last. Keep it inside the `page-reference` span with the link so Safari and
+other browsers wrap between references instead of separating a comma from its
+page number.
 
 ## Home page index descriptions
 

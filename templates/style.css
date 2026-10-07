@@ -59,6 +59,7 @@ p { max-width: 60ch; text-wrap: pretty; }
 .song-page { font: .9rem/1.8 var(--ui); color: var(--quiet); font-variant-numeric: tabular-nums; }
 .page-links { min-width: 0; text-align: left;
   font: .9rem/1.5 var(--ui); font-variant-numeric: tabular-nums; }
+.page-reference { display: inline-block; white-space: nowrap; }
 .page-links a { min-height: 44px; display: inline-block;
   text-decoration: none; padding: .5rem 0; }
 .page-links a:hover { background: var(--wash); text-decoration: underline; }
