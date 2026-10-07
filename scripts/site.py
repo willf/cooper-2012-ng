@@ -14,9 +14,31 @@ import unicodedata
 from urllib.parse import quote
 
 if __package__:
-    from .index_common import KINDS, ROOT, WORD_PATTERN, build_index, contributors, dates, lyric_body, normalize_word, page_sort_key, read_metadata
+    from .index_common import (
+        KINDS,
+        ROOT,
+        WORD_PATTERN,
+        build_index,
+        contributors,
+        dates,
+        lyric_body,
+        normalize_word,
+        page_sort_key,
+        read_metadata,
+    )
 else:
-    from index_common import KINDS, ROOT, WORD_PATTERN, build_index, contributors, dates, lyric_body, normalize_word, page_sort_key, read_metadata
+    from index_common import (
+        KINDS,
+        ROOT,
+        WORD_PATTERN,
+        build_index,
+        contributors,
+        dates,
+        lyric_body,
+        normalize_word,
+        page_sort_key,
+        read_metadata,
+    )
 
 LABELS = {
     "songs": "Songs",
@@ -156,32 +178,32 @@ def document(title: str, body: str, prefix: str = "") -> str:
         f'<a href="{prefix}{kind}.html">{escape(label)}</a>'
         for kind, label in LABELS.items()
     )
-    return f'''<!doctype html>
+    return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>{escape(title)} — Cooper 2012 Lyrics</title>
+<title>{escape(title)} — The Sacred Harp · 2012 Cooper Book Edition</title>
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
 <header>
 <div class="topbar">
-<a class="brand" href="{prefix}index.html">Cooper 2012 Lyrics</a>
-<span class="edition">The Sacred Harp · 2012 Cooper edition</span>
+<a class="brand" href="{prefix}index.html">The Sacred Harp · 2012 Cooper Book Edition</a>
+<span class="edition">The Sacred Harp · 2012 Cooper Book Edition</span>
 </div>
 <nav class="desktop-nav" aria-label="Browse indexes">{nav}</nav>
 <details class="mobile-nav"><summary>Browse indexes</summary>
 <nav aria-label="Browse indexes on mobile">{nav}</nav></details>
 </header>
 <main id="main">{body}</main>
-<footer><a href="{prefix}index.html">Cooper 2012 Lyrics</a>
+<footer><a href="{prefix}index.html">The Sacred Harp · 2012 Cooper Book Edition</a>
 <a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
-'''
+"""
 
 
 def entry_id(key: str) -> str:
@@ -215,10 +237,12 @@ def word_links(body: str, word_index: dict[str, list[str]]) -> str:
     pieces = []
     cursor = 0
     for match in WORD_PATTERN.finditer(body):
-        pieces.append(escape(body[cursor:match.start()]))
+        pieces.append(escape(body[cursor : match.start()]))
         word = normalize_word(match[0])
         if word in word_index:
-            pieces.append(f'<a href="../words/{word_letter(word)}.html#{entry_id(word)}">{escape(match[0])}</a>')
+            pieces.append(
+                f'<a href="../words/{word_letter(word)}.html#{entry_id(word)}">{escape(match[0])}</a>'
+            )
         else:
             pieces.append(escape(match[0]))
         cursor = match.end()
@@ -226,15 +250,23 @@ def word_links(body: str, word_index: dict[str, list[str]]) -> str:
     return "".join(pieces)
 
 
-def index_items(index: dict[str, list[str]], by_page: dict, prefix: str = "", *, words: bool = False) -> str:
+def index_items(
+    index: dict[str, list[str]], by_page: dict, prefix: str = "", *, words: bool = False
+) -> str:
     items = []
     for key, pages in index.items():
         links = []
         for page in pages:
             filename, title = by_page[page]
-            links.append(f'<a href="{prefix}{quote(filename)}" title="{escape(title, quote=True)}">{escape(page)}</a>')
-        label = f'<span class="index-word">{escape(key)}</span>' if words else escape(key)
-        items.append(f'<li id="{entry_id(key)}"><span class="index-label">{label}</span><span class="page-links">{" ".join(links)}</span></li>')
+            links.append(
+                f'<a href="{prefix}{quote(filename)}" title="{escape(title, quote=True)}">{escape(page)}</a>'
+            )
+        label = (
+            f'<span class="index-word">{escape(key)}</span>' if words else escape(key)
+        )
+        items.append(
+            f'<li id="{entry_id(key)}"><span class="index-label">{label}</span><span class="page-links">{" ".join(links)}</span></li>'
+        )
     return '<ul class="index-list">' + "\n".join(items) + "</ul>"
 
 
@@ -244,19 +276,40 @@ def build_word_pages(output: Path, index: dict[str, list[str]], by_page: dict) -
         groups.setdefault(word_letter(word), {})[word] = pages
     (output / "words").mkdir(exist_ok=True)
     letters = list(groups)
-    intro = (f'<h1>Words</h1><p>{len(index)} words from the lyrics, with common words omitted. '
-             'Choose a letter to browse, or select a word within a song’s lyrics.</p>')
-    links = "".join(f'<li><a href="words/{letter}.html"><span>{letter.upper()}</span>'
-                    f'<small>{len(groups[letter])}</small></a></li>' for letter in letters)
-    (output / "words.html").write_text(document("Words", intro + f'<ul class="letter-directory">{links}</ul>'), encoding="utf-8")
+    intro = (
+        f"<h1>Words</h1><p>{len(index)} words from the lyrics, with common words omitted. "
+        "Choose a letter to browse, or select a word within a song’s lyrics.</p>"
+    )
+    links = "".join(
+        f'<li><a href="words/{letter}.html"><span>{letter.upper()}</span>'
+        f"<small>{len(groups[letter])}</small></a></li>"
+        for letter in letters
+    )
+    (output / "words.html").write_text(
+        document("Words", intro + f'<ul class="letter-directory">{links}</ul>'),
+        encoding="utf-8",
+    )
     for letter, words in groups.items():
         title = f"Words — {letter.upper()}"
-        nav = '<nav class="letter-nav" aria-label="Word index letters">' + " ".join(
-            f'<a href="{initial}.html"' + (' aria-current="page"' if initial == letter else '')
-            + f'>{initial.upper()}</a>' for initial in letters) + '</nav>'
-        body = f'<h1>{title}</h1>{nav}'
-        body += index_items(words, by_page, "../", words=True) if words else '<p>No indexed words for this letter.</p>'
-        (output / "words" / f"{letter}.html").write_text(document(title, body, "../"), encoding="utf-8")
+        nav = (
+            '<nav class="letter-nav" aria-label="Word index letters">'
+            + " ".join(
+                f'<a href="{initial}.html"'
+                + (' aria-current="page"' if initial == letter else "")
+                + f">{initial.upper()}</a>"
+                for initial in letters
+            )
+            + "</nav>"
+        )
+        body = f"<h1>{title}</h1>{nav}"
+        body += (
+            index_items(words, by_page, "../", words=True)
+            if words
+            else "<p>No indexed words for this letter.</p>"
+        )
+        (output / "words" / f"{letter}.html").write_text(
+            document(title, body, "../"), encoding="utf-8"
+        )
 
 
 def metadata_value(field: str, value: str, metadata: dict[str, str]) -> str:
@@ -280,12 +333,16 @@ def metadata_value(field: str, value: str, metadata: dict[str, str]) -> str:
     if not keys:
         return escape(value)
     # Longest first avoids matching a short key inside a longer source or range.
-    pattern = "|".join(re.escape(key) for key in sorted(set(keys), key=len, reverse=True))
+    pattern = "|".join(
+        re.escape(key) for key in sorted(set(keys), key=len, reverse=True)
+    )
     pieces = []
     cursor = 0
     for match in re.finditer(pattern, value):
-        pieces.append(escape(value[cursor:match.start()]))
-        label = display_source(match[0]) if kind in ("lyrics", "composers") else match[0]
+        pieces.append(escape(value[cursor : match.start()]))
+        label = (
+            display_source(match[0]) if kind in ("lyrics", "composers") else match[0]
+        )
         pieces.append(index_link(kind, match[0], label))
         cursor = match.end()
     pieces.append(escape(value[cursor:]))
@@ -299,12 +356,22 @@ def song_navigation(songs: list, position: int, *, bottom: bool = False) -> str:
         if 0 <= neighbor < len(songs):
             filename, metadata, _ = songs[neighbor]
             title = f'{metadata["Page"]} {metadata["Title"]}'
-            items.append(f'<a href="{quote(Path(filename).name)}" rel="{rel}">{label}'
-                         f'<small>{escape(title)}</small></a>')
+            items.append(
+                f'<a href="{quote(Path(filename).name)}" rel="{rel}">{label}'
+                f"<small>{escape(title)}</small></a>"
+            )
         else:
-            items.append(f'<span class="unavailable" aria-disabled="true">{label}</span>')
-    css_class = "song-pagination song-pagination-bottom" if bottom else "song-pagination"
-    return f'<nav class="{css_class}" aria-label="Previous and next songs">' + "".join(items) + '</nav>'
+            items.append(
+                f'<span class="unavailable" aria-disabled="true">{label}</span>'
+            )
+    css_class = (
+        "song-pagination song-pagination-bottom" if bottom else "song-pagination"
+    )
+    return (
+        f'<nav class="{css_class}" aria-label="Previous and next songs">'
+        + "".join(items)
+        + "</nav>"
+    )
 
 
 def build_site(lyrics_dir: Path, output: Path) -> int:
@@ -341,50 +408,69 @@ def build_site(lyrics_dir: Path, output: Path) -> int:
         "composition_dates": "Browse composition and arrangement dates.",
         "meters": "Find songs with the same poetic meter.",
     }
-    counts = {"songs": len(songs), **{kind: len(index) for kind, index in indexes.items()}}
+    counts = {
+        "songs": len(songs),
+        **{kind: len(index) for kind, index in indexes.items()},
+    }
     intro_links = "\n".join(
         f'<li><a href="{kind}.html"><span class="name">{escape(LABELS[kind])}</span>'
         f'<span class="count">{counts[kind]:,}</span>'
-        f'<span class="description">{descriptions[kind]}</span></a></li>' for kind in LABELS)
-    intro = f'''<p class="eyebrow">The Sacred Harp · 2012 Cooper edition</p>
+        f'<span class="description">{descriptions[kind]}</span></a></li>'
+        for kind in LABELS
+    )
+    intro = f"""<p class="eyebrow">The Sacred Harp · 2012 Cooper Book Edition</p>
 <h1>A companion to the songs.</h1>
 <p class="lead">Lyrics and source information for {len(songs)} songs.
 Find a familiar tune, follow a poet, or explore the words.</p>
 <ul class="directory">{intro_links}</ul>
 <p class="index-note">Follow a page number in any index to read a song.
 Page suffixes <strong>t</strong> and <strong>b</strong> indicate top and bottom;
-top entries appear before bottom entries.</p>'''
+top entries appear before bottom entries.</p>"""
     (output / "index.html").write_text(document("Home", intro), encoding="utf-8")
     song_entries = []
     for page in sorted(by_page, key=page_sort_key):
         filename, title = by_page[page]
-        song_entries.append(f'<li id="{entry_id(page)}"><a href="{quote(filename)}">'
-                            f'<span class="song-page">{escape(page)}</span> '
-                            f'<span>{escape(title)}</span></a></li>')
-    song_body = (f'<p class="eyebrow">Browse the collection</p><h1>Songs</h1>'
-                 f'<p class="index-note">{len(songs):,} songs in page order · Select a song to read its lyrics.</p>'
-                 '<ul class="index-list song-list">' + "\n".join(song_entries) + '</ul>')
+        song_entries.append(
+            f'<li id="{entry_id(page)}"><a href="{quote(filename)}">'
+            f'<span class="song-page">{escape(page)}</span> '
+            f"<span>{escape(title)}</span></a></li>"
+        )
+    song_body = (
+        f'<p class="eyebrow">Browse the collection</p><h1>Songs</h1>'
+        f'<p class="index-note">{len(songs):,} songs in page order · Select a song to read its lyrics.</p>'
+        '<ul class="index-list song-list">' + "\n".join(song_entries) + "</ul>"
+    )
     (output / "songs.html").write_text(document("Songs", song_body), encoding="utf-8")
     for kind, index in indexes.items():
         if kind == "words":
             build_word_pages(output, index, by_page)
             continue
-        body = (f'<p class="eyebrow">Browse the collection</p><h1>{escape(LABELS[kind])}</h1>'
-                f'<p class="index-note">{len(index):,} entries · Select a page number to read a song.</p>') + index_items(index, by_page)
-        (output / f"{kind}.html").write_text(document(LABELS[kind], body), encoding="utf-8")
+        body = (
+            f'<p class="eyebrow">Browse the collection</p><h1>{escape(LABELS[kind])}</h1>'
+            f'<p class="index-note">{len(index):,} entries · Select a page number to read a song.</p>'
+        ) + index_items(index, by_page)
+        (output / f"{kind}.html").write_text(
+            document(LABELS[kind], body), encoding="utf-8"
+        )
     for position, (filename, metadata, lyrics) in enumerate(songs):
         fields = "\n".join(
             f"<dt>{escape(key)}</dt><dd>{metadata_value(key, value, metadata)}</dd>"
-            for key, value in metadata.items() if key != "Collation"
+            for key, value in metadata.items()
+            if key != "Collation"
         )
-        body = (song_navigation(songs, position) + f'<p class="eyebrow">Song · Page {escape(metadata["Page"])}</p>'
-                f'<h1>{escape(metadata["Title"])}</h1>\n'
-                '<nav class="song-jumps" aria-label="Song sections"><a href="#lyrics">Lyrics</a>'
-                '<a href="#details">Song details</a></nav><div class="song-layout">'
-                f'<section id="lyrics" aria-label="Song lyrics"><h2>Lyrics</h2><pre class="lyrics">{word_links(lyrics, indexes["words"])}</pre></section>'
-                f'<aside id="details" class="metadata" aria-label="Song metadata"><h2>Song details</h2><dl>{fields}</dl></aside></div>'
-                + song_navigation(songs, position, bottom=True))
-        (output / filename).write_text(document(metadata["Title"], body, "../"), encoding="utf-8")
+        body = (
+            song_navigation(songs, position)
+            + f'<p class="eyebrow">Song · Page {escape(metadata["Page"])}</p>'
+            f'<h1>{escape(metadata["Title"])}</h1>\n'
+            '<nav class="song-jumps" aria-label="Song sections"><a href="#lyrics">Lyrics</a>'
+            '<a href="#details">Song details</a></nav><div class="song-layout">'
+            f'<section id="lyrics" aria-label="Song lyrics"><h2>Lyrics</h2><pre class="lyrics">{word_links(lyrics, indexes["words"])}</pre></section>'
+            f'<aside id="details" class="metadata" aria-label="Song metadata"><h2>Song details</h2><dl>{fields}</dl></aside></div>'
+            + song_navigation(songs, position, bottom=True)
+        )
+        (output / filename).write_text(
+            document(metadata["Title"], body, "../"), encoding="utf-8"
+        )
     return len(songs)
 
 
@@ -394,7 +480,9 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=ROOT / "docs")
     args = parser.parse_args()
     count = build_site(args.lyrics_dir, args.output)
-    print(f"Built {args.output}: {count} song pages, {len(LABELS)} indexes, and an intro page")
+    print(
+        f"Built {args.output}: {count} song pages, {len(LABELS)} indexes, and an intro page"
+    )
 
 
 if __name__ == "__main__":
