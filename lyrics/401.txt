@@ -1,4 +1,5 @@
 Title: Cuba
+Collation: Cuba
 Page: 401
 Tune Composer: Bolen, J. H.; Rees, Henry Smith (Rev.)
 Alto Composer: Blackshear, Anna L. (Cooper) (Mrs.)

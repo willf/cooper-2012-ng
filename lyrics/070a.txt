@@ -1,4 +1,5 @@
 Title: Gainsville
+Collation: Gainsville
 Page: 70t
 Tune Composer: Jones, W. D.
 Tune Composition Date: 1869

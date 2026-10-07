@@ -1,4 +1,5 @@
 Title: Salem
+Collation: Salem
 Page: 56
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835

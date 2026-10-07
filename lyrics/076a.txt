@@ -1,4 +1,5 @@
 Title: Holiness
+Collation: Holiness
 Page: 76t
 Tune Composer: King, Elisha J.
 Tune Composition Date: 1844

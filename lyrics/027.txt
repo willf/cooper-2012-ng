@@ -1,4 +1,5 @@
 Title: Bethel
+Collation: Bethel
 Page: 27
 Lyrics: Cowper, William
 Lyrics Date: 1772

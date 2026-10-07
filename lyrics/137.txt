@@ -1,4 +1,5 @@
 Title: Liberty
+Collation: Liberty
 Page: 137
 Tune Composer: Jenks, Stephen
 Tune Composition Date: 1800

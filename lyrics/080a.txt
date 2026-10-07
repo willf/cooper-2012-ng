@@ -1,4 +1,5 @@
 Title: Shouting Song
+Collation: Shouting Song
 Page: 80t
 Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1844

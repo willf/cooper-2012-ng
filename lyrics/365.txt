@@ -1,4 +1,5 @@
 Title: Southwell
+Collation: Southwell
 Page: 365
 Tune Composer: Carpenter, Elihu
 Tune Composition Date: 1786-87

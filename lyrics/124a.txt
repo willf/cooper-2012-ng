@@ -1,4 +1,5 @@
 Title: Heavenly Land
+Collation: Heavenly Land
 Page: 124t
 Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1857

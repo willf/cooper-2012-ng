@@ -1,4 +1,5 @@
 Title: Messiah
+Collation: Messiah
 Page: 131t
 Tune Composer: Carrell, James P. (Rev.)
 Tune Composition Date: 1821

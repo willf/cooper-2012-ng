@@ -1,4 +1,5 @@
 Title: Exhilaration
+Collation: Exhilaration
 Page: 170
 Tune Composer: Carter, Thomas W. (Dr.)
 Tune Composition Date: 1844

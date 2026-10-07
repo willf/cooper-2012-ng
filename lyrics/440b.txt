@@ -1,4 +1,5 @@
 Title: Sharpsburg
+Collation: Sharpsburg
 Page: 440b
 Tune Composer: Rees, John Palmer; Shell, J. A. Z.
 Tune Composition Date: 1869

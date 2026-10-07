@@ -1,4 +1,5 @@
 Title: Cambridge
+Collation: Cambridge
 Page: 287
 Tune Composer: Randall, John; Atkinson, Clara (Mrs.) (arranger)
 Tune Composition Date: 1786; 1902 (arrangement)

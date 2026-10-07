@@ -1,4 +1,5 @@
 Title: Family Circle
+Collation: Family Circle
 Page: 333
 Tune Composer: Brown, R. E. (Rev.); White, Benjamin Franklin
 Tune Composition Date: 1850

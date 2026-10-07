@@ -1,4 +1,5 @@
 Title: Green Fields
+Collation: Green Fields
 Page: 127
 Tune Composer: Kentucky Harmonist, The
 Tune Composition Date: 1818

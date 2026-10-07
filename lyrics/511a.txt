@@ -1,4 +1,5 @@
 Title: Brown
+Collation: Brown
 Page: 511t
 Tune Composer: Bradbury, William Batchelder
 Lyrics: Brown, Phoebe (Hinsdale) (Mrs.)

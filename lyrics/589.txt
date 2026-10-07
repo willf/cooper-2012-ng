@@ -1,4 +1,5 @@
 Title: Gosia
+Collation: Gosia
 Page: 589
 Tune Composer: Helwig, Steve
 Tune Composition Date: 2011

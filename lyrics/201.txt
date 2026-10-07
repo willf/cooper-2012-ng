@@ -1,4 +1,5 @@
 Title: Pilgrim
+Collation: Pilgrim
 Page: 201
 Tune Composer: Carden, Allen D. (arranger)
 Tune Composition Date: 1820

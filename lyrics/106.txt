@@ -1,4 +1,5 @@
 Title: Ecstacy
+Collation: Ecstacy
 Page: 106
 Tune Composer: Carter, Thomas W. (Dr.)
 Tune Composition Date: 1844

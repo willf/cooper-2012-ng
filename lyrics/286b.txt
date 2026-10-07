@@ -1,4 +1,5 @@
 Title: Melody
+Collation: Melody
 Page: 286b
 Tune Composer: Wyeth’s Repository of Sacred Music, Part Second; White, Benjamin Franklin (arranger)
 Tune Composition Date: 1813; 1850 (arrangement)

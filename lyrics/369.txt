@@ -1,4 +1,5 @@
 Title: Send a Blessing
+Collation: Send a Blessing
 Page: 369
 Tune Composer: White, Benjamin Franklin; Ledbetter, Lewis L. (Dr.)
 Tune Composition Date: 1859

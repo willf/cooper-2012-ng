@@ -1,4 +1,5 @@
 Title: Worchester
+Collation: Worchester
 Page: 588
 Tune Composer: Wood, Abraham
 Tune Composition Date: 1778

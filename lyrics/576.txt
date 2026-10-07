@@ -1,4 +1,5 @@
 Title: Allen
+Collation: Allen
 Page: 576
 Tune Composer: Cooper, Wilson Marion
 Tune Composition Date: 1910

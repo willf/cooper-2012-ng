@@ -1,4 +1,5 @@
 Title: Columbus
+Collation: Columbus
 Page: 67
 Tune Composer: Columbian Harmony
 Tune Composition Date: 1829

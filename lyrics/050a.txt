@@ -1,4 +1,5 @@
 Title: Consolation
+Collation: Consolation
 Page: 50t
 Tune Composer: Chapin, Lucius (arranger)
 Tune Composition Date: 1812

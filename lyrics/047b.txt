@@ -1,4 +1,5 @@
 Title: Idumea
+Collation: Idumea
 Page: 47b
 Tune Composer: Davisson, Ananias
 Tune Composition Date: 1816

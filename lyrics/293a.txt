@@ -1,4 +1,5 @@
 Title: Ballerma
+Collation: Ballerma
 Page: 293t
 Tune Composer: Barth’l’mon, Fran’ois Hippolyte; White, Benjamin Franklin (arranger)
 Tune Composition Date: 1850

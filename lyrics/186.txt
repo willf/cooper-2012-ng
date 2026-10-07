@@ -1,4 +1,5 @@
 Title: Sherburne
+Collation: Sherburne
 Page: 186
 Tune Composer: Read, Daniel
 Tune Composition Date: 1785

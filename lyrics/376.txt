@@ -1,4 +1,5 @@
 Title: Help Me to Sing
+Collation: Help Me to Sing
 Page: 376
 Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1859

@@ -1,4 +1,5 @@
 Title: Journey Home
+Collation: Journey Home
 Page: 111t
 Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1868

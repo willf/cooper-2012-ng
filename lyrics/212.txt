@@ -1,4 +1,5 @@
 Title: Sharon
+Collation: Sharon
 Page: 212
 Tune Composer: West, Elisha
 Tune Composition Date: 1793

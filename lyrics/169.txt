@@ -1,4 +1,5 @@
 Title: Dartmouth
+Collation: Dartmouth
 Page: 169
 Tune Composer: Jenks, Stephen
 Tune Composition Date: 1803

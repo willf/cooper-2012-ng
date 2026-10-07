@@ -1,4 +1,5 @@
 Title: Palmetto
+Collation: Palmetto
 Page: 54t
 Tune Composer: Hauser, William (Dr.)
 Tune Composition Date: 1859

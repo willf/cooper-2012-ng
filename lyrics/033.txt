@@ -1,4 +1,5 @@
 Title: Gathering Home
+Collation: Gathering Home
 Page: 33
 Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1902

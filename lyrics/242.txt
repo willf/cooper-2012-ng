@@ -1,4 +1,5 @@
 Title: Newton
+Collation: Newton
 Page: 242
 Tune Composer: Poyner, B. P.
 Tune Composition Date: 1902

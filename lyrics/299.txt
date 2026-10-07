@@ -1,4 +1,5 @@
 Title: New Jerusalem
+Collation: New Jerusalem
 Page: 299
 Tune Composer: Ingalls, Jeramiah
 Tune Composition Date: 1796

@@ -1,4 +1,5 @@
 Title: Mount Pleasant
+Collation: Mount Pleasant
 Alternative Title: Long Version
 Page: 218
 Tune Composer: Deolph

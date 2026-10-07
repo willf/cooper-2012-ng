@@ -1,4 +1,5 @@
 Title: Saint Peters
+Collation: Saint Peters
 Page: 389t
 Tune Composer: Sacred Harp, The
 Tune Composition Date: 1869

@@ -1,4 +1,5 @@
 Title: Mount Zion
+Collation: Mount Zion
 Page: 220
 Tune Composer: Brown, Bartholomew
 Tune Composition Date: 1792

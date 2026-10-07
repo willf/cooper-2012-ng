@@ -1,4 +1,5 @@
 Title: Stratfield
+Collation: Stratfield
 Page: 142
 Tune Composer: Goff, Ezra
 Tune Composition Date: 1786

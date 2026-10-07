@@ -1,4 +1,5 @@
 Title: Huntington
+Collation: Huntington
 Page: 193
 Tune Composer: Morgan, Justin
 Tune Composition Date: 1790

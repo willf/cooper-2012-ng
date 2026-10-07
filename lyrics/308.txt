@@ -1,4 +1,5 @@
 Title: Parting Friends
+Collation: Parting Friends
 Page: 308
 Tune Composer: King, Elias Lafayette
 Tune Composition Date: 1850

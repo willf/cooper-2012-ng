@@ -1,4 +1,5 @@
 Title: Hallelujah
+Collation: Hallelujah
 Page: 146
 Tune Composer: Walker, William
 Tune Composition Date: 1835

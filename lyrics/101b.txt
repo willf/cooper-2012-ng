@@ -1,4 +1,5 @@
 Title: Holy City
+Collation: Holy City
 Page: 101b
 Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1844

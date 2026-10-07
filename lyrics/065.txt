@@ -1,4 +1,5 @@
 Title: Sweet Prospect
+Collation: Sweet Prospect
 Page: 65
 Tune Composer: Walker, William (arranger)
 Tune Composition Date: 1835

@@ -1,4 +1,5 @@
 Title: Yarbrough
+Collation: Yarbrough
 Page: 243t
 Alto Composer: Mullins, Belle (Miss)
 Alto Composition Date: 1902

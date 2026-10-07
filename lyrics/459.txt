@@ -1,4 +1,5 @@
 Title: Tolling Bell
+Collation: Tolling Bell
 Page: 459
 Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1868

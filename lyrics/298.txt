@@ -1,4 +1,5 @@
 Title: Providence
+Collation: Providence
 Page: 298
 Tune Composer: Curtis, C.
 Tune Composition Date: 1820

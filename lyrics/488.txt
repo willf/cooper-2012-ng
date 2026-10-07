@@ -1,4 +1,5 @@
 Title: Unity
+Collation: Unity
 Page: 488
 Tune Composer: Street, Maggie (Miss)
 Tune Composition Date: 1877

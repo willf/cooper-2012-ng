@@ -1,4 +1,5 @@
 Title: Minnesota
+Collation: Minnesota
 Page: 210
 Tune Composer: Smith, Stanley
 Tune Composition Date: 2004

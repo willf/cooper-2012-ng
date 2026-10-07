@@ -1,4 +1,5 @@
 Title: Old Hundred
+Collation: Old Hundred
 Page: 49t
 Tune Composer: Psaumes de David
 Tune Composition Date: 1551

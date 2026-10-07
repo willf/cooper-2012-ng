@@ -1,4 +1,5 @@
 Title: Jackson
+Collation: Jackson
 Page: 507t
 Tune Composer: McWhorter, M. F.
 Tune Composition Date: 1908

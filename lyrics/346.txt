@@ -1,4 +1,5 @@
 Title: My Happy Home
+Collation: My Happy Home
 Page: 346
 Tune Composer: Kieffer, Aldine Silliman
 Tune Composition Date: 1880

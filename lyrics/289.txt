@@ -1,4 +1,5 @@
 Title: Greensborough
+Collation: Greensborough
 Page: 289
 Tune Composer: Mercer, John
 Tune Composition Date: 1850

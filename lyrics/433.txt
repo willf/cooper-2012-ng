@@ -1,4 +1,5 @@
 Title: Rejoice
+Collation: Rejoice
 Page: 433
 Tune Composer: Stevens, D. F.
 Tune Composition Date: 1902

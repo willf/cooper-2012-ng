@@ -1,4 +1,5 @@
 Title: Florida
+Collation: Florida
 Page: 203
 Tune Composer: Wetmore, Truman S.
 Tune Composition Date: 1803

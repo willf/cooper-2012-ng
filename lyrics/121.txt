@@ -1,4 +1,5 @@
 Title: Florence
+Collation: Florence
 Page: 121
 Tune Composer: Carter, Thomas W. (Dr.) (arranger)
 Tune Composition Date: 1844

@@ -1,4 +1,5 @@
 Title: Amazing Grace
+Collation: Amazing Grace
 Alternative Title: New Britain
 Page: 45t
 Tune Composer: Columbian Harmony

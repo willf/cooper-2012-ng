@@ -1,4 +1,5 @@
 Title: Arnold
+Collation: Arnold
 Page: 285t
 Tune Composer: Breedlove, Leonard P.
 Tune Composition Date: 1850

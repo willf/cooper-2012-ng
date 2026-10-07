@@ -1,4 +1,5 @@
 Title: Sweet Rivers
+Collation: Sweet Rivers
 Page: 61
 Tune Composer: Moore, William
 Tune Composition Date: 1825

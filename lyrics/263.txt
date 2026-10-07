@@ -1,4 +1,5 @@
 Title: Beautiful Home
+Collation: Beautiful Home
 Page: 263
 Tune Composer: Culbreth, J. A.
 Tune Composition Date: 1902

@@ -1,4 +1,5 @@
 Title: Rock of Ages
+Collation: Rock of Ages
 Alternative Title: Toplady
 Page: 451
 Tune Composer: Hastings, Thomas

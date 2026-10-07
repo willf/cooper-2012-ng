@@ -1,4 +1,5 @@
 Title: Hebron
+Collation: Hebron
 Page: 264b
 Tune Composer: Mason, Lowell
 Tune Composition Date: 1823

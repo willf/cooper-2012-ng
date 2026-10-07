@@ -1,4 +1,5 @@
 Title: Saint Thomas
+Collation: Saint Thomas
 Page: 293b
 Tune Composer: Williams, Aaron
 Tune Composition Date: 1770

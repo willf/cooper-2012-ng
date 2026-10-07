@@ -1,4 +1,5 @@
 Title: Eternal Day
+Collation: Eternal Day
 Page: 383
 Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859

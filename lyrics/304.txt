@@ -1,4 +1,5 @@
 Title: Morgan
+Collation: Morgan
 Page: 304
 Tune Composer: Easy Instructor, Part II, The
 Tune Composition Date: 1803

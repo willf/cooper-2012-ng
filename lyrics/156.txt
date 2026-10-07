@@ -1,4 +1,5 @@
 Title: San Diego
+Collation: San Diego
 Page: 156
 Tune Composer: Smith, Stanley
 Tune Composition Date: 1997

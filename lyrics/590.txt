@@ -1,4 +1,5 @@
 Title: Every Grace
+Collation: Every Grace
 Page: 590
 Tune Composer: Wright, David
 Tune Composition Date: 1999

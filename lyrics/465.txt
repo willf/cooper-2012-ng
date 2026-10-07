@@ -1,4 +1,5 @@
 Title: Trusting
+Collation: Trusting
 Page: 465
 Tune Composer: Davis, Mary E.
 Lyrics: Davis, Mary E.

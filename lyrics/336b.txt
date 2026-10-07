@@ -1,4 +1,5 @@
 Title: Haw Ridge
+Collation: Haw Ridge
 Page: 336b
 Tune Composer: Smith, Stanley
 Tune Composition Date: 1982

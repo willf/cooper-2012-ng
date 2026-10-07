@@ -1,4 +1,5 @@
 Title: Schenectady
+Collation: Schenectady
 Page: 192
 Tune Composer: Shumway, Nehemiah
 Tune Composition Date: 1805

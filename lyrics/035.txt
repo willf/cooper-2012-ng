@@ -1,4 +1,5 @@
 Title: Augusta
+Collation: Augusta
 Page: 35
 Tune Composer: Carter, Thomas W. (Dr.)
 Tune Composition Date: 1844

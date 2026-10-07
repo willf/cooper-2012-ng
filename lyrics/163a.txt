@@ -1,4 +1,5 @@
 Title: Morning
+Collation: Morning
 Page: 163t
 Tune Composer: Pilsbury, Amos
 Tune Composition Date: 1799

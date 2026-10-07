@@ -1,4 +1,5 @@
 Title: Newry
+Collation: Newry
 Page: 225t
 Tune Composer: Davis, M. C. H.
 Alto Composer: Cooper, Wilson Marion

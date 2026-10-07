@@ -1,4 +1,5 @@
 Title: Albion
+Collation: Albion
 Page: 52t
 Tune Composer: Boyd, Robert
 Tune Composition Date: 1816

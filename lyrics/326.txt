@@ -1,4 +1,5 @@
 Title: Weary Pilgrim
+Collation: Weary Pilgrim
 Page: 326
 Tune Composer: Breedlove, Leonard P.
 Tune Composition Date: 1850

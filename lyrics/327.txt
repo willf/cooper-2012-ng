@@ -1,4 +1,5 @@
 Title: Hatfield
+Collation: Hatfield
 Page: 327
 Tune Composer: Billings, William; White, Benjamin Franklin (arranger)
 Tune Composition Date: 1793; 1850 (arrangement)

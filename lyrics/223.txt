@@ -1,4 +1,5 @@
 Title: Portuguese Hymn
+Collation: Portuguese Hymn
 Page: 223
 Tune Composer: Wade, John Francis
 Tune Composition Date: 1743

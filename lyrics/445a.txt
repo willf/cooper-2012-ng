@@ -1,4 +1,5 @@
 Title: Hill of Zion
+Collation: Hill of Zion
 Page: 445t
 Tune Composer: Mann, B. F. M.
 Tune Composition Date: 1868

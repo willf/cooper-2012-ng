@@ -1,4 +1,5 @@
 Title: Jefferson
+Collation: Jefferson
 Page: 148
 Tune Composer: Tennessee Harmony
 Tune Composition Date: 1818

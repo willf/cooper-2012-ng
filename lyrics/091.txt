@@ -1,4 +1,5 @@
 Title: Assurance
+Collation: Assurance
 Page: 91
 Tune Composer: Billings, William
 Tune Composition Date: 1781

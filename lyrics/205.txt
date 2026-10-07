@@ -1,4 +1,5 @@
 Title: Pleasant Hill
+Collation: Pleasant Hill
 Page: 205
 Tune Composer: Nicholson, William
 Tune Composition Date: 1820

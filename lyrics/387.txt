@@ -1,4 +1,5 @@
 Title: Penick
+Collation: Penick
 Page: 387
 Tune Composer: Sikes, Matthew
 Tune Composition Date: 1859

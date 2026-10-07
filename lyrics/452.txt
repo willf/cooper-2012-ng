@@ -1,4 +1,5 @@
 Title: Elder
+Collation: Elder
 Page: 452
 Tune Composer: Wynne, M. Mark
 Tune Composition Date: 1869

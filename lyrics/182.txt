@@ -1,4 +1,5 @@
 Title: Newburgh
+Collation: Newburgh
 Page: 182
 Tune Composer: Munson, Amos
 Tune Composition Date: 1798

@@ -1,4 +1,5 @@
 Title: Evening Shade
+Collation: Evening Shade
 Page: 132
 Tune Composer: Jenks, Stephen
 Tune Composition Date: 1805

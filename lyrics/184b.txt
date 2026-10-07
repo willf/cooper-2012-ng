@@ -1,4 +1,5 @@
 Title: Tribulation
+Collation: Tribulation
 Page: 184b
 Tune Composer: Patterson’s Church Music
 Tune Composition Date: 1813

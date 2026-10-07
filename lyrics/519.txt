@@ -1,4 +1,5 @@
 Title: My Mother’s Gone
+Collation: My Mother’s Gone
 Page: 519
 Tune Composer: Jackson, Judge
 Tune Composition Date: 1927

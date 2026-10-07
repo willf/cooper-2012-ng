@@ -1,4 +1,5 @@
 Title: Hinder Me Not
+Collation: Hinder Me Not
 Page: 355
 Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1902

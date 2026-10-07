@@ -1,4 +1,5 @@
 Title: Jewett
+Collation: Jewett
 Page: 438b
 Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1869

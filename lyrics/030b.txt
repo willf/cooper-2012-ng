@@ -1,4 +1,5 @@
 Title: Prospect
+Collation: Prospect
 Page: 30b
 Tune Composer: Graham
 Tune Composition Date: 1835

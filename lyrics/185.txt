@@ -1,4 +1,5 @@
 Title: Pilgrim’s Farewell
+Collation: Pilgrim’s Farewell
 Page: 185
 Tune Composer: Harmony of Harmony
 Tune Composition Date: 1802

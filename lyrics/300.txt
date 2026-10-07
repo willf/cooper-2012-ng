@@ -1,4 +1,5 @@
 Title: Calvary
+Collation: Calvary
 Page: 300
 Tune Composer: Read, Daniel
 Tune Composition Date: 1785

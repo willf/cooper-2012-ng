@@ -1,4 +1,5 @@
 Title: Heavenly Armor
+Collation: Heavenly Armor
 Page: 129
 Tune Composer: Walker, William
 Tune Composition Date: 1828

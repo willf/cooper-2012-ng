@@ -1,4 +1,5 @@
 Title: Whitestown
+Collation: Whitestown
 Page: 211
 Tune Composer: Howd
 Tune Composition Date: 1800

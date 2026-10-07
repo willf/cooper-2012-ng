@@ -1,4 +1,5 @@
 Title: Joyful
+Collation: Joyful
 Page: 166
 Tune Composer: White, Benjamin Franklin (arranger)
 Tune Composition Date: 1844

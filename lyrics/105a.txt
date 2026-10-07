@@ -1,4 +1,5 @@
 Title: Saint Paul
+Collation: Saint Paul
 Page: 105t
 Tune Composer: Mann, R. F. M.
 Tune Composition Date: 1868

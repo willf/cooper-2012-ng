@@ -1,4 +1,5 @@
 Title: Sessions
+Collation: Sessions
 Page: 38t
 Tune Composer: Emerson, Luther Orlando
 Tune Composition Date: 1847

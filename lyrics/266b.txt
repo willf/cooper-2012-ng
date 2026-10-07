@@ -1,4 +1,5 @@
 Title: Lebanon New
+Collation: Lebanon New
 Page: 266b
 Tune Composer: Carrell, James P. (Rev.)
 Tune Composition Date: 1850

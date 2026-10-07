@@ -1,4 +1,5 @@
 Title: Mount Zion
+Collation: Mount Zion
 Page: 88b
 Tune Composer: Massengale, John
 Tune Composition Date: 1844

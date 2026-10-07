@@ -1,4 +1,5 @@
 Title: Confidence
+Collation: Confidence
 Page: 270
 Tune Composer: Turner, J. R.
 Tune Composition Date: 1850

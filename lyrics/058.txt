@@ -1,4 +1,5 @@
 Title: Pisgah
+Collation: Pisgah
 Page: 58
 Tune Composer: Lowry, J. C.
 Tune Composition Date: 1817

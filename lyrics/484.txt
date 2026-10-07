@@ -1,4 +1,5 @@
 Title: My Country ’Tis of Thee
+Collation: My Country ’Tis of Thee
 Alternative Title: America
 Page: 484
 Lyrics: Smith, Samuel Francis (D. D.)

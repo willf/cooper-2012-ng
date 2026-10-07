@@ -1,4 +1,5 @@
 Title: Baldwin
+Collation: Baldwin
 Page: 274b
 Tune Composer: Arnold, J. D.
 Tune Composition Date: 1869

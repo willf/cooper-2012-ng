@@ -1,4 +1,5 @@
 Title: Rose of Sharon
+Collation: Rose of Sharon
 Page: 254
 Tune Composer: Billings, William
 Tune Composition Date: 1778

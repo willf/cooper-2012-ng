@@ -1,4 +1,5 @@
 Title: Peterborough
+Collation: Peterborough
 Page: 504t
 Tune Composer: Harrison, Ralph
 Tune Composition Date: 1786

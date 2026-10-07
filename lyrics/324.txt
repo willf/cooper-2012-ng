@@ -1,4 +1,5 @@
 Title: Northport
+Collation: Northport
 Page: 324
 Tune Composer: Osborne, R. R. (Dr.)
 Tune Composition Date: 1850

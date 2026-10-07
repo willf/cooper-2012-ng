@@ -1,4 +1,5 @@
 Title: New Lebanon
+Collation: New Lebanon
 Page: 202
 Tune Composer: Sherman, P.
 Tune Composition Date: 1808

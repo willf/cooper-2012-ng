@@ -1,4 +1,5 @@
 Title: Traveling Pilgrim
+Collation: Traveling Pilgrim
 Page: 278b
 Tune Composer: Rees, Henry Smith (Rev.)
 Tune Composition Date: 1850

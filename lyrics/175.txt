@@ -1,4 +1,5 @@
 Title: Star in the East
+Collation: Star in the East
 Page: 175
 Tune Composer: Herron, R.
 Tune Composition Date: 1825

@@ -1,4 +1,5 @@
 Title: Child of Thine
+Collation: Child of Thine
 Page: 567
 Tune Composer: Faust, Bascom Franklin (arranger)
 Tune Composition Date: 1927

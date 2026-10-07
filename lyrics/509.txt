@@ -1,4 +1,5 @@
 Title: We Are Going Home
+Collation: We Are Going Home
 Page: 509
 Tune Composer: Allen, Thomas Jefferson
 Tune Composition Date: 1907

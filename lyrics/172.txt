@@ -1,4 +1,5 @@
 Title: Harmony
+Collation: Harmony
 Page: 172
 Tune Composer: Ellis, Abner
 Tune Composition Date: 1805

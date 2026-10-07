@@ -1,4 +1,5 @@
 Title: Farewell to All
+Collation: Farewell to All
 Page: 398t
 Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859

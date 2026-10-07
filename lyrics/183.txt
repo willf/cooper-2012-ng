@@ -1,4 +1,5 @@
 Title: Arbacoochee
+Collation: Arbacoochee
 Page: 183
 Tune Composer: Denson, Seaborn McDaniel
 Tune Composition Date: 1908

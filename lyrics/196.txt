@@ -1,4 +1,5 @@
 Title: Alabama
+Collation: Alabama
 Page: 196
 Tune Composer: Tennessee Harmony; Southern Harmony (arranger)
 Tune Composition Date: 1818; 1835 (arrangement)

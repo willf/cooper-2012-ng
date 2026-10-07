@@ -1,4 +1,5 @@
 Title: Nettie
+Collation: Nettie
 Page: 380t
 Tune Composer: Green, William L.
 Tune Composition Date: 2001

@@ -1,4 +1,5 @@
 Title: Family Bible
+Collation: Family Bible
 Page: 165
 Tune Composer: Caldwell, William
 Tune Composition Date: 1837

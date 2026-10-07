@@ -1,4 +1,5 @@
 Title: New Prospect
+Collation: New Prospect
 Page: 390
 Tune Composer: Turner, William S. (arranger)
 Tune Composition Date: 1866

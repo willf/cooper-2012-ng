@@ -1,4 +1,5 @@
 Title: Restoration New
+Collation: Restoration New
 Page: 265t
 Tune Composer: White, David Patillo
 Tune Composition Date: 1850

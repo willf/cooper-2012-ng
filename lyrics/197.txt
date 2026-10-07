@@ -1,4 +1,5 @@
 Title: Edwards
+Collation: Edwards
 Page: 197
 Tune Composer: Woodward, H. S. (arranger)
 Tune Composition Date: 1902

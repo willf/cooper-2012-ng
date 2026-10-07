@@ -1,4 +1,5 @@
 Title: Gospel Message
+Collation: Gospel Message
 Page: 174
 Tune Composer: Lincoln, Horace Neely
 Tune Composition Date: 1895

@@ -1,4 +1,5 @@
 Title: Delight
+Collation: Delight
 Page: 216
 Tune Composer: Coan, Simeon
 Tune Composition Date: 1798

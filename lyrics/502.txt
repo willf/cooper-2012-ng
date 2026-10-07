@@ -1,4 +1,5 @@
 Title: Wilson
+Collation: Wilson
 Page: 502
 Tune Composer: Wilson, Vera (Miss)
 Tune Composition Date: 1909

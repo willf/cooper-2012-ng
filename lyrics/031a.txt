@@ -1,4 +1,5 @@
 Title: Ninety-Third Psalm
+Collation: Ninety-Third Psalm
 Page: 31t
 Tune Composer: Chapin, Lucius
 Tune Composition Date: 1812

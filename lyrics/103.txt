@@ -1,4 +1,5 @@
 Title: Animation
+Collation: Animation
 Page: 103
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835

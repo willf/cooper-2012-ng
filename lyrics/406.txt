@@ -1,4 +1,5 @@
 Title: New Harmony
+Collation: New Harmony
 Page: 406
 Tune Composer: Lancaster, Maria Lucinda Anna (Miss)
 Tune Composition Date: 1859

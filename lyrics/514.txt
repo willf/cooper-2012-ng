@@ -1,4 +1,5 @@
 Title: Wiley
+Collation: Wiley
 Page: 514
 Tune Composer: Vaughn, Robert Lee (Eld.)
 Tune Composition Date: 2011

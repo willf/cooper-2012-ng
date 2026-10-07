@@ -1,4 +1,5 @@
 Title: My Home Above
+Collation: My Home Above
 Page: 524
 Tune Composer: Miller, John Wesley
 Tune Composition Date: ca. 1913

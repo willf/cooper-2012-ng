@@ -1,4 +1,5 @@
 Title: Amherst
+Collation: Amherst
 Page: 314
 Tune Composer: Billings, William
 Tune Composition Date: 1770

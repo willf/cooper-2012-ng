@@ -1,4 +1,5 @@
 Title: Sacred Stream
+Collation: Sacred Stream
 Page: 267t
 Tune Composer: Mann, Henry Goodwin
 Tune Composition Date: 1869

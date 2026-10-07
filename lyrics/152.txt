@@ -1,4 +1,5 @@
 Title: Bruce’s Address
+Collation: Bruce’s Address
 Page: 152
 Tune Composer: Christian Lyre
 Tune Composition Date: 1831

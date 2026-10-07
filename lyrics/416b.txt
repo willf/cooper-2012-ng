@@ -1,4 +1,5 @@
 Title: Vernon
+Collation: Vernon
 Page: 416b
 Tune Composer: Chapin, Amzi (arranger)
 Tune Composition Date: 1813

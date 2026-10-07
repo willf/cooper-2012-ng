@@ -1,4 +1,5 @@
 Title: Duane Street
+Collation: Duane Street
 Page: 164
 Tune Composer: Coles, George
 Tune Composition Date: 1835

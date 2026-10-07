@@ -1,4 +1,5 @@
 Title: Golden Streets
+Collation: Golden Streets
 Page: 425
 Tune Composer: Pickard, J. L.
 Tune Composition Date: 1859

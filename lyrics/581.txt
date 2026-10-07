@@ -1,4 +1,5 @@
 Title: Wells Second
+Collation: Wells Second
 Page: 581
 Tune Composer: Wright, David
 Tune Composition Date: 2001

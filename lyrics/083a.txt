@@ -1,4 +1,5 @@
 Title: Vale of Sorrow
+Collation: Vale of Sorrow
 Page: 83t
 Tune Composer: White, Benjamin Franklin
 Tune Composition Date: 1844

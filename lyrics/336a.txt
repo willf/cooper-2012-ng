@@ -1,4 +1,5 @@
 Title: Hester
+Collation: Hester
 Page: 336t
 Tune Composer: Everett, L. C.
 Tune Composition Date: 1860

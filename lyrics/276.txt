@@ -1,4 +1,5 @@
 Title: Bridgewater
+Collation: Bridgewater
 Page: 276
 Tune Composer: Edson, Lewis
 Tune Composition Date: 1782

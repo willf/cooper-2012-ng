@@ -1,4 +1,5 @@
 Title: Poyner
+Collation: Poyner
 Page: 41
 Tune Composer: Cooper, Wilson Marion
 Tune Composition Date: 1905

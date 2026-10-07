@@ -1,4 +1,5 @@
 Title: Fight On
+Collation: Fight On
 Page: 385t
 Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859

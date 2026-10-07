@@ -1,4 +1,5 @@
 Title: Fatherland
+Collation: Fatherland
 Page: 462
 Tune Composer: Wakefield, Samuel; Jones (Miss) (arranger)
 Tune Composition Date: 1843; 1869 (arrangement)

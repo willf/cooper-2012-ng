@@ -1,4 +1,5 @@
 Title: Morality
+Collation: Morality
 Page: 136
 Tune Composer: Wyeth’s Repository of Sacred Music, Part Second
 Tune Composition Date: 1813

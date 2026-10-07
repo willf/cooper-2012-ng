@@ -1,4 +1,5 @@
 Title: Distress
+Collation: Distress
 Page: 50b
 Tune Composer: Southern Harmony
 Tune Composition Date: 1835

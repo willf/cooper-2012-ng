@@ -1,4 +1,5 @@
 Title: Weeping Pilgrim
+Collation: Weeping Pilgrim
 Page: 417
 Tune Composer: Rees, John Palmer
 Tune Composition Date: 1859

@@ -1,4 +1,5 @@
 Title: Devotion
+Collation: Devotion
 Page: 48t
 Tune Composer: Johnson, Alexander
 Tune Composition Date: 1818

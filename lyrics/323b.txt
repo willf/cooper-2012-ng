@@ -1,4 +1,5 @@
 Title: Soft Music
+Collation: Soft Music
 Page: 323b
 Tune Composer: White, Benjamin Franklin (arranger)
 Tune Composition Date: 1850

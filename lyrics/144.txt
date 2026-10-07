@@ -1,4 +1,5 @@
 Title: Jubilee
+Collation: Jubilee
 Page: 144
 Tune Composer: Supplement to the Kentucky Harmony
 Tune Composition Date: 1820

@@ -1,4 +1,5 @@
 Title: Little Pilgrim
+Collation: Little Pilgrim
 Page: 392
 Tune Composer: Merritt, John Newton
 Tune Composition Date: 1987

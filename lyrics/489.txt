@@ -1,4 +1,5 @@
 Title: Cooper
+Collation: Cooper
 Alternative Title: Jordan
 Page: 489
 Tune Composer: Billings, William

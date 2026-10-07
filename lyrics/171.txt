@@ -1,4 +1,5 @@
 Title: Exhortation
+Collation: Exhortation
 Page: 171
 Tune Composer: Hibbard
 Tune Composition Date: 1796

@@ -1,4 +1,5 @@
 Title: Hocutt
+Collation: Hocutt
 Page: 464
 Tune Composer: Hocutt, John
 Tune Composition Date: 1997

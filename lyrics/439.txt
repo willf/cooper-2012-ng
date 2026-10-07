@@ -1,4 +1,5 @@
 Title: Adoration
+Collation: Adoration
 Page: 439
 Tune Composer: Parks, W. W.
 Tune Composition Date: 1869

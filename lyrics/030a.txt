@@ -1,4 +1,5 @@
 Title: Rochester
+Collation: Rochester
 Page: 30t
 Tune Composer: Holdroyd, Israel
 Tune Composition Date: 1722

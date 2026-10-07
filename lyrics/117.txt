@@ -1,4 +1,5 @@
 Title: Timmons
+Collation: Timmons
 Page: 117
 Tune Composer: Williams, E. F.
 Tune Composition Date: 1869
