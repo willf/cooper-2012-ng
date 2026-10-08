@@ -5,6 +5,7 @@
 """Build the static lyrics website with uv run scripts/site.py."""
 
 import argparse
+import json
 from hashlib import sha256
 from html import escape
 from pathlib import Path
@@ -347,6 +348,14 @@ def build_site(
     indexes = {kind: build_index(lyrics_dir, kind) for kind in KINDS}
     # Parse and validate all input before writing the generated site.
     output.mkdir(parents=True, exist_ok=True)
+    (output / "songs.json").write_text(
+        json.dumps(
+            {metadata["Page"]: {"metadata": metadata, "lyrics": body}
+             for _, metadata, body in songs},
+            ensure_ascii=False, indent=2,
+        ) + "\n",
+        encoding="utf-8",
+    )
     (output / "songs").mkdir(exist_ok=True)
     (output / "style.css").write_text(
         (templates_dir / "style.css").read_text(encoding="utf-8"), encoding="utf-8"

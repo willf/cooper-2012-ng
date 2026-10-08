@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, lyric_words, meter_sort_key, read_metadata
+from scripts.songs import build_songs
 
 
 class IndexTests(unittest.TestCase):
@@ -65,6 +66,41 @@ Words
         for kind, expected in self.expected.items():
             with self.subTest(kind=kind):
                 self.assertEqual(build_index(self.lyrics, kind), expected)
+
+    def test_songs_export_preserves_headers_lyrics_and_page_order(self):
+        self.write("003.txt", "Page: 10b\nAlternative Title: An alternate\nCustom Field: Unchanged; annotation (verse)\n________________\nLyrics: Excluded\n")
+        songs = build_songs(self.lyrics)
+        self.assertEqual(list(songs), ["2", "10t", "10b"])
+        self.assertEqual(songs["10t"]["metadata"], read_metadata(self.lyrics / "001.txt"))
+        self.assertEqual(songs["10t"]["lyrics"], "Lyrics: This is a lyric, not metadata\nPage: 999")
+        self.assertEqual(songs["10b"]["metadata"], {
+            "Page": "10b", "Alternative Title": "An alternate",
+            "Custom Field": "Unchanged; annotation (verse)",
+        })
+        self.assertEqual(songs["10b"]["lyrics"], "Lyrics: Excluded")
+        self.assertNotIn("999", songs)
+
+    def test_songs_export_preserves_verses_spacing_and_empty_lyrics(self):
+        self.write("003.txt", "Page: 3\n________________\n\n  O, sing!  \nNext line\n\nGod’s love.\n\n")
+        self.write("004.txt", "Page: 4\n________________\n\n")
+        songs = build_songs(self.lyrics)
+        self.assertEqual(songs["3"]["lyrics"], "  O, sing!  \nNext line\n\nGod’s love.")
+        self.assertEqual(songs["4"]["lyrics"], "")
+
+    def test_songs_export_rejects_duplicate_pages(self):
+        self.write("003.txt", "Page: 2\nTitle: Different song\n________________\n")
+        with self.assertRaisesRegex(ValueError, "003.txt: duplicate Page '2'.*002.txt"):
+            build_songs(self.lyrics)
+
+    def test_songs_command_and_checked_in_export(self):
+        output = self.root / "out" / "songs.json"
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "songs.py"),
+                        "--lyrics-dir", str(self.lyrics), "--output", str(output)],
+                       cwd=self.root, check=True, capture_output=True, text=True)
+        self.assertEqual(json.loads(output.read_text(encoding="utf-8")), build_songs(self.lyrics))
+        self.assertIn("Broaddus’", output.read_text(encoding="utf-8"))
+        self.assertEqual(json.loads((ROOT / "indexes" / "songs.json").read_text(encoding="utf-8")),
+                         build_songs(ROOT / "lyrics"))
 
     def test_each_command_writes_utf8_json_from_any_directory(self):
         for kind in KINDS:

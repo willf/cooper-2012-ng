@@ -1,4 +1,5 @@
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import shutil
 import tempfile
@@ -6,6 +7,7 @@ import unittest
 from urllib.parse import quote, unquote, urlsplit
 
 from scripts.index_common import KINDS, ROOT, alphabetical_text, build_index
+from scripts.songs import build_songs
 from scripts.site import (
     Templates,
     LABELS,
@@ -248,6 +250,13 @@ Another verse & more
             f'../songs.html#{entry_id("27t")}',
             (self.output / "songs/027t.html").read_text(),
         )
+
+    def test_download_contains_current_collection(self):
+        build_site(self.lyrics, self.output)
+        self.assertIn('href="songs.json" download="songs.json"',
+                      (self.output / "index.html").read_text(encoding="utf-8"))
+        self.assertEqual(json.loads((self.output / "songs.json").read_text(encoding="utf-8")),
+                         build_songs(self.lyrics))
 
     def test_display_names_preserve_sources_suffixes_and_uncertainty(self):
         examples = {

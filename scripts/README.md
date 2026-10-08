@@ -20,9 +20,10 @@ The script runs these generators in order:
 6. `lyric_dates.py`
 7. `composition_dates.py`
 8. `meters.py`
-9. `site.py`
+9. `songs.py`
+10. `site.py`
 
-The first eight write JSON files to `indexes/`; the last writes the website to
+The first nine write JSON files to `indexes/`; the last writes the website to
 `docs/`. Existing generated files are overwritten. The source lyrics and
 stopword list are not modified. Each generator reports its output, followed by
 a `Build complete` message when all steps succeed.
@@ -50,6 +51,7 @@ uv run scripts/composers.py
 uv run scripts/lyric_dates.py
 uv run scripts/composition_dates.py
 uv run scripts/meters.py
+uv run scripts/songs.py
 ```
 
 Each writes its corresponding JSON file in `indexes/`. The scripts use only the
@@ -57,7 +59,20 @@ Python standard library. Defaults are relative to the repository, so commands
 also work from another directory when given the script's absolute path.
 Use `--lyrics-dir PATH` and `--output PATH` for custom input and output locations.
 
-Every index is an object mapping a source, title, first line, date, or meter to an array of
+`songs.json` is an object keyed by printed page number, such as `"30t"`.
+Each value has a `metadata` object and a `lyrics` string. The metadata contains
+every header field as a string, preserving original field names, Unicode,
+contributor annotations, dates, and separate voice parts, including `Page` and
+`Collation`. Missing optional fields remain absent. The lyrics preserve line
+breaks, blank lines between verses, punctuation, and spacing; only surrounding
+newlines after the separator and at the end of the file are removed. The
+`metadata.Lyrics` field remains the attribution; `lyrics` holds the song text.
+Songs without lyric text have an empty string. Records are sorted in book page order, with an unsuffixed
+page first, then `t` before `b`. Duplicate page numbers cause an error rather
+than overwriting a song. Rebuild only this export with `uv run scripts/songs.py`;
+it accepts the same `--lyrics-dir` and `--output` options as the other generators.
+
+Every other index is an object mapping a source, title, first line, date, or meter to an array of
 unique page strings, sorted numerically by page, with an unsuffixed page first,
 then `t` before `b`. Page values
 come from `Page` metadata, including suffixes such as `t` and `b`, rather than
@@ -106,6 +121,11 @@ Generate the website (intro, nine indexes, and individual song pages):
 ```sh
 uv run scripts/site.py
 ```
+
+The home page includes a download link to `songs.json`, containing all song
+metadata and lyrics. The website generator writes this file from the current
+source collection, including when using custom `--lyrics-dir` and `--output`
+paths; it does not depend on a previously generated `indexes/songs.json`.
 
 The site is generated in `docs/`. Open `docs/index.html` directly in a browser,
 or serve it locally with `python3 -m http.server 8000 --directory docs`.

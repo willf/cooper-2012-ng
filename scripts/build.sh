@@ -5,7 +5,7 @@ set -euo pipefail
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 cd -- "$script_dir/.."
 
-for generator in titles first_lines words lyrics composers lyric_dates composition_dates meters site; do
+for generator in titles first_lines words lyrics composers lyric_dates composition_dates meters songs site; do
     uv run "scripts/$generator.py"
 done
 

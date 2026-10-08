@@ -16,6 +16,14 @@ song pages, and all index pages. It reads the current lyrics and metadata
 directly, so rebuild after changing a lyrics file. Edit the source files and
 templates rather than the generated HTML, which is overwritten on each build.
 
+The build also exports all songs to [indexes/songs.json](indexes/songs.json),
+keyed by printed page number (for example, `"30t"`). Each record has a `metadata`
+object preserving all source header fields and values, including `Page`,
+`Collation`, and annotations, plus a `lyrics` string preserving lyric line and
+verse breaks. Records follow book page order.
+The website build generates the same export as `docs/songs.json`, linked for
+download beneath the home page's index list.
+
 Open `docs/index.html` in a browser, or start a local preview:
 
 ```sh
