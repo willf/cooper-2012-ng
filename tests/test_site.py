@@ -355,6 +355,13 @@ Another verse & more
     def test_complete_collection_builds_and_links_resolve(self):
         count = build_site(ROOT / "lyrics", self.output)
         self.assertEqual(count, len(list((ROOT / "lyrics").glob("*.txt"))))
+        songs_html = (self.output / "songs.html").read_text()
+        songs_links = Links()
+        songs_links.feed(songs_html)
+        song_ids = [identifier for identifier in songs_links.ids if identifier.startswith("entry-")]
+        jumps = Links()
+        jumps.feed(songs_html.split('class="song-index-jumps"', 1)[1].split('</nav>', 1)[0])
+        self.assertEqual(jumps.targets, [f"#{identifier}" for identifier in song_ids[50::50]])
         extra = int((self.output / "words/other.html").exists())
         self.assertEqual(
             len(list(self.output.rglob("*.html"))), count + len(LABELS) + 1 + 26 + extra

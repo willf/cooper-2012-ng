@@ -54,6 +54,8 @@ LABELS = {
     "meters": "Meters",
 }
 
+SONG_JUMP_INTERVAL = 50
+
 
 class Templates:
     """Render editable templates; only *_html values contain trusted markup."""
@@ -384,7 +386,8 @@ def build_site(
         document("Home", intro, templates=templates), encoding="utf-8"
     )
     song_entries = []
-    for page in sorted(by_page, key=page_sort_key):
+    ordered_pages = sorted(by_page, key=page_sort_key)
+    for page in ordered_pages:
         filename, title = by_page[page]
         song_entries.append(
             templates.render(
@@ -395,8 +398,13 @@ def build_site(
                 title=title,
             )
         )
+    jumps = "".join(
+        templates.render("song-jump.html", id=entry_id(page), page=page)
+        for page in ordered_pages[SONG_JUMP_INTERVAL::SONG_JUMP_INTERVAL]
+    )
     song_body = templates.render(
-        "songs.html", count=f"{len(songs):,}", entries_html="\n".join(song_entries)
+        "songs.html", count=f"{len(songs):,}", entries_html="\n".join(song_entries),
+        jumps_html=templates.render("song-jumps.html", links_html=jumps, interval=SONG_JUMP_INTERVAL),
     )
     (output / "songs.html").write_text(
         document("Songs", song_body, templates=templates), encoding="utf-8"

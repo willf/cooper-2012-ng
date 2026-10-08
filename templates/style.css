@@ -3,7 +3,7 @@
   color-scheme: light dark;
   --paper: #fffdf7; --ink: #241d19; --quiet: #70645b;
   --line: #d8cdc1; --accent: #8b3329; --wash: #f4ece3;
-  --highlight: #e4d9a6;
+  --highlight: #c4ab4930;
   --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --book: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --measure: 64rem; --label-width: 20rem;
@@ -76,6 +76,14 @@ p { max-width: 60ch; text-wrap: pretty; }
   align-items: baseline; min-height: 32px; padding-block: .25rem; text-decoration: none; }
 .song-list a:hover { background: var(--wash); text-decoration: underline; }
 .song-page { color: var(--ink); font: bold 1.05rem/1.5 var(--book); font-variant-numeric: tabular-nums; }
+.song-index-jumps { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem;
+  margin-block: .75rem; font: .85rem/1.3 var(--ui); }
+.jump-caption { color: var(--quiet); }
+.jump-caption small { display: block; font-size: .7rem; }
+.jump-links { display: flex; flex-wrap: wrap; gap: 0 .25rem; }
+.jump-links a { display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; min-height: 44px; font-variant-numeric: tabular-nums; text-decoration: none; }
+.jump-links a:hover { background: var(--wash); text-decoration: underline; }
 .page-links { min-width: 0; text-align: left; font: bold 1.05rem/1.3 var(--book);
   font-variant-numeric: tabular-nums; }
 /* The comma stays inside the unbroken reference, including in Safari. */
@@ -118,7 +126,8 @@ p { max-width: 60ch; text-wrap: pretty; }
 .lyrics a { color: var(--ink); text-decoration: none; }
 .lyrics a:hover, .lyrics a:focus-visible { color: var(--accent); text-decoration: underline; }
 .lyrics a.word-highlight { background: var(--highlight); box-shadow: 0 0 0 .12em var(--highlight);
-  text-decoration: underline; text-decoration-color: var(--accent); }
+  text-decoration: none; }
+.lyrics a.word-highlight:hover { text-decoration: underline; }
 .metadata { border-top: 1px solid var(--line); padding-top: 1rem; }
 dl { font: .9rem/1.65 var(--ui); margin: 0; }
 dt { color: var(--quiet); font-size: .75rem; margin: .75rem 0 .125rem; }
@@ -151,7 +160,7 @@ footer .copyright a { display: inline; min-height: 0; }
 }
 @media (prefers-color-scheme: dark) {
   :root { --paper: #241f1c; --ink: #f5eee4; --quiet: #c1b4a7; --line: #51443b;
-    --accent: #eda696; --wash: #342924; --highlight: #57502d; }
+    --accent: #eda696; --wash: #342924; --highlight: #d6bb4826; }
 }
 @media (any-pointer: coarse) {
   .page-links a, .song-list a { min-height: 44px; padding-block: .5rem; }

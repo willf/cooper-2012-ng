@@ -94,12 +94,15 @@ a build error naming the template.
 | `base.html` | `title`, `prefix`, `nav_html`, `body_html` |
 | `home.html` | `song_count`, `directory_html` |
 | `index.html` | `kind`, `title`, `count`, `letters_html`, `entries_html` |
-| `songs.html` | `count`, `entries_html` |
+| `songs.html` | `count`, `entries_html`, `jumps_html` |
 | `song.html` | `page`, `title`, `navigation_html`, `lyrics_html`, `metadata_html`, `bottom_navigation_html` |
 | `words.html` | `count`, `letters_html` |
 | `word-letter.html` | `title`, `letters_html`, `entries_html` |
 
 Smaller templates show their available placeholders directly in their source.
+The Songs index has jumps every 50 songs, labeled by printed page number.
+Change `SONG_JUMP_INTERVAL` in `scripts/site.py` to adjust the interval.
+`song-jumps.html` controls the jump navigation and `song-jump.html` each link.
 Titles and first lines use `index-alphabet.html`, `index-letter.html`,
 `index-letter-empty.html`, and `index-section.html` for A–Z jumps and letter
 sections. Letters with no entries are shown without links.
