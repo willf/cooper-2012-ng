@@ -90,7 +90,7 @@ def document(
 
 def entry_id(key: str) -> str:
     """An entry keeps its ID when other entries are added or reordered."""
-    return "entry-" + sha256(key.encode("utf-8")).hexdigest()
+    return "entry-" + sha256(key.encode("utf-8")).hexdigest()[:12]
 
 
 def index_link(kind: str, key: str, label: str) -> str:

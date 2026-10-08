@@ -120,7 +120,8 @@ The Songs index lists page numbers and titles in page order, with `t` before `b`
 linking each entry directly to its song page.
 Each song page has Prev and Next navigation at the top and bottom, following
 the same page order. The first and last songs have no link beyond the collection.
-Each index entry has a stable ID. Song metadata links to the matching title,
+Each index entry has a short, stable ID (`entry-` plus 12 hexadecimal characters
+derived from its key). Song metadata links to the matching title,
 contributor, date, and meter entries, preserving the displayed annotations.
 The word index has an overview and separate A–Z pages. Accented initials are grouped
 under their corresponding letter; an additional “Other” page is generated if needed.
