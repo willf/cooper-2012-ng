@@ -18,6 +18,7 @@ if __package__:
         KINDS,
         ROOT,
         WORD_PATTERN,
+        alphabetical_text,
         build_index,
         contributors,
         dates,
@@ -31,6 +32,7 @@ else:
         KINDS,
         ROOT,
         WORD_PATTERN,
+        alphabetical_text,
         build_index,
         contributors,
         dates,
@@ -138,6 +140,7 @@ def index_items(
     prefix: str = "",
     *,
     words: bool = False,
+    linked_labels: bool = False,
     templates: Templates | None = None,
 ) -> str:
     templates = templates or Templates()
@@ -158,6 +161,11 @@ def index_items(
                 )
             )
         label = templates.render("word-label.html", word=key) if words else escape(key)
+        if linked_labels:
+            label = templates.render(
+                "index-label-link.html", label=key,
+                href=prefix + quote(by_page[pages[0]][0]),
+            )
         items.append(
             templates.render(
                 "index-item.html",
@@ -167,6 +175,28 @@ def index_items(
             )
         )
     return templates.render("index-list.html", items_html="\n".join(items))
+
+
+def alphabetical_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, str]:
+    groups = {letter: {} for letter in ascii_lowercase}
+    for key, pages in index.items():
+        initial = alphabetical_text(key)[:1]
+        groups.setdefault(initial if initial in ascii_lowercase else "other", {})[key] = pages
+    letters = []
+    sections = []
+    for letter, entries in groups.items():
+        label = letter.upper() if letter != "other" else "#"
+        letters.append(templates.render(
+            "index-letter.html" if entries else "index-letter-empty.html",
+            letter=letter, label=label,
+        ))
+        if entries:
+            sections.append(templates.render(
+                "index-section.html", letter=letter, label=label,
+                top_html=templates.render("index-top.html") if letter != "a" else "",
+                entries_html=index_items(entries, by_page, linked_labels=True, templates=templates),
+            ))
+    return templates.render("index-alphabet.html", letters_html="".join(letters)), "\n".join(sections)
 
 
 def build_word_pages(
@@ -375,11 +405,17 @@ def build_site(
         if kind == "words":
             build_word_pages(output, index, by_page, templates=templates)
             continue
+        letters_html = ""
+        entries_html = index_items(index, by_page, templates=templates)
+        if kind in ("titles", "first_lines"):
+            letters_html, entries_html = alphabetical_index(index, by_page, templates)
         body = templates.render(
             "index.html",
+            kind=kind,
             title=LABELS[kind],
             count=f"{len(index):,}",
-            entries_html=index_items(index, by_page, templates=templates),
+            letters_html=letters_html,
+            entries_html=entries_html,
         )
         (output / f"{kind}.html").write_text(
             document(LABELS[kind], body, templates=templates), encoding="utf-8"

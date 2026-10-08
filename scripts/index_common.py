@@ -123,6 +123,16 @@ def meter_sort_key(meter: str) -> tuple:
     return (3, (), meter.casefold(), meter)
 
 
+def alphabetical_text(key: str) -> str:
+    """Ignore opening punctuation and spaces without changing displayed text."""
+    start = 0
+    while start < len(key) and (
+        key[start].isspace() or unicodedata.category(key[start]).startswith("P")
+    ):
+        start += 1
+    return unicodedata.normalize("NFKD", key[start:]).casefold()
+
+
 def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
     if kind not in KINDS:
         raise ValueError(f"Unknown index kind: {kind}")
@@ -141,6 +151,8 @@ def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
         for key in keys:
             pages_by_key.setdefault(key, set()).add(metadata["Page"])
     key_order = meter_sort_key if kind == "meters" else lambda key: (key.casefold(), key)
+    if kind in ("titles", "first_lines"):
+        key_order = lambda key: (alphabetical_text(key), key)
     return {
         key: sorted(pages_by_key[key], key=page_sort_key)
         for key in sorted(pages_by_key, key=key_order)

@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from urllib.parse import quote, unquote, urlsplit
 
-from scripts.index_common import KINDS, ROOT
+from scripts.index_common import KINDS, ROOT, alphabetical_text, build_index
 from scripts.site import (
     Templates,
     LABELS,
@@ -74,6 +74,28 @@ Another verse & more
 """,
                 encoding="utf-8",
             )
+
+    def test_alphabetical_indexes_link_labels_and_ignore_opening_punctuation(self):
+        for suffix, text in (("t", "“Zion"), ("b", "—‘Alpha")):
+            path = self.lyrics / f"027{suffix}.txt"
+            content = path.read_text().replace(
+                "Collation: <Fountain> & Life, The", f"Collation: {text}"
+            ).replace('First line <script>alert("test")</script>', text)
+            path.write_text(content)
+        for kind in ("titles", "first_lines"):
+            self.assertEqual(list(build_index(self.lyrics, kind)), ["—‘Alpha", "“Zion"])
+        self.assertEqual(alphabetical_text("  (‘Grace"), "grace")
+        build_site(self.lyrics, self.output)
+        for kind in ("titles", "first_lines"):
+            html = (self.output / f"{kind}.html").read_text()
+            self.assertIn('href="#letter-a"', html)
+            self.assertIn('href="#letter-z"', html)
+            self.assertNotIn('href="#letter-b"', html)
+            self.assertLess(html.index('id="letter-a"'), html.index('id="letter-z"'))
+            self.assertIn('<a href="songs/027b.html">—‘Alpha</a>', html)
+            self.assertIn('<a href="songs/027t.html">“Zion</a>', html)
+            self.assertEqual(html.count('class="index-top"'), 1)
+            self.assertIn('href="#top">Top ↑</a>', html)
 
     def test_site_escapes_content_preserves_metadata_and_verses(self):
         self.assertEqual(build_site(self.lyrics, self.output), 2)
@@ -250,7 +272,7 @@ Another verse & more
         replacements = {
             "base.html": ("Back to top ↑", "Return to top"),
             "home.html": ("<h1>", "<h1>My song collection</h1><h1>"),
-            "index.html": ("Browse the collection", "Explore this index"),
+            "index.html": ("Select a page number", "Explore this index"),
             "song.html": ("Song details</h2>", "About this song</h2>"),
             "words.html": ("Choose a letter", "Select a letter"),
             "word-letter.html": ("<h1>", '<h1 class="custom-letter">'),

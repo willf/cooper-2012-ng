@@ -20,7 +20,7 @@ Start with these files:
 | `song.js` | Highlights all occurrences of the word selected in the word index |
 
 The smaller templates control repeated pieces: `directory-item.html` for home
-page directory cards, `song-item.html` for song directory rows, `index-list.html`
+page directory rows, `song-item.html` for song directory rows, `index-list.html`
 and `index-item.html` for index lists and rows, `page-link.html` for page-number
 links, `nav-link.html` for header links, `letter-item.html` and `letter-link.html`
 for the word directory and letter navigation, `word-label.html` for indexed
@@ -56,6 +56,23 @@ uv run scripts/site.py
 
 ## Placeholders
 
+### Pocket guide styling
+
+The design uses spaced lists, serif lyrics, and compact navigation, with no external
+fonts or assets. In `style.css`, edit the variables at the top to change the
+palette, `--measure` to change the maximum page width, and `--label-width` to
+change the maximum width of the right-aligned index labels.
+The desktop first-lines index has its own wider `--label-width` setting in
+`.index-first_lines` and uses up to 48% of the content width for its labels.
+Dark-mode colors are
+in the `prefers-color-scheme: dark` block at the bottom; the browser follows the
+reader’s system preference. Index rows use compact 32-pixel targets with
+44-pixel targets on touchscreens. Navigation keeps at least 44 pixels of vertical
+touch space. The mobile Songs/Words shortcuts are in `base.html`;
+the large song page number is in `song.html`.
+
+### Template syntax
+
 Templates are ordinary HTML with Python `string.Template` placeholders such as
 `${title}`. Edit wording and HTML freely around them. For example, in `home.html`:
 
@@ -76,13 +93,21 @@ a build error naming the template.
 | --- | --- |
 | `base.html` | `title`, `prefix`, `nav_html`, `body_html` |
 | `home.html` | `song_count`, `directory_html` |
-| `index.html` | `title`, `count`, `entries_html` |
+| `index.html` | `kind`, `title`, `count`, `letters_html`, `entries_html` |
 | `songs.html` | `count`, `entries_html` |
 | `song.html` | `page`, `title`, `navigation_html`, `lyrics_html`, `metadata_html`, `bottom_navigation_html` |
 | `words.html` | `count`, `letters_html` |
 | `word-letter.html` | `title`, `letters_html`, `entries_html` |
 
 Smaller templates show their available placeholders directly in their source.
+Titles and first lines use `index-alphabet.html`, `index-letter.html`,
+`index-letter-empty.html`, and `index-section.html` for A–Z jumps and letter
+sections. Letters with no entries are shown without links.
+`index-top.html` provides the “Top ↑” link beside each letter heading except A.
+`index-label-link.html` makes their text a song link; when an entry has multiple pages, its text opens
+the first song in page order and the individual page links select the others.
+Opening punctuation and spaces are ignored when sorting and choosing the letter,
+while the displayed text and existing entry IDs are preserved.
 Keep `${prefix}` on shared local links in `base.html` so links work on nested
 song and word pages. Keep the `main`, `top`, `lyrics`, and `details` IDs and the
 `${id}` placeholders on index entries so existing navigation still works.
