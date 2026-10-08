@@ -136,6 +136,11 @@ Contributor names display in reading order (`F. Price`), with links pointing to
 their collation keys (`Price, F.`); book titles retain their proper wording.
 The site rebuilds indexes
 from current lyrics using the same rules as the JSON generators.
+The Titles, First Lines, Composers, and Lyrics indexes have A–Z jump links and
+letter headings. Contributors are grouped by their collation names (surname first).
+The Lyrics Dates and Composition Dates indexes have century headings and jump
+links, with entries ordered by their first stated year. Approximate dates and
+ranges retain their original labels and are grouped by that year.
 The Songs index lists page numbers and titles in page order, with `t` before `b`,
 linking each entry directly to its song page.
 Each song page has Prev and Next navigation at the top and bottom, following

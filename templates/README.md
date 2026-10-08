@@ -103,14 +103,17 @@ Smaller templates show their available placeholders directly in their source.
 The Songs index has jumps every 50 songs, labeled by printed page number.
 Change `SONG_JUMP_INTERVAL` in `scripts/site.py` to adjust the interval.
 `song-jumps.html` controls the jump navigation and `song-jump.html` each link.
-Titles and first lines use `index-alphabet.html`, `index-letter.html`,
+Titles, first lines, composers, and lyrics sources use `index-alphabet.html`, `index-letter.html`,
 `index-letter-empty.html`, and `index-section.html` for A–Z jumps and letter
 sections. Letters with no entries are shown without links.
 `index-top.html` provides the “Top ↑” link beside each letter heading except A.
-`index-label-link.html` makes their text a song link; when an entry has multiple pages, its text opens
+`index-label-link.html` makes title and first-line text a song link; when an entry has multiple pages, its text opens
 the first song in page order and the individual page links select the others.
 Opening punctuation and spaces are ignored when sorting and choosing the letter,
 while the displayed text and existing entry IDs are preserved.
+Date indexes use `index-dates.html`, `index-date-link.html`, and
+`index-date-section.html` for century navigation and headings. Dates are ordered
+and grouped by their first stated year, retaining approximate and range labels.
 Keep `${prefix}` on shared local links in `base.html` so links work on nested
 song and word pages. Keep the `main`, `top`, `lyrics`, and `details` IDs and the
 `${id}` placeholders on index entries so existing navigation still works.

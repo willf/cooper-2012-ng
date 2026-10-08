@@ -12,6 +12,7 @@ from scripts.site import (
     Templates,
     LABELS,
     build_site,
+    date_index,
     display_source,
     entry_id,
     metadata_value,
@@ -98,6 +99,23 @@ Another verse & more
             self.assertIn('<a href="songs/027t.html">“Zion</a>', html)
             self.assertEqual(html.count('class="index-top"'), 1)
             self.assertIn('href="#top">Top ↑</a>', html)
+
+    def test_date_sections_group_approximate_dates_and_ranges_by_first_year(self):
+        dates = {key: ["27t"] for key in
+                 ("July 15, 1927", "ca. 1778", "1840-1904", "c. 1600", "abt 1810-1830")}
+        nav, sections = date_index(dates, {"27t": ("songs/027t.html", "Song")}, Templates())
+        self.assertIn('href="#date-1600">1600s</a>', nav)
+        self.assertLess(sections.index('id="date-1600"'), sections.index('id="date-1700"'))
+        self.assertLess(sections.index('id="date-1800"'), sections.index('id="date-1900"'))
+        for key in dates:
+            self.assertIn(f'id="{entry_id(key)}"', sections)
+            self.assertIn(key, sections)
+        self.assertLess(sections.index("abt 1810-1830"), sections.index("1840-1904"))
+        build_site(self.lyrics, self.output)
+        for kind in ("lyric_dates", "composition_dates"):
+            html = (self.output / f"{kind}.html").read_text()
+            self.assertIn('href="#date-1700"', html)
+            self.assertIn('id="date-1700"', html)
 
     def test_site_escapes_content_preserves_metadata_and_verses(self):
         self.assertEqual(build_site(self.lyrics, self.output), 2)

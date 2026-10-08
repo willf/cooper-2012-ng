@@ -180,7 +180,9 @@ def index_items(
     return templates.render("index-list.html", items_html="\n".join(items))
 
 
-def alphabetical_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, str]:
+def alphabetical_index(
+    index: dict, by_page: dict, templates: Templates, *, linked_labels: bool = True
+) -> tuple[str, str]:
     groups = {letter: {} for letter in ascii_lowercase}
     for key, pages in index.items():
         initial = alphabetical_text(key)[:1]
@@ -197,9 +199,33 @@ def alphabetical_index(index: dict, by_page: dict, templates: Templates) -> tupl
             sections.append(templates.render(
                 "index-section.html", letter=letter, label=label,
                 top_html=templates.render("index-top.html") if letter != "a" else "",
-                entries_html=index_items(entries, by_page, linked_labels=True, templates=templates),
+                entries_html=index_items(entries, by_page, linked_labels=linked_labels, templates=templates),
             ))
     return templates.render("index-alphabet.html", letters_html="".join(letters)), "\n".join(sections)
+
+
+def date_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, str]:
+    """Group dates by century, using the first stated year for ranges."""
+    def year(key: str) -> int:
+        match = re.search(r"\d{4}\b", key)
+        return int(match[0]) if match else 10000
+
+    groups = {}
+    for key in sorted(index, key=lambda key: (year(key), key.casefold(), key)):
+        first_year = year(key)
+        group = str(first_year // 100 * 100) if first_year != 10000 else "other"
+        groups.setdefault(group, {})[key] = index[key]
+    links = []
+    sections = []
+    for group, entries in groups.items():
+        label = group + "s" if group != "other" else "Other dates"
+        links.append(templates.render("index-date-link.html", group=group, label=label))
+        sections.append(templates.render(
+            "index-date-section.html", group=group, label=label,
+            top_html=templates.render("index-top.html") if sections else "",
+            entries_html=index_items(entries, by_page, templates=templates),
+        ))
+    return templates.render("index-dates.html", links_html="".join(links)), "\n".join(sections)
 
 
 def build_word_pages(
@@ -424,8 +450,12 @@ def build_site(
             continue
         letters_html = ""
         entries_html = index_items(index, by_page, templates=templates)
-        if kind in ("titles", "first_lines"):
-            letters_html, entries_html = alphabetical_index(index, by_page, templates)
+        if kind in ("titles", "first_lines", "composers", "lyrics"):
+            letters_html, entries_html = alphabetical_index(
+                index, by_page, templates, linked_labels=kind in ("titles", "first_lines")
+            )
+        elif kind in ("lyric_dates", "composition_dates"):
+            letters_html, entries_html = date_index(index, by_page, templates)
         body = templates.render(
             "index.html",
             kind=kind,
