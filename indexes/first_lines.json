@@ -12,13 +12,13 @@
   "Afflictions, tho’ they seem severe": [
     "113"
   ],
+  "Alas! And did my Savior bleed": [
+    "290"
+  ],
   "Alas! and did my Savior bleed": [
     "206",
     "310",
     "375"
-  ],
-  "Alas! And did my Saviour bleed": [
-    "290"
   ],
   "All hail the pow’r of Jesus’ name": [
     "63"
@@ -34,11 +34,9 @@
     "283b",
     "309"
   ],
-  "Amazing grace! How sweet the sound": [
-    "362"
-  ],
   "Amazing grace! how sweet the sound": [
-    "45t"
+    "45t",
+    "362"
   ],
   "Amazing grace, how sweet the sound": [
     "438b"
@@ -121,10 +119,8 @@
   "Behold the glories of the Lamb": [
     "138t"
   ],
-  "Behold the love, the generous love": [
-    "183"
-  ],
   "Behold the love, the gen’rous love": [
+    "183",
     "296"
   ],
   "Behold, the Judge descends, His guards are nigh": [
@@ -196,9 +192,6 @@
   "Come tell of your ship and what is her name": [
     "388"
   ],
-  "Come thou Fount of ev’ry blessing": [
-    "457"
-  ],
   "Come, all my dear brethren, and help me to sing": [
     "119"
   ],
@@ -256,14 +249,17 @@
     "293b"
   ],
   "Come, Thou Fount of ev’ry blessing": [
-    "59t",
-    "135",
     "145t",
-    "268t",
-    "474"
+    "268t"
   ],
   "Come, thou Fount of ev’ry blessing": [
-    "333"
+    "333",
+    "457"
+  ],
+  "Come, thou fount of ev’ry blessing": [
+    "59t",
+    "135",
+    "474"
   ],
   "Come, we that love the Lord": [
     "31b",
@@ -308,11 +304,11 @@
   "Early, my God, without delay": [
     "189"
   ],
+  "Eer since I knew His wond’rous love": [
+    "465"
+  ],
   "Ere mountains reared their forms sublime": [
     "431"
-  ],
-  "E’er since I knew His wond’rous love": [
-    "465"
   ],
   "Far from my thoughts, vain world, be gone": [
     "280"
@@ -929,11 +925,9 @@
   "O Jesus, my Savior, I know Thou art mine": [
     "125"
   ],
-  "O land of rest! For thee I sigh": [
-    "390"
-  ],
   "O land of rest! for thee I sigh": [
-    "154b"
+    "154b",
+    "390"
   ],
   "O land of rest, for thee I sigh": [
     "284",
@@ -1374,7 +1368,7 @@
   "They crucified the Saviour": [
     "408"
   ],
-  "Thou art gone to the grave —but we will not deplore thee": [
+  "Thou art gone to the grave — but we will not deplore thee": [
     "158"
   ],
   "Thou Man of grief, remember me": [
@@ -1426,7 +1420,7 @@
   "Up to Thee, Almighty Father": [
     "456"
   ],
-  "Vain man, thy found pursuits forbear": [
+  "Vain man, thy fond pursuits forbear": [
     "368b"
   ],
   "Vital spark of heav’nly flame": [
@@ -1480,7 +1474,7 @@
   "What wondrous love is this? O my soul! O my soul": [
     "159"
   ],
-  "What’s this that in my soul that’s rising": [
+  "What’s this that in my soul is rising": [
     "337"
   ],
   "What’s this that steals, that steals upon my frame": [

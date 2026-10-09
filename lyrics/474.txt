@@ -11,7 +11,7 @@ Meter: 8s,7s Double (8,7,8,7,8,7,8,7)
 
 ________________________________________________________________________________
 
-Come, Thou Fount of ev’ry blessing,
+Come, thou fount of ev’ry blessing,
 Tune my heart to sing Thy grace;
 Streams of mercy, never ceasing,
 Call for songs of loudest praise;
