@@ -58,7 +58,7 @@ uv run scripts/site.py
 
 ### Pocket guide styling
 
-The design uses spaced lists, serif lyrics, and compact navigation, with no external
+The design uses single-spaced index lists, serif lyrics, and compact navigation, with no external
 fonts or assets. In `style.css`, edit the variables at the top to change the
 palette, `--measure` to change the maximum page width, and `--label-width` to
 change the maximum width of the right-aligned index labels.
@@ -66,8 +66,8 @@ The desktop first-lines index has its own wider `--label-width` setting in
 `.index-first_lines` and uses up to 48% of the content width for its labels.
 Dark-mode colors are
 in the `prefers-color-scheme: dark` block at the bottom; the browser follows the
-reader’s system preference. Index rows use compact 32-pixel targets with
-44-pixel targets on touchscreens. Navigation keeps at least 44 pixels of vertical
+reader’s system preference. Index rows use a 1.2 line height with no vertical link
+padding, including on touchscreens. Letter and main navigation keep at least 44 pixels of vertical
 touch space. The mobile Songs/Words shortcuts are in `base.html`;
 the large song page number is in `song.html`.
 

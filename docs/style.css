@@ -51,18 +51,18 @@ p { max-width: 60ch; text-wrap: pretty; }
 .directory .count { font: .8rem/1.5 var(--ui); color: var(--quiet); align-self: center; font-variant-numeric: tabular-nums; }
 .directory a:hover .name { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
 .index-note { margin-bottom: 1rem; }
-.index-list { list-style: none; padding: 0; margin: .75rem 0; }
+.index-list { list-style: none; padding: 0; margin: .35rem 0; line-height: 1.2; }
 .index-list li { padding: 0;
   display: grid; grid-template-columns: min(36%, var(--label-width)) minmax(0, 1fr);
-  align-items: baseline; gap: .25rem .65rem; overflow-wrap: anywhere;
-  content-visibility: auto; contain-intrinsic-size: auto 4rem; scroll-margin-top: 1rem; }
+  align-items: baseline; gap: 0 .65rem; overflow-wrap: anywhere;
+  content-visibility: auto; contain-intrinsic-size: auto 1.3rem; scroll-margin-top: 1rem; }
 .index-list li:target { background: var(--wash); box-shadow: -.35rem 0 var(--accent); }
-.index-label { min-width: 0; text-align: right; line-height: 1.3; }
+.index-label { min-width: 0; text-align: right; line-height: 1.2; }
 .index-label a { color: var(--ink); text-decoration: none; }
 .index-label a:hover { color: var(--accent); text-decoration: underline; }
-.index-section { margin-block: 1.25rem; }
+.index-section { margin-block: .75rem; }
 .index-section-heading { display: flex; align-items: center; gap: 1rem; }
-.index-top { display: inline-flex; align-items: center; min-height: 44px;
+.index-top { display: inline-flex; align-items: center; min-height: 24px;
   font: .8rem/1.3 var(--ui); }
 .index-section h2 { color: var(--accent); font: bold 1.35rem/1.2 var(--book);
   text-transform: none; letter-spacing: 0; margin: 0; scroll-margin-top: 1rem; }
@@ -73,9 +73,9 @@ p { max-width: 60ch; text-wrap: pretty; }
 .index-word { font-variant-caps: small-caps; font-weight: bold; font-size: 1.08em; }
 .song-list li { display: block; padding: 0; }
 .song-list a { display: grid; grid-template-columns: 4rem minmax(0, 1fr);
-  align-items: baseline; min-height: 32px; padding-block: .25rem; text-decoration: none; }
+  align-items: baseline; padding-block: 0; text-decoration: none; }
 .song-list a:hover { background: var(--wash); text-decoration: underline; }
-.song-page { color: var(--ink); font: bold 1.05rem/1.5 var(--book); font-variant-numeric: tabular-nums; }
+.song-page { color: var(--ink); font: bold 1.05rem/1.2 var(--book); font-variant-numeric: tabular-nums; }
 .song-index-jumps { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem;
   margin-block: .75rem; font: .85rem/1.3 var(--ui); }
 .jump-caption { color: var(--quiet); }
@@ -84,12 +84,12 @@ p { max-width: 60ch; text-wrap: pretty; }
 .jump-links a { display: inline-flex; align-items: center; justify-content: center;
   min-width: 44px; min-height: 44px; font-variant-numeric: tabular-nums; text-decoration: none; }
 .jump-links a:hover { background: var(--wash); text-decoration: underline; }
-.page-links { min-width: 0; text-align: left; font: bold 1.05rem/1.3 var(--book);
+.page-links { min-width: 0; text-align: left; font: bold 1.05rem/1.2 var(--book);
   font-variant-numeric: tabular-nums; }
 /* The comma stays inside the unbroken reference, including in Safari. */
 .page-reference { display: inline-block; white-space: nowrap; }
-.page-links a { color: var(--ink); min-height: 32px; display: inline-block; text-decoration: none;
-  padding: .25rem .12rem; }
+.page-links a { color: var(--ink); display: inline-block; text-decoration: none;
+  padding: 0 .12rem; }
 .page-links a:hover { color: var(--accent); background: var(--wash); text-decoration: underline; }
 .letter-nav { display: flex; flex-wrap: wrap; gap: .2rem; margin: 1rem 0; }
 .letter-nav a { display: inline-flex; align-items: center; justify-content: center;
@@ -161,7 +161,4 @@ footer .copyright a { display: inline; min-height: 0; }
 @media (prefers-color-scheme: dark) {
   :root { --paper: #241f1c; --ink: #f5eee4; --quiet: #c1b4a7; --line: #51443b;
     --accent: #eda696; --wash: #342924; --highlight: #d6bb4826; }
-}
-@media (any-pointer: coarse) {
-  .page-links a, .song-list a { min-height: 44px; padding-block: .5rem; }
 }
