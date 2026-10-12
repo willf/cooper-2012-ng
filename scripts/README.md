@@ -94,6 +94,14 @@ The first-line index uses the first nonblank line after the metadata separator,
 with surrounding whitespace and all trailing punctuation removed, including
 sentence endings, typographic quotes, and ellipses. Punctuation within the line is retained.
 Songs with the same first line share an entry; songs without lyrics are skipped.
+When first lines compare equally for grouping but their second nonblank lyric
+lines differ, entries include both lines, separated by ` / `.
+Each line has trailing punctuation removed. A song without a second line keeps
+its first line alone. Case and opening punctuation do not create a difference
+for grouping. Grouping also ignores commas and normalizes whitespace; the special
+comma sorting rule still applies when ordering the resulting index entries.
+Displayed spelling and capitalization are retained, so differently written
+labels remain separate entries even when they collate equally.
 
 The word index reads only the lyrics. Keys are lowercase; straight and typographic
 internal apostrophes combine under a typographic apostrophe. Elisions such as

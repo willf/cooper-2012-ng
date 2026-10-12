@@ -26,8 +26,10 @@
   "Almighty Father, heav’nly King": [
     "140"
   ],
-  "Am I a soldier of the cross": [
-    "57",
+  "Am I a soldier of the cross / A follow’r of the Lamb": [
+    "57"
+  ],
+  "Am I a soldier of the cross / A foll’wer of the Lamb": [
     "73b",
     "166",
     "271t",
@@ -48,9 +50,11 @@
   "And if you meet with troubles": [
     "129"
   ],
-  "And let this feeble body fail": [
-    "103",
+  "And let this feeble body fail / And let it faint and die": [
     "146"
+  ],
+  "And let this feeble body fail / And let it faint or die": [
+    "103"
   ],
   "And must I be to judgment bro’t": [
     "207b",
@@ -325,13 +329,21 @@
   "Farewell, my friends, I must be gone": [
     "185"
   ],
-  "Farewell, vain world, I’m going home": [
-    "80b",
-    "95t",
+  "Farewell, vain world, I’m going home / I am bound to die in the army": [
+    "80b"
+  ],
+  "Farewell, vain world, I’m going home / I belong to this band, hallelujah": [
+    "176t"
+  ],
+  "Farewell, vain world, I’m going home / I can’t stay away": [
+    "95t"
+  ],
+  "Farewell, vain world, I’m going home / My Savior smiles and bids me come": [
     "153",
-    "176t",
-    "274t",
     "282"
+  ],
+  "Farewell, vain world, I’m going home / To play on the golden harp": [
+    "274t"
   ],
   "Farewell! vain world, I’m going home": [
     "278b"
@@ -360,8 +372,10 @@
   "Frequent the day of God returns": [
     "138b"
   ],
-  "From all that dwell below the skies": [
-    "192",
+  "From all that dwell below the skies / Let the Creator’s praise arise": [
+    "192"
+  ],
+  "From all that dwell below the skies / Let the Redeemer’s praise arise": [
     "276",
     "555"
   ],
@@ -564,8 +578,10 @@
   "I know that Jesus saves me now": [
     "198"
   ],
-  "I know that my Redeemer lives": [
-    "277",
+  "I know that my Redeemer lives / Glory, hallelujah": [
+    "277"
+  ],
+  "I know that my Redeemer lives / What comfort this sweet sentence gives": [
     "453t"
   ],
   "I long to reach the shore of bliss": [
@@ -654,9 +670,11 @@
   "Jesus, and shall it ever be": [
     "532"
   ],
-  "Jesus, grant us all a blessing": [
-    "80t",
+  "Jesus, grant us all a blessing / Send it down, Lord, from above": [
     "323t"
+  ],
+  "Jesus, grant us all a blessing / Shouting, singing, send it down": [
+    "80t"
   ],
   "Jesus, I my cross have taken": [
     "370"
@@ -667,11 +685,15 @@
   "Jesus, lover of my soul": [
     "107"
   ],
-  "Jesus, my all, to heav’n is gone": [
-    "53",
-    "88t",
-    "163b",
+  "Jesus, my all, to heav’n is gone / And I don’t expect to stay much longer here": [
+    "88t"
+  ],
+  "Jesus, my all, to heav’n is gone / Glory hallelujah": [
     "324"
+  ],
+  "Jesus, my all, to heav’n is gone / He whom I fix my hopes upon": [
+    "53",
+    "163b"
   ],
   "Jesus, Thou art the sinner’s friend": [
     "58"
@@ -703,9 +725,11 @@
   "Let sinners take their course": [
     "203"
   ],
-  "Life is the time to serve the Lord": [
-    "28b",
+  "Life is the time to serve the Lord / The time to seek the great reward": [
     "570"
+  ],
+  "Life is the time to serve the Lord / The time t’ensure the great reward": [
+    "28b"
   ],
   "Life’s sun is sinking down": [
     "521"
@@ -772,12 +796,14 @@
   "May the grace of Christ our Saviour": [
     "331t"
   ],
-  "‘Mercy, O Thou Son of David": [
-    "52b",
-    "331b"
+  "‘Mercy, O Thou Son of David / Thus poor blind Bartimeus prayed": [
+    "52b"
   ],
-  "‘Mercy, O Thou son of David": [
+  "‘Mercy, O Thou son of David / Thus poor blind Bartimeus prayed": [
     "458"
+  ],
+  "‘Mercy, O Thou Son of David / Thus poor blind Bartimeus pray’d": [
+    "331b"
   ],
   "’Mid scenes of confusion and creature complaints": [
     "161"
@@ -818,8 +844,10 @@
   "My heart and voice I raise": [
     "394"
   ],
-  "My heav’nly home is bright and fair": [
-    "111b",
+  "My heav’nly home is bright and fair / Nor pain nor death can enter there": [
+    "111b"
+  ],
+  "My heav’nly home is bright and fair / We’ll be gathered home": [
     "432"
   ],
   "My latest sun is sinking fast": [
@@ -940,19 +968,23 @@
   "O Jesus, my Savior, I know Thou art mine": [
     "125"
   ],
-  "O land of rest, for thee I sigh": [
+  "O land of rest, for thee I sigh / When will the moment come": [
     "284",
-    "285b",
     "430",
     "438t"
+  ],
+  "O land of rest, for thee I sigh / When will the moments come": [
+    "285b"
   ],
   "O land of rest! for thee I sigh": [
     "154b",
     "390"
   ],
-  "O may I worthy prove to see": [
-    "170",
+  "O may I worthy prove to see / Glory to Immanuel": [
     "359"
+  ],
+  "O may I worthy prove to see / The saints in full prosperity": [
+    "170"
   ],
   "O once I had a glorious view": [
     "67"
@@ -994,11 +1026,19 @@
   "O when will the period appear": [
     "384"
   ],
-  "O who will come and go with me": [
-    "87",
-    "111t",
-    "116",
-    "207t",
+  "O who will come and go with me / I am bound for the land of Canaan": [
+    "87"
+  ],
+  "O who will come and go with me / I am bound for the promised land": [
+    "116"
+  ],
+  "O who will come and go with me / I am on my journey home": [
+    "207t"
+  ],
+  "O who will come and go with me / I’m on my journey home": [
+    "111t"
+  ],
+  "O who will come and go with me / We’ll shout and sing hosanna": [
     "397"
   ],
   "O yes, my Savior I will trust": [
@@ -1030,13 +1070,15 @@
   "Oh! sing with me in social spheres": [
     "374"
   ],
-  "On Jordan’s stormy banks I stand": [
+  "On Jordan’s stormy banks I stand / An cast a wishful eye": [
+    "557"
+  ],
+  "On Jordan’s stormy banks I stand / And cast a wishful eye": [
     "51",
     "65",
     "128",
     "378t",
-    "478",
-    "557"
+    "478"
   ],
   "Once more, my soul, the rising day": [
     "50t"
@@ -1098,9 +1140,11 @@
   "See how the Scriptures are fulfilling": [
     "102"
   ],
-  "See how the wicked kingdom": [
-    "191",
+  "See how the wicked kingdom / Is falling every day": [
     "469"
+  ],
+  "See how the wicked kingdom / Is falling ev’ry day": [
+    "191"
   ],
   "See the happy spirits waiting": [
     "454"
@@ -1147,9 +1191,11 @@
   "Soft, soft music is stealing": [
     "323b"
   ],
-  "Softly now the light of day": [
-    "70b",
+  "Softly now the light of day / Fades upon my sight away": [
     "269"
+  ],
+  "Softly now the light of day / Fades upon our sight away": [
+    "70b"
   ],
   "Soldiers of the cross, arise": [
     "152"
@@ -1166,9 +1212,11 @@
   "Stand ye in the way, and see, and ask": [
     "520"
   ],
-  "Sweet is the day of sacred rest": [
-    "48t",
+  "Sweet is the day of sacred rest / No mortal care shall fill my breast": [
     "435"
+  ],
+  "Sweet is the day of sacred rest / No mortal care shall seize my breast": [
+    "48t"
   ],
   "Sweet land of rest for thee I sigh": [
     "577"
@@ -1303,13 +1351,15 @@
     "218",
     "581"
   ],
-  "There is a land of pure delight": [
-    "33",
+  "There is a land of pure delight / Where saints immortal reign": [
     "124t",
     "154t",
     "289",
     "293t",
     "489"
+  ],
+  "There is a land of pure delight / Where we shall be gathered home": [
+    "33"
   ],
   "There is a place called heaven": [
     "572"
@@ -1627,14 +1677,16 @@
   "Young ladies, all, attention give": [
     "437"
   ],
-  "Young people, all attention give": [
-    "204",
+  "Young people, all attention give / And hear what I shall say": [
     "286t"
   ],
-  "Young people all, attention give": [
+  "Young people, all attention give / While I address you in God’s name": [
+    "204"
+  ],
+  "Young people all, attention give / And hear what I do say": [
     "215"
   ],
-  "Young people all attention give": [
+  "Young people all attention give / And hear what I shall say": [
     "29b"
   ],
   "Youth, like the spring will soon be gone": [

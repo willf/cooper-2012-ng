@@ -203,8 +203,49 @@ Words
         self.write("005.txt", "Page: 3\n________________\n\n  \n")
         self.assertEqual(build_index(self.lyrics, "first_lines"), {
             "Lyrics: This is a lyric, not metadata": ["10t"],
-            "Words": ["2", "2t", "2b"],
+            "Words": ["2"],
+            "Words / Another line": ["2b"],
+            "Words / Different verse": ["2t"],
         })
+
+    def test_first_lines_disambiguate_collation_equivalents(self):
+        self.write("003.txt", "Page: 3\n________________\n‘WORDS!\n\nA new opening.\n")
+        self.write("004.txt", "Page: 4\n________________\nWords\nA new opening!\n")
+        index = build_index(self.lyrics, "first_lines")
+        self.assertEqual(index["‘WORDS / A new opening"], ["3"])
+        self.assertEqual(index["Words / A new opening"], ["4"])
+        self.assertEqual(index["Words"], ["2"])
+
+    def test_first_lines_keep_one_line_when_second_lines_collate_equally(self):
+        self.write("003.txt", "Page: 3\n________________\nWords\nSame continuation!\n")
+        self.write("004.txt", "Page: 4\n________________\nWORDS\nsame continuation.\n")
+        # Give the existing Words song the same second line as well.
+        with (self.lyrics / "002.txt").open("a") as source:
+            source.write("Same continuation\n")
+        index = build_index(self.lyrics, "first_lines")
+        self.assertEqual(index["Words"], ["2", "3"])
+        self.assertEqual(index["WORDS"], ["4"])
+        self.assertFalse(any(" / " in key for key in index))
+
+    def test_first_line_grouping_ignores_commas_but_ordering_does_not(self):
+        for page, first, second in [
+            ("3", "Come, sing", "A new song"),
+            ("4", "Come sing", "Another song"),
+            ("5", "Come, sing", "A, new song"),
+            ("6", "Come all", "An unrelated song"),
+        ]:
+            self.write(f"group-{page}.txt",
+                       f"Page: {page}\n________________\n{first}\n{second}\n")
+        index = build_index(self.lyrics, "first_lines")
+        self.assertIn("Come, sing / A new song", index)
+        self.assertIn("Come sing / Another song", index)
+        self.assertIn("Come, sing / A, new song", index)
+        self.assertLess(list(index).index("Come, sing / A new song"),
+                        list(index).index("Come all"))
+        # Comma differences in the second line alone do not require expansion.
+        (self.lyrics / "group-4.txt").unlink()
+        index = build_index(self.lyrics, "first_lines")
+        self.assertEqual(index["Come, sing"], ["3", "5"])
 
     def test_first_lines_require_a_lyrics_separator(self):
         self.write("bad.txt", "Page: 4\nTitle: Missing separator\n")

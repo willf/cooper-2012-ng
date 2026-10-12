@@ -48,6 +48,12 @@ def lyric_body(path: Path) -> str:
 def first_line(path: Path) -> str:
     """Return the first lyric line without trailing punctuation."""
     line = next((line.strip() for line in lyric_body(path).splitlines() if line.strip()), "")
+    return trim_line(line)
+
+
+def trim_line(line: str) -> str:
+    """Remove surrounding whitespace and trailing punctuation for index labels."""
+    line = line.strip()
     while line and (line[-1].isspace() or unicodedata.category(line[-1]).startswith("P")):
         line = line[:-1]
     return line
@@ -143,23 +149,41 @@ def alphabetical_sort_key(key: str) -> tuple[tuple[str, ...], str]:
     return (tuple(part.strip() for part in alphabetical_text(key).split(",")), key)
 
 
+def line_group_key(line: str) -> str:
+    """Ignore commas for lyric-line equivalence, independently of sorting."""
+    return " ".join(alphabetical_text(line).replace(",", "").split())
+
+
 def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
     if kind not in KINDS:
         raise ValueError(f"Unknown index kind: {kind}")
     if not lyrics_dir.is_dir():
         raise FileNotFoundError(f"Lyrics directory does not exist: {lyrics_dir}")
     pages_by_key = {}
+    openings = []
     for path in sorted(lyrics_dir.glob("*.txt")):
         metadata = read_metadata(path)
         if kind == "first_lines":
-            line = first_line(path)
-            keys = [line] if line else []
+            lines = [trim_line(line) for line in lyric_body(path).splitlines() if line.strip()]
+            if lines and lines[0]:
+                openings.append((lines[0], lines[1] if len(lines) > 1 else "", metadata["Page"]))
+            continue
         elif kind == "words":
             keys = lyric_words(lyric_body(path))
         else:
             keys = index_keys(metadata, kind)
         for key in keys:
             pages_by_key.setdefault(key, set()).add(metadata["Page"])
+    if kind == "first_lines":
+        seconds_by_first = {}
+        for first, second, _ in openings:
+            seconds_by_first.setdefault(line_group_key(first), set()).add(
+                line_group_key(second)
+            )
+        for first, second, page in openings:
+            distinguish = len(seconds_by_first[line_group_key(first)]) > 1
+            key = f"{first} / {second}" if distinguish and second else first
+            pages_by_key.setdefault(key, set()).add(page)
     key_order = meter_sort_key if kind == "meters" else alphabetical_sort_key
     return {
         key: sorted(pages_by_key[key], key=page_sort_key)
