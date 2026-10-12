@@ -384,6 +384,14 @@ def build_site(
         ) + "\n",
         encoding="utf-8",
     )
+    (output / "songs.jsonl").write_text(
+        "".join(
+            json.dumps({"page": metadata["Page"], "metadata": metadata, "lyrics": body},
+                       ensure_ascii=False) + "\n"
+            for _, metadata, body in songs
+        ),
+        encoding="utf-8",
+    )
     (output / "songs").mkdir(exist_ok=True)
     (output / "style.css").write_text(
         (templates_dir / "style.css").read_text(encoding="utf-8"), encoding="utf-8"

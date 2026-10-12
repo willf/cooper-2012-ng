@@ -21,8 +21,15 @@ keyed by printed page number (for example, `"30t"`). Each record has a `metadata
 object preserving all source header fields and values, including `Page`,
 `Collation`, and annotations, plus a `lyrics` string preserving lyric line and
 verse breaks. Records follow book page order.
-The website build generates the same export as `docs/songs.json`, linked for
-download beneath the home page's index list.
+The website build generates `docs/songs.json` and `docs/songs.jsonl`, both linked
+for download beneath the home page's index list.
+For one song per line with an explicit page identifier, generate a JSONL export
+with `uv run scripts/songs.py --format jsonl` (writes `indexes/songs.jsonl`).
+
+The reusable [Cooper Book skill](skills/cooper-book/SKILL.md) includes song lookup
+instructions, a Python search helper, and a bundled data snapshot. The full build
+refreshes that snapshot. Copy `skills/cooper-book` into your Codex skills folder
+to install it, then invoke it as `$cooper-book`.
 
 Open `docs/index.html` in a browser, or start a local preview:
 

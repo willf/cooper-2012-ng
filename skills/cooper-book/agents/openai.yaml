@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cooper Book Lookup"
+  short_description: "Find Cooper Book songs, lyrics, and source metadata"
+  default_prompt: "Use $cooper-book to find a song in the 2012 Cooper Book and cite its page."

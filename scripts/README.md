@@ -21,9 +21,11 @@ The script runs these generators in order:
 7. `composition_dates.py`
 8. `meters.py`
 9. `songs.py`
-10. `site.py`
+10. `refresh_skill.py`
+11. `site.py`
 
-The first nine write JSON files to `indexes/`; the last writes the website to
+The first nine write JSON files to `indexes/`; `refresh_skill.py` updates the
+bundled data and source links in `skills/cooper-book/references/`; the last writes the website to
 `docs/`. Existing generated files are overwritten. The source lyrics and
 stopword list are not modified. Each generator reports its output, followed by
 a `Build complete` message when all steps succeed.
@@ -71,6 +73,19 @@ Songs without lyric text have an empty string. Records are sorted in book page o
 page first, then `t` before `b`. Duplicate page numbers cause an error rather
 than overwriting a song. Rebuild only this export with `uv run scripts/songs.py`;
 it accepts the same `--lyrics-dir` and `--output` options as the other generators.
+
+For a JSONL export, run:
+
+```sh
+uv run scripts/songs.py --format jsonl
+```
+
+This writes `indexes/songs.jsonl`, with one complete song per line in book page
+order. Each record has `page`, `metadata`, and `lyrics` fields. The `page` string
+matches `metadata.Page`; lyric newlines are escaped within the JSON string so
+each record occupies a single physical line. Unicode is retained. An empty
+collection produces an empty JSONL file. Use `--output PATH` for another
+destination. The default format remains JSON; the full build generates JSON.
 
 Every other index is an object mapping a source, title, first line, date, or meter to an array of
 unique page strings, sorted numerically by page, with an unsuffixed page first,
@@ -138,8 +153,8 @@ Generate the website (intro, nine indexes, and individual song pages):
 uv run scripts/site.py
 ```
 
-The home page includes a download link to `songs.json`, containing all song
-metadata and lyrics. The website generator writes this file from the current
+The home page includes download links to `songs.json` and `songs.jsonl`, containing
+all song metadata and lyrics. The website generator writes both files from the current
 source collection, including when using custom `--lyrics-dir` and `--output`
 paths; it does not depend on a previously generated `indexes/songs.json`.
 

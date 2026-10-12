@@ -134,6 +134,28 @@ Words
                 if kind == "lyrics":
                     self.assertIn("Broaddus’", output.read_text())
 
+    def test_songs_jsonl_command_preserves_records_and_line_breaks(self):
+        self.write("003.txt", "Page: 3\nTitle: A song\n________________\nGod’s love\n\nSecond verse\n")
+        output = self.root / "out" / "songs.jsonl"
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "songs.py"),
+                        "--format", "jsonl", "--lyrics-dir", str(self.lyrics),
+                        "--output", str(output)],
+                       cwd=self.root, check=True, capture_output=True, text=True)
+        text = output.read_text(encoding="utf-8")
+        records = [json.loads(line) for line in text.splitlines()]
+        self.assertEqual([record["page"] for record in records], ["2", "3", "10t"])
+        self.assertEqual({record["page"]: {"metadata": record["metadata"], "lyrics": record["lyrics"]}
+                          for record in records}, build_songs(self.lyrics))
+        self.assertEqual(records[1]["lyrics"], "God’s love\n\nSecond verse")
+        self.assertIn("God’s", text)
+        self.assertTrue(text.endswith("\n"))
+        for path in self.lyrics.glob("*.txt"):
+            path.unlink()
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "songs.py"),
+                        "--format", "jsonl", "--lyrics-dir", str(self.lyrics),
+                        "--output", str(output)], check=True, capture_output=True)
+        self.assertEqual(output.read_text(), "")
+
     def test_preserves_name_parentheses_initials_and_suffixes(self):
         self.assertEqual(contributors("Blackshear, Anna L. (Cooper) (Mrs.) (arranger); "
                                       "Chapin, (Amzi or Lucius); White, Benjamin Franklin, Jr.; "

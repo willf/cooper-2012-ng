@@ -275,6 +275,12 @@ Another verse & more
                       (self.output / "index.html").read_text(encoding="utf-8"))
         self.assertEqual(json.loads((self.output / "songs.json").read_text(encoding="utf-8")),
                          build_songs(self.lyrics))
+        self.assertIn('href="songs.jsonl" download="songs.jsonl"',
+                      (self.output / "index.html").read_text(encoding="utf-8"))
+        records = [json.loads(line) for line in
+                   (self.output / "songs.jsonl").read_text(encoding="utf-8").splitlines()]
+        expected = build_songs(self.lyrics)
+        self.assertEqual(records, [{"page": page, **song} for page, song in expected.items()])
 
     def test_display_names_preserve_sources_suffixes_and_uncertainty(self):
         examples = {

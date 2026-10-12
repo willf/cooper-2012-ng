@@ -2,7 +2,7 @@
 # requires-python = ">=3.13"
 # dependencies = []
 # ///
-"""Export every song's metadata and lyrics, keyed by its printed page number."""
+"""Export every song's metadata and lyrics as JSON or JSONL."""
 
 import argparse
 import json
@@ -38,12 +38,23 @@ def build_songs(lyrics_dir: Path) -> dict[str, Song]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lyrics-dir", type=Path, default=ROOT / "lyrics")
-    parser.add_argument("--output", type=Path, default=ROOT / "indexes" / "songs.json")
+    parser.add_argument("--format", choices=("json", "jsonl"), default="json",
+                        help="Export format (default: json).")
+    parser.add_argument("--output", type=Path,
+                        help="Output path (default: indexes/songs.<format>).")
     args = parser.parse_args()
     songs = build_songs(args.lyrics_dir)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(songs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"{args.output}: {len(songs)} songs")
+    output = args.output or ROOT / "indexes" / f"songs.{args.format}"
+    if args.format == "jsonl":
+        content = "".join(
+            json.dumps({"page": page, **song}, ensure_ascii=False) + "\n"
+            for page, song in songs.items()
+        )
+    else:
+        content = json.dumps(songs, ensure_ascii=False, indent=2) + "\n"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(content, encoding="utf-8")
+    print(f"{output}: {len(songs)} songs")
 
 
 if __name__ == "__main__":
