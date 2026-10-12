@@ -34,12 +34,12 @@
     "283b",
     "309"
   ],
+  "Amazing grace, how sweet the sound": [
+    "438b"
+  ],
   "Amazing grace! how sweet the sound": [
     "45t",
     "362"
-  ],
-  "Amazing grace, how sweet the sound": [
-    "438b"
   ],
   "And am I born to die": [
     "47b",
@@ -86,32 +86,38 @@
   "At the sounding of the trumpet": [
     "229"
   ],
-  "Awake and sing the song": [
-    "575"
-  ],
-  "Awake my soul, in joyful lays": [
-    "424"
-  ],
   "Awake, my soul, in joyful songs": [
     "187"
   ],
   "Awake, my soul, to joyful lays": [
     "275t"
   ],
+  "Awake and sing the song": [
+    "575"
+  ],
+  "Awake my soul, in joyful lays": [
+    "424"
+  ],
   "Awaked by Sinai’s awful sound": [
     "295"
   ],
-  "Away here in Texas, the bright, Sunny South": [
-    "422t"
-  ],
   "Away, my unbelieving fear": [
     "270"
+  ],
+  "Away here in Texas, the bright, Sunny South": [
+    "422t"
   ],
   "Be kind to thy father, for when thou wert young": [
     "413"
   ],
   "Before the judgment bar of God": [
     "273"
+  ],
+  "Behold, the Judge descends, His guards are nigh": [
+    "151"
+  ],
+  "Behold, the morning sun": [
+    "118"
   ],
   "Behold a sinner dearest Lord": [
     "479"
@@ -122,12 +128,6 @@
   "Behold the love, the gen’rous love": [
     "183",
     "296"
-  ],
-  "Behold, the Judge descends, His guards are nigh": [
-    "151"
-  ],
-  "Behold, the morning sun": [
-    "118"
   ],
   "Beside the gospel pool": [
     "444t"
@@ -172,25 +172,6 @@
   ],
   "Christ went a building to prepare": [
     "571"
-  ],
-  "Come and taste along with me": [
-    "326"
-  ],
-  "Come life, come death, come then what will": [
-    "345t"
-  ],
-  "Come little pilgrim take my hand": [
-    "392"
-  ],
-  "Come my soul, and let us try": [
-    "422b"
-  ],
-  "Come on, my fellow pilgrims, come": [
-    "470",
-    "471"
-  ],
-  "Come tell of your ship and what is her name": [
-    "388"
   ],
   "Come, all my dear brethren, and help me to sing": [
     "119"
@@ -268,6 +249,25 @@
   "Come, ye sinners, poor and needy": [
     "81"
   ],
+  "Come and taste along with me": [
+    "326"
+  ],
+  "Come life, come death, come then what will": [
+    "345t"
+  ],
+  "Come little pilgrim take my hand": [
+    "392"
+  ],
+  "Come my soul, and let us try": [
+    "422b"
+  ],
+  "Come on, my fellow pilgrims, come": [
+    "470",
+    "471"
+  ],
+  "Come tell of your ship and what is her name": [
+    "388"
+  ],
   "Convinced as a sinner to Jesus I come": [
     "340"
   ],
@@ -313,9 +313,6 @@
   "Far from my thoughts, vain world, be gone": [
     "280"
   ],
-  "Farewell! vain world, I’m going home": [
-    "278b"
-  ],
   "Farewell, dear brothers, fare you well": [
     "539"
   ],
@@ -336,14 +333,17 @@
     "274t",
     "282"
   ],
-  "Father to Thee my soul I lift": [
-    "336b"
+  "Farewell! vain world, I’m going home": [
+    "278b"
   ],
   "Father, I wait before Thy throne": [
     "567"
   ],
   "Father, remove this bitter cup": [
     "497"
+  ],
+  "Father to Thee my soul I lift": [
+    "336b"
   ],
   "Fight on, my soul, ’till death": [
     "385t"
@@ -383,30 +383,24 @@
   "Glorious things of thee are spoken": [
     "148"
   ],
+  "Go, preachers, and tell it to the world": [
+    "401"
+  ],
   "Go and tell his disciples": [
     "473"
   ],
   "Go forth, ye heralds, in My Name": [
     "528t"
   ],
-  "Go, preachers, and tell it to the world": [
-    "401"
-  ],
   "God, in the gospel of His Son": [
     "499"
-  ],
-  "Grace! ’tis a charming sound": [
-    "31t",
-    "446b"
   ],
   "Grace, ’tis a most delightful theme": [
     "356"
   ],
-  "Great God of nations now to Thee": [
-    "594"
-  ],
-  "Great God! attend to my complaint": [
-    "264t"
+  "Grace! ’tis a charming sound": [
+    "31t",
+    "446b"
   ],
   "Great God, attend while Zion sings": [
     "217"
@@ -416,6 +410,12 @@
   ],
   "Great God, the heav’n’s well order’d frame": [
     "202"
+  ],
+  "Great God of nations now to Thee": [
+    "594"
+  ],
+  "Great God! attend to my complaint": [
+    "264t"
   ],
   "Hail the blest morn when the great Mediator": [
     "175"
@@ -447,11 +447,11 @@
   "He comes! He comes! to judge the world": [
     "131t"
   ],
-  "He dies! the friend of sinners dies": [
-    "472"
-  ],
   "He dies, the friend of sinners dies": [
     "163t"
+  ],
+  "He dies! the friend of sinners dies": [
+    "472"
   ],
   "Here’s my heart, my loving Jesus": [
     "361"
@@ -651,18 +651,6 @@
   "Jerusalem! My happy home": [
     "343"
   ],
-  "Jesus and shall it ever be": [
-    "32t"
-  ],
-  "Jesus came to save poor sinners": [
-    "404"
-  ],
-  "Jesus paid the debt on Calvary": [
-    "510"
-  ],
-  "Jesus the vision of Thy face": [
-    "494"
-  ],
   "Jesus, and shall it ever be": [
     "532"
   ],
@@ -687,6 +675,18 @@
   ],
   "Jesus, Thou art the sinner’s friend": [
     "58"
+  ],
+  "Jesus and shall it ever be": [
+    "32t"
+  ],
+  "Jesus came to save poor sinners": [
+    "404"
+  ],
+  "Jesus paid the debt on Calvary": [
+    "510"
+  ],
+  "Jesus the vision of Thy face": [
+    "494"
   ],
   "Joy to the world, the Lord is come": [
     "244"
@@ -722,13 +722,6 @@
   "Look, how we grovel here below": [
     "157"
   ],
-  "Lord Jesus, I’m not worthy": [
-    "580"
-  ],
-  "Lord of the worlds above": [
-    "314",
-    "315"
-  ],
   "Lord, in the morning Thou shalt hear": [
     "171",
     "173"
@@ -756,6 +749,13 @@
   ],
   "Lord, ’tis an infinite delight": [
     "210"
+  ],
+  "Lord Jesus, I’m not worthy": [
+    "580"
+  ],
+  "Lord of the worlds above": [
+    "314",
+    "315"
   ],
   "Loud swell the pealing organ’s notes": [
     "389b"
@@ -791,11 +791,11 @@
   "My breth’ren all, on you I call": [
     "90"
   ],
-  "My Christian friends to whom I speak": [
-    "535t"
-  ],
   "My Christian friends, in bonds of love": [
     "62"
+  ],
+  "My Christian friends to whom I speak": [
+    "535t"
   ],
   "My country, ’tis of thee": [
     "484"
@@ -806,14 +806,14 @@
   "My friends, I am going a long and tedious journey": [
     "260"
   ],
-  "My God is real, oh, yes, He’s real": [
-    "512"
-  ],
   "My God, my Life, my Love": [
     "447t"
   ],
   "My God, my life, my love": [
     "243b"
+  ],
+  "My God is real, oh, yes, He’s real": [
+    "512"
   ],
   "My heart and voice I raise": [
     "394"
@@ -843,14 +843,14 @@
   "My Savior leads me ev’ry day": [
     "569"
   ],
+  "My soul, be on thy guard": [
+    "447b"
+  ],
   "My soul forsakes her vain delight": [
     "71"
   ],
   "My soul repeat His praise": [
     "36t"
-  ],
-  "My soul, be on thy guard": [
-    "447b"
   ],
   "My span of life will soon be done": [
     "407"
@@ -880,14 +880,29 @@
     "121",
     "466"
   ],
+  "Now, in the heat of youthful blood": [
+    "272"
+  ],
   "Now I have a dear Friend": [
     "563"
   ],
   "Now shall my soul be lifted high": [
     "91"
   ],
-  "Now, in the heat of youthful blood": [
-    "272"
+  "O, for a closer walk with God": [
+    "27"
+  ],
+  "O, for a heart to praise my God": [
+    "556"
+  ],
+  "O, if my soul was formed for woe": [
+    "214"
+  ],
+  "O, sing to me of heav’n": [
+    "312"
+  ],
+  "O, when shall I see Jesus": [
+    "106"
   ],
   "O come, come away": [
     "334"
@@ -925,15 +940,15 @@
   "O Jesus, my Savior, I know Thou art mine": [
     "125"
   ],
-  "O land of rest! for thee I sigh": [
-    "154b",
-    "390"
-  ],
   "O land of rest, for thee I sigh": [
     "284",
     "285b",
     "430",
     "438t"
+  ],
+  "O land of rest! for thee I sigh": [
+    "154b",
+    "390"
   ],
   "O may I worthy prove to see": [
     "170",
@@ -993,30 +1008,6 @@
     "292b",
     "347"
   ],
-  "O, for a closer walk with God": [
-    "27"
-  ],
-  "O, for a heart to praise my God": [
-    "556"
-  ],
-  "O, if my soul was formed for woe": [
-    "214"
-  ],
-  "O, sing to me of heav’n": [
-    "312"
-  ],
-  "O, when shall I see Jesus": [
-    "106"
-  ],
-  "Oh if my Lord would come and meet": [
-    "480"
-  ],
-  "Oh Lord, look down from Thy throne": [
-    "380b"
-  ],
-  "Oh! sing with me in social spheres": [
-    "374"
-  ],
   "Oh, for a closer walk with God": [
     "513t"
   ],
@@ -1029,6 +1020,15 @@
   ],
   "Oh, where is now our brother dear": [
     "550"
+  ],
+  "Oh if my Lord would come and meet": [
+    "480"
+  ],
+  "Oh Lord, look down from Thy throne": [
+    "380b"
+  ],
+  "Oh! sing with me in social spheres": [
+    "374"
   ],
   "On Jordan’s stormy banks I stand": [
     "51",
@@ -1074,11 +1074,11 @@
   "Religion is the chief concern": [
     "205"
   ],
-  "Rise my soul, and stretch thy wings": [
-    "508"
-  ],
   "Rise, my soul, and stretch thy wings": [
     "131b"
+  ],
+  "Rise my soul, and stretch thy wings": [
+    "508"
   ],
   "Rock of Ages, cleft for me": [
     "451"
@@ -1121,12 +1121,12 @@
     "339",
     "459"
   ],
-  "Shepherds, rejoice! lift up your eyes": [
-    "306"
-  ],
   "Shepherds, rejoice, lift up your eyes": [
     "291",
     "433"
+  ],
+  "Shepherds, rejoice! lift up your eyes": [
+    "306"
   ],
   "Should earth against my soul engage": [
     "423",
@@ -1135,11 +1135,11 @@
   "Show pity, Lord; O Lord, forgive": [
     "73t"
   ],
-  "Sinner go, will you go": [
-    "453b"
-  ],
   "Sinner, O why so thoughtless grown": [
     "38t"
+  ],
+  "Sinner go, will you go": [
+    "453b"
   ],
   "So fades the lovely blooming flow’r": [
     "50b"
@@ -1223,6 +1223,12 @@
     "445t",
     "553"
   ],
+  "The Lord, the Judge, before His throne": [
+    "592"
+  ],
+  "The Lord, who built the earth and sky": [
+    "278t"
+  ],
   "The Lord into His garden come": [
     "64"
   ],
@@ -1240,12 +1246,6 @@
   ],
   "The Lord will happiness divine": [
     "287"
-  ],
-  "The Lord, the Judge, before His throne": [
-    "592"
-  ],
-  "The Lord, who built the earth and sky": [
-    "278t"
   ],
   "The men of grace have found": [
     "313"
@@ -1290,18 +1290,18 @@
     "101b",
     "551"
   ],
+  "There is a home, a peaceful home": [
+    "564"
+  ],
   "There is a home not made with hands": [
     "372"
   ],
-  "There is a home, a peaceful home": [
-    "564"
+  "There is a house, not made with hands": [
+    "418"
   ],
   "There is a house not made with hands": [
     "218",
     "581"
-  ],
-  "There is a house, not made with hands": [
-    "418"
   ],
   "There is a land of pure delight": [
     "33",
@@ -1627,15 +1627,15 @@
   "Young ladies, all, attention give": [
     "437"
   ],
-  "Young people all attention give": [
-    "29b"
+  "Young people, all attention give": [
+    "204",
+    "286t"
   ],
   "Young people all, attention give": [
     "215"
   ],
-  "Young people, all attention give": [
-    "204",
-    "286t"
+  "Young people all attention give": [
+    "29b"
   ],
   "Youth, like the spring will soon be gone": [
     "414"

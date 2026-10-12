@@ -76,7 +76,15 @@ Every other index is an object mapping a source, title, first line, date, or met
 unique page strings, sorted numerically by page, with an unsuffixed page first,
 then `t` before `b`. Page values
 come from `Page` metadata, including suffixes such as `t` and `b`, rather than
-filenames. Keys are sorted without regard to case; Unicode punctuation is retained.
+filenames. Alphabetic keys are sorted without regard to case, ignoring opening
+punctuation. Commas interrupt collation: compare the text before the first comma,
+then subsequent comma-separated parts only when earlier parts match. Thus
+`New, Zoe` precedes `New Deal`, and `New, Arthur` precedes `New, Zoe`.
+Unqualified entries precede their comma-qualified forms. Other internal punctuation
+and spaces retain their existing sort behavior; displayed text is preserved.
+The same rule applies to alphabetic meter ordering and same-year date ordering
+on the website. Numeric page, date-century, and meter-pattern ordering retain
+their numeric priorities.
 Meters use a separate order: Common Meter and its variants, Short Meter and its
 variants, Long Meter and its variants, other named meters alphabetically, numeric
 meters, Particular Meter patterns, then Irregular and Prose. Numeric patterns sort

@@ -111,16 +111,16 @@ def meter_sort_key(meter: str) -> tuple:
     """Lead with Common, Short, and Long Meter and their variants."""
     for rank, family in enumerate(("Common Meter", "Short Meter", "Long Meter")):
         if meter == family or meter.startswith(family + " "):
-            return (rank, (), meter.casefold(), meter)
+            return (rank, (), alphabetical_sort_key(meter))
     if meter in ("Irregular", "Prose"):
-        return (6 if meter == "Irregular" else 7, (), meter.casefold(), meter)
+        return (6 if meter == "Irregular" else 7, (), alphabetical_sort_key(meter))
     if meter.startswith("Particular Meter:"):
         pattern = meter.split(":", 1)[1]
-        return (5, tuple(map(int, re.findall(r"\d+", pattern))), meter.casefold(), meter)
+        return (5, tuple(map(int, re.findall(r"\d+", pattern))), alphabetical_sort_key(meter))
     if meter[:1].isdigit():
         pattern = meter.split("(", 1)[0]
-        return (4, tuple(map(int, re.findall(r"\d+", pattern))), meter.casefold(), meter)
-    return (3, (), meter.casefold(), meter)
+        return (4, tuple(map(int, re.findall(r"\d+", pattern))), alphabetical_sort_key(meter))
+    return (3, (), alphabetical_sort_key(meter))
 
 
 def alphabetical_text(key: str) -> str:
@@ -131,6 +131,16 @@ def alphabetical_text(key: str) -> str:
     ):
         start += 1
     return unicodedata.normalize("NFKD", key[start:]).casefold()
+
+
+def alphabetical_sort_key(key: str) -> tuple[tuple[str, ...], str]:
+    """Compare comma-separated parts in turn; preserve text as a final tie-breaker.
+
+    A comma interrupts collation: later parts matter only when the preceding
+    parts match. An unqualified entry precedes its comma-qualified forms.
+    Other internal punctuation and spaces retain their existing sort behavior.
+    """
+    return (tuple(part.strip() for part in alphabetical_text(key).split(",")), key)
 
 
 def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
@@ -150,9 +160,7 @@ def build_index(lyrics_dir: Path, kind: str) -> dict[str, list[str]]:
             keys = index_keys(metadata, kind)
         for key in keys:
             pages_by_key.setdefault(key, set()).add(metadata["Page"])
-    key_order = meter_sort_key if kind == "meters" else lambda key: (key.casefold(), key)
-    if kind in ("titles", "first_lines"):
-        key_order = lambda key: (alphabetical_text(key), key)
+    key_order = meter_sort_key if kind == "meters" else alphabetical_sort_key
     return {
         key: sorted(pages_by_key[key], key=page_sort_key)
         for key in sorted(pages_by_key, key=key_order)

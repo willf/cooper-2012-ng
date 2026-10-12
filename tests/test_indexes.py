@@ -7,6 +7,7 @@ from pathlib import Path
 
 from scripts.index_common import KINDS, ROOT, build_index, contributors, dates, lyric_words, meter_sort_key, read_metadata
 from scripts.songs import build_songs
+from scripts.index_common import alphabetical_sort_key
 
 
 class IndexTests(unittest.TestCase):
@@ -66,6 +67,26 @@ Words
         for kind, expected in self.expected.items():
             with self.subTest(kind=kind):
                 self.assertEqual(build_index(self.lyrics, kind), expected)
+
+    def test_commas_interrupt_alphabetical_collation(self):
+        expected = ["New", "New, Arthur", "New, Zoe", "New Deal",
+                    "news, lamentable", "News, Networks, and the Arts", "news conference"]
+        self.assertEqual(sorted(reversed(expected), key=alphabetical_sort_key), expected)
+        self.assertLess(alphabetical_sort_key("Smith, John, Jr."),
+                        alphabetical_sort_key("Smith, John Paul"))
+        self.assertLess(alphabetical_sort_key("‘Come, Zion"),
+                        alphabetical_sort_key("Come all"))
+        for number, text in enumerate(reversed(expected)):
+            self.write(f"comma-{number}.txt",
+                       f"Page: {100 + number}\nCollation: {text}\nLyrics: {text}\n"
+                       f"Tune Composer: {text}\nLyrics Date: {text}\n"
+                       f"Tune Composition Date: {text}\nMeter: {text}\n________________\n{text}\n")
+        for kind in KINDS:
+            if kind == "words":
+                continue
+            with self.subTest(kind=kind):
+                self.assertEqual([key for key in build_index(self.lyrics, kind) if key in expected],
+                                 expected)
 
     def test_songs_export_preserves_headers_lyrics_and_page_order(self):
         self.write("003.txt", "Page: 10b\nAlternative Title: An alternate\nCustom Field: Unchanged; annotation (verse)\n________________\nLyrics: Excluded\n")

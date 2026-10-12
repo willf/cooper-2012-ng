@@ -20,6 +20,7 @@ if __package__:
         ROOT,
         WORD_PATTERN,
         alphabetical_text,
+        alphabetical_sort_key,
         build_index,
         contributors,
         dates,
@@ -34,6 +35,7 @@ else:
         ROOT,
         WORD_PATTERN,
         alphabetical_text,
+        alphabetical_sort_key,
         build_index,
         contributors,
         dates,
@@ -211,7 +213,7 @@ def date_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, s
         return int(match[0]) if match else 10000
 
     groups = {}
-    for key in sorted(index, key=lambda key: (year(key), key.casefold(), key)):
+    for key in sorted(index, key=lambda key: (year(key), alphabetical_sort_key(key))):
         first_year = year(key)
         group = str(first_year // 100 * 100) if first_year != 10000 else "other"
         groups.setdefault(group, {})[key] = index[key]
