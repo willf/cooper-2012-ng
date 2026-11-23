@@ -14,7 +14,7 @@ from scripts.site import (
     build_site,
     date_index,
     display_source,
-    entry_id,
+    entry_ids,
     metadata_value,
     word_letter,
 )
@@ -103,13 +103,15 @@ Another verse & more
     def test_date_sections_group_approximate_dates_and_ranges_by_first_year(self):
         dates = {key: ["27t"] for key in
                  ("July 15, 1927", "ca. 1778", "1840-1904", "c. 1600", "abt 1810-1830")}
-        nav, sections = date_index(dates, {"27t": ("songs/027t.html", "Song")}, Templates())
+        ids = entry_ids(dates)
+        nav, sections = date_index(dates, {"27t": ("songs/027t.html", "Song")}, ids, Templates())
         self.assertIn('href="#date-1600">1600s</a>', nav)
         self.assertLess(sections.index('id="date-1600"'), sections.index('id="date-1700"'))
         self.assertLess(sections.index('id="date-1800"'), sections.index('id="date-1900"'))
         for key in dates:
-            self.assertIn(f'id="{entry_id(key)}"', sections)
+            self.assertIn(f'id="{ids[key]}"', sections)
             self.assertIn(key, sections)
+        self.assertIn('id="entry-july-15-1927"', sections)
         self.assertLess(sections.index("abt 1810-1830"), sections.index("1840-1904"))
         build_site(self.lyrics, self.output)
         for kind in ("lyric_dates", "composition_dates"):
@@ -123,7 +125,8 @@ Another verse & more
         self.assertIn("The &lt;Fountain&gt; &amp; Life", song)
         self.assertIn(">William Cowper</a> (1st Verse)", song)
         self.assertNotIn("<dt>Collation</dt>", song)
-        self.assertIn(f'../titles.html#{entry_id("<Fountain> & Life, The")}', song)
+        self.assertIn('../titles.html#entry-fountain-life-the', song)
+        self.assertIn('../meters.html#entry-common-meter-8-6-8-6', song)
         self.assertNotIn("<script>", song)
         parser = Links()
         parser.feed(song)
@@ -148,6 +151,7 @@ Another verse & more
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text())
+            self.assertEqual(len(links.ids), len(set(links.ids)), path)
             for target in links.targets:
                 self.assert_link_resolves(path, target)
 
@@ -177,22 +181,54 @@ Another verse & more
             self.assertTrue(parser.ids)
             self.assertEqual(len(parser.ids), len(set(parser.ids)))
         value = "Watts, Isaac (1st Verse); Newton, John (Rev.) (2nd Verse)"
-        rendered = metadata_value("Lyrics", value, {})
-        self.assertIn(f'../lyrics.html#{entry_id("Watts, Isaac")}', rendered)
-        self.assertIn(f'../lyrics.html#{entry_id("Newton, John")}', rendered)
+        ids = {"lyrics": entry_ids(["Watts, Isaac", "Newton, John"])}
+        rendered = metadata_value("Lyrics", value, {}, ids)
+        self.assertIn('../lyrics.html#entry-watts-isaac', rendered)
+        self.assertIn('../lyrics.html#entry-newton-john', rendered)
         self.assertIn("</a> (1st Verse); ", rendered)
         self.assertIn("</a> (Rev.) (2nd Verse)", rendered)
-        rendered = metadata_value("Lyrics Date", "1706 (verse 1), 1707 (verse 2)", {})
-        self.assertIn(f'../lyric_dates.html#{entry_id("1706")}', rendered)
-        self.assertIn(f'../lyric_dates.html#{entry_id("1707")}', rendered)
+        ids = {"lyric_dates": entry_ids(["1706", "1707"])}
+        rendered = metadata_value("Lyrics Date", "1706 (verse 1), 1707 (verse 2)", {}, ids)
+        self.assertIn('../lyric_dates.html#entry-1706', rendered)
+        self.assertIn('../lyric_dates.html#entry-1707', rendered)
+
+    def test_colliding_entry_slugs_resolve_to_distinct_entries(self):
+        path = self.lyrics / "027t.txt"
+        path.write_text(
+            path.read_text().replace("<Fountain> & Life, The", "Café") + "\nCafé cafe Ωmega\n"
+        )
+        path = self.lyrics / "027b.txt"
+        path.write_text(path.read_text().replace("<Fountain> & Life, The", "Cafe!"))
+        build_site(self.lyrics, self.output)
+
+        titles = (self.output / "titles.html").read_text()
+        for filename, anchor in [("027b.html", "entry-cafe"), ("027t.html", "entry-cafe--2")]:
+            self.assertIn(
+                f'<li id="{anchor}"><span class="index-label"><a href="songs/{filename}">',
+                titles,
+            )
+            song = (self.output / "songs" / filename).read_text()
+            self.assertIn(f'href="../titles.html#{anchor}"', song)
+
+        path = self.output / "songs/027t.html"
+        links = Links()
+        links.feed(path.read_text())
+        targets = {link["data-word"]: link["href"] for link in links.word_targets}
+        for word, target in {
+            "cafe": "../words/c.html#entry-cafe",
+            "café": "../words/c.html#entry-cafe--2",
+            "ωmega": "../words/other.html#entry-%CF%89mega",
+        }.items():
+            self.assertEqual(targets[word], target)
+            self.assert_link_resolves(path, target)
 
     def test_word_index_letter_pages_and_lyric_links(self):
         build_site(self.lyrics, self.output)
         song = (self.output / "songs/027t.html").read_text()
-        self.assertIn(f'../words/v.html#{entry_id("verse")}', song)
-        self.assertNotIn(f'#{entry_id("more")}', song)
+        self.assertIn('../words/v.html#entry-verse', song)
+        self.assertNotIn('#entry-more', song)
         words = (self.output / "words/v.html").read_text()
-        self.assertIn(f'id="{entry_id("verse")}"', words)
+        self.assertIn('id="entry-verse"', words)
         self.assertIn('href="../songs/027t.html?highlight=verse"', words)
         self.assertLess(words.index(">27t</a>"), words.index(">27b</a>"))
         for letter in "abcdefghijklmnopqrstuvwxyz":
@@ -232,15 +268,16 @@ Another verse & more
             ("Tenor Composer", "composers"),
         ]:
             with self.subTest(field=field):
+                ids = {kind: entry_ids(["Price, F.", "Watts, Isaac"])}
                 rendered = metadata_value(
-                    field, "Price, F. (arranger); Watts, Isaac (1st Verse)", {}
+                    field, "Price, F. (arranger); Watts, Isaac (1st Verse)", {}, ids
                 )
                 self.assertIn(
-                    f'href="../{kind}.html#{entry_id("Price, F.")}">F. Price</a>',
+                    f'href="../{kind}.html#entry-price-f">F. Price</a>',
                     rendered,
                 )
                 self.assertIn(
-                    f'href="../{kind}.html#{entry_id("Watts, Isaac")}">Isaac Watts</a>',
+                    f'href="../{kind}.html#entry-watts-isaac">Isaac Watts</a>',
                     rendered,
                 )
                 self.assertIn("</a> (arranger); ", rendered)
@@ -265,7 +302,7 @@ Another verse & more
         )
         self.assertIn('href="songs.html"', (self.output / "index.html").read_text())
         self.assertIn(
-            f'../songs.html#{entry_id("27t")}',
+            '../songs.html#entry-27t',
             (self.output / "songs/027t.html").read_text(),
         )
 
@@ -402,5 +439,6 @@ Another verse & more
         for path in self.output.rglob("*.html"):
             links = Links()
             links.feed(path.read_text(encoding="utf-8"))
+            self.assertEqual(len(links.ids), len(set(links.ids)), path)
             for target in links.targets:
                 self.assert_link_resolves(path, target)

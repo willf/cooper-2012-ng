@@ -5,8 +5,9 @@
 """Build the static lyrics website with uv run scripts/site.py."""
 
 import argparse
+from collections import Counter
+from collections.abc import Iterable
 import json
-from hashlib import sha256
 from html import escape
 from pathlib import Path
 import re
@@ -95,13 +96,23 @@ def document(
     )
 
 
-def entry_id(key: str) -> str:
-    """An entry keeps its ID when other entries are added or reordered."""
-    return "entry-" + sha256(key.encode("utf-8")).hexdigest()[:12]
+def entry_ids(keys: Iterable[str]) -> dict[str, str]:
+    """Assign readable anchors, resolving collisions in key order."""
+    ids = {}
+    counts = Counter()
+    for key in sorted(set(keys)):
+        text = unicodedata.normalize("NFKD", key.casefold())
+        text = "".join(char for char in text if not unicodedata.combining(char))
+        slug = re.sub(r"[\W_]+", "-", text).strip("-") or "untitled"
+        anchor = f"entry-{slug}"
+        counts[anchor] += 1
+        # Slugs use single hyphens, so a double hyphen reserves the suffix.
+        ids[key] = f"{anchor}--{counts[anchor]}" if counts[anchor] > 1 else anchor
+    return ids
 
 
-def index_link(kind: str, key: str, label: str) -> str:
-    return f'<a href="../{kind}.html#{entry_id(key)}">{escape(label)}</a>'
+def index_link(kind: str, anchor: str, label: str) -> str:
+    return f'<a href="../{kind}.html#{quote(anchor)}">{escape(label)}</a>'
 
 
 def display_source(key: str) -> str:
@@ -121,16 +132,17 @@ def word_letter(word: str) -> str:
     return initial if initial in ascii_lowercase else "other"
 
 
-def word_links(body: str, word_index: dict[str, list[str]]) -> str:
+def word_links(body: str, ids: dict[str, str]) -> str:
     """Preserve lyric text, capitalization, whitespace, and punctuation."""
     pieces = []
     cursor = 0
     for match in WORD_PATTERN.finditer(body):
         pieces.append(escape(body[cursor : match.start()]))
         word = normalize_word(match[0])
-        if word in word_index:
+        if word in ids:
+            href = f"../words/{word_letter(word)}.html#{quote(ids[word])}"
             pieces.append(
-                f'<a href="../words/{word_letter(word)}.html#{entry_id(word)}" data-word="{escape(word)}">{escape(match[0])}</a>'
+                f'<a href="{href}" data-word="{escape(word)}">{escape(match[0])}</a>'
             )
         else:
             pieces.append(escape(match[0]))
@@ -142,6 +154,7 @@ def word_links(body: str, word_index: dict[str, list[str]]) -> str:
 def index_items(
     index: dict[str, list[str]],
     by_page: dict,
+    ids: dict[str, str],
     prefix: str = "",
     *,
     words: bool = False,
@@ -174,7 +187,7 @@ def index_items(
         items.append(
             templates.render(
                 "index-item.html",
-                id=entry_id(key),
+                id=ids[key],
                 label_html=label,
                 links_html=" ".join(links),
             )
@@ -183,7 +196,12 @@ def index_items(
 
 
 def alphabetical_index(
-    index: dict, by_page: dict, templates: Templates, *, linked_labels: bool = True
+    index: dict,
+    by_page: dict,
+    ids: dict[str, str],
+    templates: Templates,
+    *,
+    linked_labels: bool = True,
 ) -> tuple[str, str]:
     groups = {letter: {} for letter in ascii_lowercase}
     for key, pages in index.items():
@@ -201,12 +219,16 @@ def alphabetical_index(
             sections.append(templates.render(
                 "index-section.html", letter=letter, label=label,
                 top_html=templates.render("index-top.html") if letter != "a" else "",
-                entries_html=index_items(entries, by_page, linked_labels=linked_labels, templates=templates),
+                entries_html=index_items(
+                    entries, by_page, ids, linked_labels=linked_labels, templates=templates
+                ),
             ))
     return templates.render("index-alphabet.html", letters_html="".join(letters)), "\n".join(sections)
 
 
-def date_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, str]:
+def date_index(
+    index: dict, by_page: dict, ids: dict[str, str], templates: Templates
+) -> tuple[str, str]:
     """Group dates by century, using the first stated year for ranges."""
     def year(key: str) -> int:
         match = re.search(r"\d{4}\b", key)
@@ -225,7 +247,7 @@ def date_index(index: dict, by_page: dict, templates: Templates) -> tuple[str, s
         sections.append(templates.render(
             "index-date-section.html", group=group, label=label,
             top_html=templates.render("index-top.html") if sections else "",
-            entries_html=index_items(entries, by_page, templates=templates),
+            entries_html=index_items(entries, by_page, ids, templates=templates),
         ))
     return templates.render("index-dates.html", links_html="".join(links)), "\n".join(sections)
 
@@ -234,6 +256,7 @@ def build_word_pages(
     output: Path,
     index: dict[str, list[str]],
     by_page: dict,
+    ids: dict[str, str],
     *,
     templates: Templates | None = None,
 ) -> None:
@@ -272,7 +295,7 @@ def build_word_pages(
             title=title,
             letters_html=links,
             entries_html=index_items(
-                words, by_page, "../", words=True, templates=templates
+                words, by_page, ids, "../", words=True, templates=templates
             )
             if words
             else templates.render("empty-words.html"),
@@ -282,14 +305,19 @@ def build_word_pages(
         )
 
 
-def metadata_value(field: str, value: str, metadata: dict[str, str]) -> str:
+def metadata_value(
+    field: str,
+    value: str,
+    metadata: dict[str, str],
+    ids_by_kind: dict[str, dict[str, str]],
+) -> str:
     """Link index keys, displaying contributor names in normal reading order."""
     if field in ("Title", "Collation") and metadata.get("Collation"):
-        return index_link("titles", metadata["Collation"], value)
-    if field == "Meter":
-        return index_link("meters", value, value)
+        return index_link("titles", ids_by_kind["titles"][metadata["Collation"]], value)
+    if field == "Meter" and value:
+        return index_link("meters", ids_by_kind["meters"][value], value)
     if field == "Page":
-        return index_link("songs", value, value)
+        return index_link("songs", ids_by_kind["songs"][value], value)
     if field == "Lyrics":
         kind, keys = "lyrics", contributors(value)
     elif field.endswith(" Composer"):
@@ -313,7 +341,7 @@ def metadata_value(field: str, value: str, metadata: dict[str, str]) -> str:
         label = (
             display_source(match[0]) if kind in ("lyrics", "composers") else match[0]
         )
-        pieces.append(index_link(kind, match[0], label))
+        pieces.append(index_link(kind, ids_by_kind[kind][match[0]], label))
         cursor = match.end()
     pieces.append(escape(value[cursor:]))
     return "".join(pieces)
@@ -374,6 +402,9 @@ def build_site(
         songs.append((filename, metadata, body))
     songs.sort(key=lambda song: page_sort_key(song[1]["Page"]))
     indexes = {kind: build_index(lyrics_dir, kind) for kind in KINDS}
+    ids_by_kind = {kind: entry_ids(index) for kind, index in indexes.items()}
+    song_ids = entry_ids(by_page)
+    ids_by_kind["songs"] = song_ids
     # Parse and validate all input before writing the generated site.
     output.mkdir(parents=True, exist_ok=True)
     (output / "songs.json").write_text(
@@ -437,14 +468,14 @@ def build_site(
         song_entries.append(
             templates.render(
                 "song-item.html",
-                id=entry_id(page),
+                id=song_ids[page],
                 href=quote(filename),
                 page=page,
                 title=title,
             )
         )
     jumps = "".join(
-        templates.render("song-jump.html", id=entry_id(page), page=page)
+        templates.render("song-jump.html", id=quote(song_ids[page]), page=page)
         for page in ordered_pages[SONG_JUMP_INTERVAL::SONG_JUMP_INTERVAL]
     )
     song_body = templates.render(
@@ -455,17 +486,19 @@ def build_site(
         document("Songs", song_body, templates=templates), encoding="utf-8"
     )
     for kind, index in indexes.items():
+        ids = ids_by_kind[kind]
         if kind == "words":
-            build_word_pages(output, index, by_page, templates=templates)
+            build_word_pages(output, index, by_page, ids, templates=templates)
             continue
         letters_html = ""
-        entries_html = index_items(index, by_page, templates=templates)
         if kind in ("titles", "first_lines", "composers", "lyrics"):
             letters_html, entries_html = alphabetical_index(
-                index, by_page, templates, linked_labels=kind in ("titles", "first_lines")
+                index, by_page, ids, templates, linked_labels=kind in ("titles", "first_lines")
             )
         elif kind in ("lyric_dates", "composition_dates"):
-            letters_html, entries_html = date_index(index, by_page, templates)
+            letters_html, entries_html = date_index(index, by_page, ids, templates)
+        else:
+            entries_html = index_items(index, by_page, ids, templates=templates)
         body = templates.render(
             "index.html",
             kind=kind,
@@ -482,7 +515,7 @@ def build_site(
             templates.render(
                 "metadata-field.html",
                 label=key,
-                value_html=metadata_value(key, value, metadata),
+                value_html=metadata_value(key, value, metadata, ids_by_kind),
             )
             for key, value in metadata.items()
             if key != "Collation"
@@ -492,7 +525,7 @@ def build_site(
             page=metadata["Page"],
             title=metadata["Title"],
             navigation_html=song_navigation(songs, position, templates=templates),
-            lyrics_html=word_links(lyrics, indexes["words"]),
+            lyrics_html=word_links(lyrics, ids_by_kind["words"]),
             metadata_html=fields,
             bottom_navigation_html=song_navigation(
                 songs, position, bottom=True, templates=templates
